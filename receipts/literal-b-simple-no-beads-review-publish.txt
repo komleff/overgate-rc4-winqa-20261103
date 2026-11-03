@@ -1,0 +1,5 @@
+{"command": ["C:\\Python314\\python.exe", "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\source-2343df8\\.claude\\tools\\publish-pr-comment.py", "1", "-"], "cwd": "C:\\work\\og-b-simple-no-beads", "exit_code": 0}
+STDOUT:
+https://github.com/komleff/overgate-rc4-b-simple-no-beads-20261104/pull/1#issuecomment-6612782085
+
+STDERR:

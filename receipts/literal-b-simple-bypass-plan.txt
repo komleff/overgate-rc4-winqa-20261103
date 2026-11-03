@@ -1,0 +1,5 @@
+{"command": ["C:\\Python314\\python.exe", "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\source-2343df8\\scripts\\install-overgate.py", "plan", "--source", "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\source-2343df8", "--source-sha", "2343df83a3a26ae83bc66d4009dd67a913eeea4e", "--target", "C:\\work\\og-b-simple-bypass", "--contract", "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\literal-b-simple-bypass-contract.md", "--target-pr", "https://github.com/komleff/overgate-rc4-b-simple-bypass-20261104/pull/1", "--output", "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\literal-b-simple-bypass-plan.json", "--mode", "bypass"], "cwd": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103", "exit_code": 0}
+STDOUT:
+Plan written; conflicts=0; SHA256=c4b122173ba4aa7fe218837cdf0e461ff3a746d300ac71a3b285f107bedd2b3d
+
+STDERR:

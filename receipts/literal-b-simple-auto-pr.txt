@@ -1,0 +1,5 @@
+{"command": ["gh", "pr", "create", "--draft", "--base", "main", "--head", "install/overgate-b", "--title", "Literal fresh B Windows simple auto", "--body-file", "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\literal-b-simple-auto-pr-body.md"], "cwd": "C:\\work\\og-b-simple-auto", "exit_code": 0}
+STDOUT:
+https://github.com/komleff/overgate-rc4-b-simple-auto-20261104/pull/1
+
+STDERR:

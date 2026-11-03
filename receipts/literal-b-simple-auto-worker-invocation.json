@@ -1,0 +1,22 @@
+{
+  "cwd": "C:/work/og-b-simple-auto",
+  "mode": "auto",
+  "command": [
+    "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\tools\\claude-runtime\\node_modules\\.bin\\claude.cmd",
+    "--permission-mode",
+    "auto",
+    "--effort",
+    "low",
+    "--print",
+    "--verbose",
+    "--output-format",
+    "stream-json",
+    "--include-hook-events"
+  ],
+  "started": "2026-11-04T01:57:09+0700",
+  "stopped_on_first_tool_error": true,
+  "failed_tool_ids": [
+    "toolu_01DEoYeRGqNFHPHzQGsyPcfG"
+  ],
+  "exit_code": 1
+}

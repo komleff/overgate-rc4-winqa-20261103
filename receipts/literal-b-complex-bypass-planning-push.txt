@@ -1,0 +1,11 @@
+{"command": ["git", "push", "-u", "origin", "install/overgate-b"], "cwd": "C:\\Users\\komle\\Мои проекты\\og B bypass", "exit_code": 0}
+STDOUT:
+branch 'install/overgate-b' set up to track 'origin/install/overgate-b'.
+
+STDERR:
+remote: 
+remote: Create a pull request for 'install/overgate-b' on GitHub by visiting:        
+remote:      https://github.com/komleff/overgate-rc4-b-complex-bypass-20261104/pull/new/install/overgate-b        
+remote: 
+To https://github.com/komleff/overgate-rc4-b-complex-bypass-20261104.git
+ * [new branch]      install/overgate-b -> install/overgate-b

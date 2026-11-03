@@ -1,0 +1,5 @@
+{"command": ["git", "switch", "-c", "install/overgate-b"], "cwd": "C:\\Users\\komle\\Мои проекты\\og B no-beads", "exit_code": 0}
+STDOUT:
+
+STDERR:
+Switched to a new branch 'install/overgate-b'

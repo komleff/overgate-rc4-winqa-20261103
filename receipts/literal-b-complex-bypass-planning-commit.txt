@@ -1,0 +1,7 @@
+{"command": ["git", "commit", "-m", "docs: plan literal B Windows fresh complex bypass"], "cwd": "C:\\Users\\komle\\Мои проекты\\og B bypass", "exit_code": 0}
+STDOUT:
+[install/overgate-b 794cf96] docs: plan literal B Windows fresh complex bypass
+ 1 file changed, 8 insertions(+)
+ create mode 100644 qa-install-plan.md
+
+STDERR:

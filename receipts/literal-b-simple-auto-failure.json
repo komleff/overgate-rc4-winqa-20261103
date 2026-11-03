@@ -1,0 +1,73 @@
+{
+  "case": "literal-b-simple-auto",
+  "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e",
+  "result": "FAIL",
+  "step": "5.4 step2: fill project-owned verify.sh",
+  "failed": [
+    {
+      "id": "toolu_01DEoYeRGqNFHPHzQGsyPcfG",
+      "tool": "Bash",
+      "input": {
+        "command": "cd C:/work/og-b-simple-auto && cp D:/CodexArtifacts/overgate-rc4-winqa-20261103/evidence/literal-b-simple-auto-project-verify-template.sh .agents/project/verify.sh && sha256sum .agents/project/verify.sh D:/CodexArtifacts/overgate-rc4-winqa-20261103/evidence/literal-b-simple-auto-project-verify-template.sh",
+        "description": "Copy prepared verifier template into project verify.sh"
+      },
+      "is_error": true,
+      "output": "PreToolUse:Bash hook error: [bash -c 'H=./.claude/hooks/pre-bash.sh; if [ -f \"$H\" ]; then exec bash \"$H\"; fi; P=$(cat); Q=$(printf %s \"$P\" | tr -d \"{[:space:]\" | cut -c1); T=$(printf %s \"$P\" | grep -oE \"[$Q]command[$Q]: *[$Q]cd (/|[A-Za-z]:/)[A-Za-z0-9_:/.-]*[$Q]\" | head -n1); T=${T#*cd }; T=${T%?}; if [ -n \"$T\" ] && [ -f \"$T/.claude/hooks/pre-bash.sh\" ]; then exit 0; fi; R=$(git rev-parse --show-toplevel 2>/dev/null); echo \"БЛОКИРОВКА: каталог сессии не корень репозитория, диспетчер хуков .claude/hooks/pre-bash.sh здесь не найден (PWD=[$PWD], CLAUDE_PROJECT_DIR=[${CLAUDE_PROJECT_DIR-}]). Проходит только одна команда: cd с абсолютным путём к корню репозитория (прямые слэши, без кавычек). Восстановление: cd ${R:-<корень репозитория>}\" >&2; exit 2']: БЛОКИРОВКА: команда может скрывать git commit, но классификатор не доказал точную commit-операцию.\nИспользуй явный git commit после проверок; тяжёлый test-suite для ambiguous-команды не запускается.\n"
+    }
+  ],
+  "completed_apply_and_helper_receipts": [
+    {
+      "id": "toolu_015dkhNCcmGssqvRcAKEPK4J",
+      "tool": "Bash",
+      "input": {
+        "command": "cd C:/work/og-b-simple-auto && py -3 D:/CodexArtifacts/overgate-rc4-winqa-20261103/source-2343df8/scripts/install-overgate.py apply --plan D:/CodexArtifacts/overgate-rc4-winqa-20261103/evidence/literal-b-simple-auto-plan.json --approval D:/CodexArtifacts/overgate-rc4-winqa-20261103/evidence/literal-b-simple-auto-approval.json; echo \"EXIT=$?\"",
+        "description": "Run OverGate installer apply with bound plan and approval",
+        "timeout": 300000
+      },
+      "is_error": false,
+      "output": "Applied frozen source 2343df83a3a26ae83bc66d4009dd67a913eeea4e; backup: C:\\work\\og-b-simple-auto\\.overgate-backups\\d79760c6c2b24ac48f11befa9a3faa53\\rollback.json\r\nEXIT=0"
+    },
+    {
+      "id": "toolu_01VyFA5mZ1ZX2eKboX17vMDj",
+      "tool": "Bash",
+      "input": {
+        "command": "cd C:/work/og-b-simple-auto && bash scripts/og-init-memory-bank.sh; echo \"EXIT=$?\"",
+        "description": "Run Memory Bank init helper"
+      },
+      "is_error": false,
+      "output": "Memory Bank: created six files\r\nEXIT=0"
+    },
+    {
+      "id": "toolu_01KCUMtFABw8xfWMfNZXNKD1",
+      "tool": "Bash",
+      "input": {
+        "command": "cd C:/work/og-b-simple-auto && bash scripts/bd-bootstrap.sh; echo \"EXIT=$?\"",
+        "description": "Run Beads bootstrap helper",
+        "timeout": 300000
+      },
+      "is_error": false,
+      "output": "Beads fresh prefix: og-b-simple-auto\r\nBeads: ready; origin/beads-backup exists\r\nEXIT=0"
+    },
+    {
+      "id": "toolu_01RxqzD6sZTpMLtGZgKvSdku",
+      "tool": "Bash",
+      "input": {
+        "command": "cd C:/work/og-b-simple-auto && bash scripts/og-protect-main.sh; echo \"EXIT=$?\"",
+        "description": "Run main-branch protection helper",
+        "timeout": 180000
+      },
+      "is_error": false,
+      "output": "Protection: verified komleff/overgate-rc4-b-simple-auto-20261104/main updated; evidence for target PR\r\nEXIT=0"
+    }
+  ],
+  "no_retry_or_alternative_after_deny": true,
+  "head": "fdaa13b91ef0b1d67f5fcfc796b377db27af6725",
+  "status": " M .beads/config.yaml\n?? .claude/agents/\n?? .claude/hooks/\n?? .claude/rules/\n?? .claude/skills/\n?? .claude/tools/\n?? .memory-bank/\n?? .overgate/\n?? LICENSE\n?? docs/\n?? scripts/\n",
+  "install_state": {
+    "beads": true,
+    "format": 2,
+    "mode": "auto",
+    "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e"
+  },
+  "verifier_text": "#!/usr/bin/env bash\n# Заполните реальные build/test/lint команды проекта. Не удаляйте fail до заполнения.\necho \"NOT CONFIGURED: заполните .agents/project/verify.sh реальными проверками проекта.\" >&2\nexit 2\n"
+}

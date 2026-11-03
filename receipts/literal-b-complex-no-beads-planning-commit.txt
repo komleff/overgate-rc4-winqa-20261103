@@ -1,0 +1,7 @@
+{"command": ["git", "commit", "-m", "docs: plan literal B Windows fresh complex no-beads"], "cwd": "C:\\Users\\komle\\Мои проекты\\og B no-beads", "exit_code": 0}
+STDOUT:
+[install/overgate-b 104504a] docs: plan literal B Windows fresh complex no-beads
+ 1 file changed, 8 insertions(+)
+ create mode 100644 qa-install-plan.md
+
+STDERR:
