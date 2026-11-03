@@ -1,0 +1,8 @@
+After ordinary trust acceptance, native terminal displayed C:\work\demo and auto mode on. Optional renderer prompt dismissed; no model request or repository mutation. Exit receipt:
+[?25l[18;64H[K[16;3H[?25h[?2004h]0;◐ Claude Code[?1006l[?1003l[?1002l[?1000l[>4m[?2031l[?2004l[?1016l[?25l[15;1H> /exit[K
+[K
+· Whisking…[K[18;3H[K
+────────────────────────────────────────────────────────────────────────────────
+> 
+────────────────────────────────────────────────────────────────────────────────[22;3H⏵⏵[1Cauto[1Cmode[1Con[1C(shift+tab[1Cto[1Ccycle)[1C·[1CPR]8;id=u-7ezbr5%3209294357523487472;https://github.com/komleff/overgate-rc4-winqa-20261103/pull/10\[1C#10]8;;\[1C·[1Cesc[1Cto[1Cinterrupt
+]0;[?25h]0;✳ Claude Code]0;C:\Program Files\PowerShell\7\pwsh.exe[?9001l[?1004l

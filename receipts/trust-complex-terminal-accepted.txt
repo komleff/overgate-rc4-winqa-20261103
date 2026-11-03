@@ -1,0 +1,27 @@
+Selected Yes, I trust this folder by Down + Enter in native interactive CLI, complex root. Exact output:
+[?2004h[>4m[?2031l[?2004l[H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[80C[?2004h[?2031h[?1004h]0;✳ Claude Code[1;2H▐▛███▛█[3CClaude[1CCode[1Cv2.1.317
+▝▜██████▀[2CFable[1C5.1[1Cwith[1Clow[1Ceffort[1C·[1CClaude[1CMax[3;2H▝▝[3C▝▝[3C~\Мои[1Cпроекты\demo[1Capp[5;1H‼[1CDeny[1Crule[1CWrite(.git/**)[1Cnever[1Cmatches[1C·[1Cuse[1CEdit(.git/**)
+‼[1CDeny[1Crule[1CWrite(.gitignore)[1Cnever[1Cmatches[1C·[1Cuse[1CEdit(.gitignore)
+‼[1CDeny[1Crule[1CWrite(.gitattributes)[1Cnever[1Cmatches[1C·[1Cuse[1CEdit(.gitattributes)[9;3HGet[1Cto[1Cfinished[1Cwork[1Csooner[1Cwith[1COpus[1C5.5.[1CSwitch[1Canytime[1Cwith[1C/model.[11;1H────────────────────────────────────────────────────────────────────────────────[12;3HTry[1Cthe[1Cnew[1Cfullscreen[1Crenderer?[14;3H·[1CFlicker-free[1Coutput[1C—[1Cfixes[1Cthe[1Cflashing[1Cyou[1Csee[1Cduring[1Clong[1Cresponses[15;3H·[1CMouse[1Csupport[1C—[1Cclick[1Cto[1Cmove[1Cyour[1Ccursor[1Cor[1Cexpand[1Cresults[16;3H·[1CSelected[1Ctext[1Cauto-copies[1Cto[1Cyour[1Cclipboard[18;3H>[1C1.[1CYes,[1Ctry[1Cit[19;5H2.[1CNot[1Cnow[21;3HEnter[1Cto[1Cconfirm[1C·[1CEsc[1Cto[1Ccancel[>0q

@@ -1,0 +1,27 @@
+Interactive terminal after workspace trust. Browser-tools optional prompt dismissed with Escape; no browser automation used.
+[?2004h[>4m[?2031l[?2004l[H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[80C[?2004h[?2031h[?1004h]0;✳ Claude Code[1;2H▐▛███▛█[3CClaude[1CCode[1Cv2.1.317
+▝▜██████▀[2CFable[1C5.1[1Cwith[1Clow[1Ceffort[1C·[1CClaude[1CMax[3;2H▝▝[3C▝▝[3CC:\work\demo[5;3HUpdated[1Cto[1Clatest.[1CGot[1C50[1Cfeatures,[1C405[1Cbugfixes,[1Cand[1C177[1Cother[1Cchanges.[6;3Hcode.claude.com/docs/en/changelog[1Cfor[1Cdetails[8;1H‼[1CDeny[1Crule[1CWrite(.git/**)[1Cnever[1Cmatches[1C·[1Cuse[1CEdit(.git/**)
+‼[1CDeny[1Crule[1CWrite(.gitignore)[1Cnever[1Cmatches[1C·[1Cuse[1CEdit(.gitignore)
+‼[1CDeny[1Crule[1CWrite(.gitattributes)[1Cnever[1Cmatches[1C·[1Cuse[1CEdit(.gitattributes)[12;3HGet[1Cto[1Cfinished[1Cwork[1Csooner[1Cwith[1COpus[1C5.5.[1CSwitch[1Canytime[1Cwith[1C/model.[14;1H────────────────────────────────────────────────────────────────────────────────[15;3HTry[1Cthe[1Cnew[1Cfullscreen[1Crenderer?[17;3H·[1CFlicker-free[1Coutput[1C—[1Cfixes[1Cthe[1Cflashing[1Cyou[1Csee[1Cduring[1Clong[1Cresponses[18;3H·[1CMouse[1Csupport[1C—[1Cclick[1Cto[1Cmove[1Cyour[1Ccursor[1Cor[1Cexpand[1Cresults[19;3H·[1CSelected[1Ctext[1Cauto-copies[1Cto[1Cyour[1Cclipboard[21;3H>[1C1.[1CYes,[1Ctry[1Cit[22;5H2.[1CNot[1Cnow[24;3HEnter[1Cto[1Cconfirm[1C·[1CEsc[1Cto[1Ccancel
+[80C[>0q[10;1H‼[1C15[1CMCP[1Cservers[1Cneed[1Cauthentication[1C·[1Crun[1C/mcp[11;3H[K
+Get[1Cto[1Cfinished[1Cwork[1Csooner[1Cwith[1COpus[1C5.5.[1CSwitch[1Canytime[1Cwith[1C/model.
+[K
+────────────────────────────────────────────────────────────────────────────────[15;3HTry[1Cthe[1Cnew[1Cfullscreen[1Crenderer?[16;3H[K[17;5HFlicker-free output —[1Cfixes the flashing y[1Cu[1Csee during [1Cong[1Cresponses[18;5HMouse suppor[2C— cli[1Ck to move your curs[1Cr or[1Cexpand[1Cresults[19;3H·[1CSelected[1Ctext[1Cauto-copies[1Cto[1Cyour[1Cclipboard[20;3H[K
+>[1C1[2CYes, try[1Cit[22;5H2.[1CNot[1Cnow[23;3H[K
+Enter[1Cto[1Cconfirm[1C·[1CEsc[1Cto[1Ccancel
+[80C

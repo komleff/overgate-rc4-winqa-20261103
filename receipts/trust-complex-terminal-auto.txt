@@ -1,0 +1,11 @@
+After normal trust acceptance and dismissing optional renderer prompt. Actual native root/auto indicator:
+[?2004h[12;1H> [4C"[1Cow does <filepath> work?"[K
+────────────────────────────────────────────────────────────────────────────────[14;3H⏵⏵ auto mode on (shift+tab to[1Ccycle)      [1C   [1C   [1C      [1C   ○[1Clow · /[1Cffort
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[12;3H[?25h[?25l[14;40H·[1CPR]8;id=u-2j3lcn%3608480981455878645;https://github.com/komleff/overgate-rc4-winqa-20261103/pull/9\[1C#9[12;3H[?25h]8;;\

@@ -1,0 +1,26 @@
+Native interactive Claude Code2.1.317, C:/work/demo, requested auto, PTY session11598.
+Initial UI observed: Accessing workspace C:\work\demo; 11 permissions in .claude/settings.json; No, exit / Yes, I trust this folder.
+Selected Yes by Down + Enter. Following exact terminal output:
+[?2004h[>4m[?2031l[?2004l[H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[80C[?2004h[?2031h[?1004h[>0q[2;1H────────────────────────────────────────────────────────────────────────────────[3;3HClaude[1Cin[1CChrome[1Cextension[1Cdetected[5;3HClaude[1Cwill[1Cuse[1Cyour[1CChrome[1Cbrowser[1Cby[1Cdefault[1C—[1Cnavigating[1Csites,[1Cfilling[6;3Hforms,[1Cand[1Ccapturing[1Cscreenshots[1Cin[1Cyour[1Cexisting[1Csession.[8;3HThis[1Csession[1Cis[1Cin[1CAuto[1Cmode,[1Cwhich[1Cchecks[1Croutine[1Cbrowser[1Cactions[1C—[1Cyou[1Care[9;3Honly[1Cprompted[1Cwhen[1Cit[1Cis[1Cunsure.[1CTurn[1Cbrowser[1Ctools[1Coff[1Cfor[1Cfuture[1Csessions[10;3Hwith[1C/chrome.[12;3H>[1CNo,[1Ckeep[1Cbrowser[1Ctools[1Coff[13;5HYes,[1Cuse[1Cmy[1Cbrowser[15;3HEnter[1Cto[1Cconfirm[1C·[1CEsc[1Cto[1Ckeep[1Cbrowser[1Ctools[1Coff

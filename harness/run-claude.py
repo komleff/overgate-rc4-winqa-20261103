@@ -3,7 +3,7 @@ from pathlib import Path
 base=Path(__file__).parent
 label,cwd,mode,promptfile=sys.argv[1:]
 env=os.environ.copy()
-env['PATH']=str(base/'tools')+';C:/Program Files/Git/bin;C:/Program Files/Git/usr/bin;'+env['PATH']
+env['PATH']=str(base/'tools/claude-runtime/node_modules/.bin')+';'+str(base/'tools')+';C:/Program Files/Git/bin;C:/Program Files/Git/usr/bin;'+env['PATH']
 env['CLAUDE_CODE_GIT_BASH_PATH']='C:/Program Files/Git/bin/bash.exe'
 env['PYTHONUTF8']='1'
 cmd=[str(base/'tools/claude-runtime/node_modules/.bin/claude.cmd'),'--permission-mode',mode,'--effort','low','--print','--verbose','--output-format','stream-json','--include-hook-events']

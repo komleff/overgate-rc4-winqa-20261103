@@ -1,0 +1,5 @@
+{"command": ["git", "clone", "https://github.com/komleff/overgate-rc4-e2e-simple-20261104.git", "C:\\work\\overgate-e2e-auto"], "cwd": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103", "exit_code": 0}
+STDOUT:
+
+STDERR:
+Cloning into 'C:\work\overgate-e2e-auto'...
