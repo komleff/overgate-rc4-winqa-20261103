@@ -137,6 +137,101 @@
         "command": "cd D:/CodexArtifacts/overgate-rc4-winqa-20261103 && cat > evidence/e2e-complex-auto-contract.md <<'EOF'\nWindows E2E literal fresh auto install (e2e-complex-auto)\nSource 403f95b8a7fae50957a99c16a211a8ef7217cb22 (clean trusted Git checkout D:/CodexArtifacts/overgate-rc4-winqa-20261103/source)\nTarget C:\\Users\\komle\\Мои проекты\\overgate e2e auto, repo komleff/overgate-rc4-e2e-complex-20261104, branch qa/install-e2e-auto, base main 6ae19d5712ec60c26a2ed50cae3dde2d3cf28578\nTarget PR https://github.com/komleff/overgate-rc4-e2e-complex-20261104/pull/1\nOperator is product authority. Project consists of README only; no custom settings/hooks/AGENTS exist. Preserve README and project authority.\nInstall frozen source with Beads; mode auto (explicit claude --permission-mode auto); no bypass, no --no-beads.\nRuntime: Git Bash (GNU bash 5.2.37 msys), native Python 3.14.0 via py -3, git 2.51.2.windows.1, gh 2.85.0, jq 1.8.2, node v24.11.0, bd 1.2.2 (6c124203e), Claude Code CLI 2.1.139 reported / portable 2.1.317 harness.\nExpected plan: 0 conflicts, operations guards/helpers -> dispatcher -> settings, before==after only on re-plan after apply.\nAfter apply strictly: bash scripts/og-init-memory-bank.sh (six Memory Bank files), bash scripts/bd-bootstrap.sh (embedded bd 1.2.2, beads-backup branch pushed), bash scripts/og-protect-main.sh (PR required, enforce_admins true, force/delete false; codes 2/3/4/5 recorded as R8, code 6 stop).\nProject verification: .agents/project/verify.sh must check the real README.md (exists, nonempty, contains project title); unfilled template FAIL is expected before fill. python3 scripts/check-reference.py must PASS in target.\nHooks must deny main push, merge, readiness comments, and commit with red project verification.\nIndependent PLAN_READY from a separate reviewer before apply; installer never self-approves. Live auto activation evidence is separate; file bytes are not mode evidence.\nKnown WB-01 mode-only no-op mismatch on Windows: do not change requirements, source or managed code.\nNo source fixes, no working U2/OverGate checkout changes, no merge, no release, no finalize, no push to main.\nEOF\nC:/Python314/python.exe source/scripts/install-overgate.py plan --source D:/CodexArtifacts/overgate-rc4-winqa-20261103/source --source-sha 403f95b8a7fae50957a99c16a211a8ef7217cb22 --target \"C:/Users/komle/Мои проекты/overgate e2e auto\" --contract D:/CodexArtifacts/overgate-rc4-winqa-20261103/evidence/e2e-complex-auto-contract.md --target-pr https://github.com/komleff/overgate-rc4-e2e-complex-20261104/pull/1 --output D:/CodexArtifacts/overgate-rc4-winqa-20261103/evidence/e2e-complex-auto-plan.json 2>&1 | tee evidence/e2e-complex-auto-plan.txt; echo \"exit=${PIPESTATUS[0]}\"; sha256sum evidence/e2e-complex-auto-plan.json evidence/e2e-complex-auto-contract.md; C:/Python314/python.exe -I -c \"import json;p=json.load(open('evidence/e2e-complex-auto-plan.json',encoding='utf-8'));print({k:(v if not isinstance(v,(list,dict)) else type(v).__name__+':'+str(len(v))) for k,v in p.items()})\"",
         "description": "Write contract, generate inventory plan, compute SHA256 and summarize plan"
       }
+    },
+    {
+      "tool_use_id": "toolu_01L9Be7awP7zd8T7FG9FHQtZ",
+      "type": "tool_result",
+      "content": "Plan written; conflicts=0; SHA256=7bc8599a877bf2af7e962e20f51d6ec8d459188c2065f16db860ef5c8e926931\r\nexit=0\n7bc8599a877bf2af7e962e20f51d6ec8d459188c2065f16db860ef5c8e926931 *evidence/e2e-complex-auto-plan.json\nc3f3ed663a9d9969455d213db85bc503ca620f479f9521bde24f87b805c66d1a *evidence/e2e-complex-auto-contract.md\n{'beads': True, 'branch': 'qa/install-e2e-auto', 'conflicts': 'list:0', 'contract': 'D:\\\\CodexArtifacts\\\\overgate-rc4-winqa-20261103\\\\evidence\\\\e2e-complex-auto-contract.md', 'contract_sha256': 'c3f3ed663a9d9969455d213db85bc503ca620f479f9521bde24f87b805c66d1a', 'format': 1, 'manifest_version': '4.0.0-rc.4', 'mode': 'auto', 'no_beads': False, 'notes': 'list:0', 'operations': 'list:78', 'requested_mode': None, 'source': 'D:\\\\CodexArtifacts\\\\overgate-rc4-winqa-20261103\\\\source', 'source_sha': '403f95b8a7fae50957a99c16a211a8ef7217cb22', 'state_before': None, 'target': 'C:\\\\Users\\\\komle\\\\��� �������\\\\overgate e2e auto', 'target_pr': 'https://github.com/komleff/overgate-rc4-e2e-complex-20261104/pull/1'}\nShell cwd was reset to C:\\Users\\komle\\Мои проекты\\overgate e2e auto",
+      "is_error": false
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01QQspzETDgk2KaHobWyvUUH",
+      "name": "Bash",
+      "input": {
+        "command": "cd D:/CodexArtifacts/overgate-rc4-winqa-20261103 && C:/Python314/python.exe -I -c \"import json;p=json.load(open('evidence/e2e-complex-auto-plan.json',encoding='utf-8'));t=p['target'];print(repr(t), t=='C:\\\\\\\\Users\\\\\\\\komle\\\\\\\\Мои проекты\\\\\\\\overgate e2e auto'); ops=p['operations']; import collections; print(collections.Counter(o.get('action') or o.get('op') for o in ops)); print(ops[0]); print([o.get('path') for o in ops if 'settings' in str(o.get('path'))])\" ; cd \"C:/Users/komle/Мои проекты/overgate e2e auto\" && echo \"--- target status ---\" && git status --short && ls -A",
+        "description": "Verify plan target path encoding and operations, confirm target untouched"
+      }
+    },
+    {
+      "tool_use_id": "toolu_01QQspzETDgk2KaHobWyvUUH",
+      "type": "tool_result",
+      "content": "  File \"<string>\", line 1\r\n    import json;p=json.load(open('evidence/e2e-complex-auto-plan.json',encoding='utf-8'));t=p['target'];print(repr(t), t=='C:\\Users\\komle\\��� �������\\overgate e2e auto'); ops=p['operations']; import collections; print(collections.Counter(o.get('action') or o.get('op') for o in ops)); print(ops[0]); print([o.get('path') for o in ops if 'settings' in str(o.get('path'))])\r\n                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nSyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \\UXXXXXXXX escape\r\n--- target status ---\n.git\n.overgate-install-plan.txt\nREADME.md",
+      "is_error": false
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_013TSaDY2U8JmzwCqy5MxHrf",
+      "name": "Bash",
+      "input": {
+        "command": "cd D:/CodexArtifacts/overgate-rc4-winqa-20261103 && cat > /tmp/chk.py <<'EOF'\nimport json, collections, sys\nsys.stdout.reconfigure(encoding='utf-8')\np=json.load(open('evidence/e2e-complex-auto-plan.json',encoding='utf-8'))\nt=p['target']; print(t.encode('unicode_escape').decode())\nprint('cyrillic ok:', 'Мои проекты' in t)\nops=p['operations']\nprint(collections.Counter(o.get('action') or o.get('op') or o.get('kind') for o in ops))\nprint(json.dumps(ops[0],ensure_ascii=False)[:400])\nprint([o.get('path') for o in ops if 'settings' in str(o.get('path')) or 'gitignore' in str(o.get('path'))])\nEOF\nC:/Python314/python.exe -I /tmp/chk.py",
+        "description": "Check plan target encoding and operation summary"
+      }
+    },
+    {
+      "tool_use_id": "toolu_013TSaDY2U8JmzwCqy5MxHrf",
+      "type": "tool_result",
+      "content": "C:\\\\Users\\\\komle\\\\\\u041c\\u043e\\u0438 \\u043f\\u0440\\u043e\\u0435\\u043a\\u0442\\u044b\\\\overgate e2e auto\r\ncyrillic ok: True\r\nCounter({None: 78})\r\n{\"after\": {\"mode\": 420, \"sha256\": \"fe434b3d5ccf88e0cc76b588ffb62edebe19c39a6d72b2d6f93b2a0a65b1d260\"}, \"before\": null, \"data\": null, \"source\": \".agents/PIPELINE_ADR.md\", \"target\": \".agents/PIPELINE_ADR.md\"}\r\n[]\nShell cwd was reset to C:\\Users\\komle\\Мои проекты\\overgate e2e auto",
+      "is_error": false
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01AQGXotCL4NJkcnbSmGpYQm",
+      "name": "Bash",
+      "input": {
+        "command": "cd D:/CodexArtifacts/overgate-rc4-winqa-20261103 && C:/Python314/python.exe -I -c \"\nimport json,sys; sys.stdout.reconfigure(encoding='utf-8')\np=json.load(open('evidence/e2e-complex-auto-plan.json',encoding='utf-8'))\nops=p['operations']; print('before==null:',sum(o['before'] is None for o in ops),'/',len(ops))\nprint([o['target'] for o in ops][-8:])\nprint('runtime keys:',[k for k in p if k not in ('operations','conflicts')])\n\"; echo \"--- PR comments ---\"\n{ echo '## Verification Contract (exact bytes)'; echo; echo 'File: `D:/CodexArtifacts/overgate-rc4-winqa-20261103/evidence/e2e-complex-auto-contract.md`'; echo 'SHA256: `c3f3ed663a9d9969455d213db85bc503ca620f479f9521bde24f87b805c66d1a`'; echo; echo '```'; cat evidence/e2e-complex-auto-contract.md; echo '```'; } > /tmp/c1.md\ngh pr comment 1 --repo komleff/overgate-rc4-e2e-complex-20261104 --body-file /tmp/c1.md | tee evidence/e2e-complex-auto-contract-publish.txt",
+        "description": "Summarize plan operations and publish contract to PR"
+      }
+    },
+    {
+      "tool_use_id": "toolu_01AQGXotCL4NJkcnbSmGpYQm",
+      "type": "tool_result",
+      "content": "before==null: 78 / 78\r\n['scripts/og-protect-main.sh', 'scripts/bd-bootstrap.sh', '.agents/templates/memory-bank/projectbrief.md', '.agents/templates/memory-bank/productContext.md', '.agents/templates/memory-bank/systemPatterns.md', '.agents/templates/memory-bank/techContext.md', '.agents/templates/memory-bank/activeContext.md', '.agents/templates/memory-bank/progress.md']\r\nruntime keys: ['beads', 'branch', 'contract', 'contract_sha256', 'format', 'manifest_version', 'mode', 'no_beads', 'notes', 'requested_mode', 'source', 'source_sha', 'state_before', 'target', 'target_pr']\r\n--- PR comments ---\nhttps://github.com/komleff/overgate-rc4-e2e-complex-20261104/pull/1#issuecomment-6610922916\nShell cwd was reset to C:\\Users\\komle\\Мои проекты\\overgate e2e auto",
+      "is_error": false
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01NAxYAuArGLMgbmD1Qz764p",
+      "name": "Bash",
+      "input": {
+        "command": "cd D:/CodexArtifacts/overgate-rc4-winqa-20261103 && cat > /tmp/c2.md <<'EOF'\n## Inventory plan (phase A, no target writes)\n\nCommand (native Python, Git Bash cwd D:/CodexArtifacts/overgate-rc4-winqa-20261103):\n```\nC:/Python314/python.exe source/scripts/install-overgate.py plan \\\n  --source D:/CodexArtifacts/overgate-rc4-winqa-20261103/source \\\n  --source-sha 403f95b8a7fae50957a99c16a211a8ef7217cb22 \\\n  --target \"C:/Users/komle/Мои проекты/overgate e2e auto\" \\\n  --contract D:/CodexArtifacts/overgate-rc4-winqa-20261103/evidence/e2e-complex-auto-contract.md \\\n  --target-pr https://github.com/komleff/overgate-rc4-e2e-complex-20261104/pull/1 \\\n  --output D:/CodexArtifacts/overgate-rc4-winqa-20261103/evidence/e2e-complex-auto-plan.json\n```\nOutput: `Plan written; conflicts=0; SHA256=7bc8599a877bf2af7e962e20f51d6ec8d459188c2065f16db860ef5c8e926931` (exit 0)\n\n| Field | Value |\n|---|---|\n| plan file | `D:/CodexArtifacts/overgate-rc4-winqa-20261103/evidence/e2e-complex-auto-plan.json` |\n| plan SHA256 | `7bc8599a877bf2af7e962e20f51d6ec8d459188c2065f16db860ef5c8e926931` |\n| contract SHA256 (bound in plan) | `c3f3ed663a9d9969455d213db85bc503ca620f479f9521bde24f87b805c66d1a` |\n| source_sha | `403f95b8a7fae50957a99c16a211a8ef7217cb22` |\n| manifest_version / mode / beads | 4.0.0-rc.4 / auto (requested_mode null = fresh default) / true |\n| operations | 78, all `before: null` (fresh), order guards/helpers -> dispatcher -> settings per inventory |\n| conflicts / notes | 0 / 0 |\n| state_before | null (fresh, no install-state) |\n| target branch HEAD | `b6816a9560a79de2e962ff1f8764891e1e475bb5` (planning marker only), base main `6ae19d5712ec60c26a2ed50cae3dde2d3cf28578` |\n\nTarget working tree is unchanged by plan (`git status` clean apart from committed marker). Awaiting independent PLAN_READY from a separate reviewer; approval JSON must bind to the plan SHA256 above and this PR URL. No apply, helpers or managed payload until then.\nEOF\ngh pr comment 1 --repo komleff/overgate-rc4-e2e-complex-20261104 --body-file /tmp/c2.md | tee evidence/e2e-complex-auto-plan-publish.txt\ncat > evidence/e2e-complex-auto-phase-a-summary.json <<'EOF'\n{\n  \"scenario\": \"e2e-complex-auto\",\n  \"source\": \"D:/CodexArtifacts/overgate-rc4-winqa-20261103/source\",\n  \"source_sha\": \"403f95b8a7fae50957a99c16a211a8ef7217cb22\",\n  \"source_clean\": true,\n  \"target\": \"C:\\\\Users\\\\komle\\\\Мои проекты\\\\overgate e2e auto\",\n  \"repo\": \"komleff/overgate-rc4-e2e-complex-20261104\",\n  \"branch\": \"qa/install-e2e-auto\",\n  \"base_main_sha\": \"6ae19d5712ec60c26a2ed50cae3dde2d3cf28578\",\n  \"branch_head_sha\": \"b6816a9560a79de2e962ff1f8764891e1e475bb5\",\n  \"pr_url\": \"https://github.com/komleff/overgate-rc4-e2e-complex-20261104/pull/1\",\n  \"contract\": \"D:/CodexArtifacts/overgate-rc4-winqa-20261103/evidence/e2e-complex-auto-contract.md\",\n  \"contract_sha256\": \"c3f3ed663a9d9969455d213db85bc503ca620f479f9521bde24f87b805c66d1a\",\n  \"plan\": \"D:/CodexArtifacts/overgate-rc4-winqa-20261103/evidence/e2e-complex-auto-plan.json\",\n  \"plan_sha256\": \"7bc8599a877bf2af7e962e20f51d6ec8d459188c2065f16db860ef5c8e926931\",\n  \"conflicts\": 0,\n  \"operations\": 78,\n  \"mode\": \"auto\",\n  \"beads\": true,\n  \"versions\": {\"git\": \"2.51.2.windows.1\", \"bash\": \"GNU bash 5.2.37(1)-release x86_64-pc-msys (Git Bash)\", \"python_native\": \"Python 3.14.0 (py -3 / C:\\\\Python314\\\\python.exe)\", \"gh\": \"2.85.0\", \"jq\": \"1.8.2\", \"node\": \"v24.11.0\", \"bd\": \"1.2.2 (6c124203e)\", \"claude_cli_reported\": \"2.1.139\", \"claude_harness\": \"portable 2.1.317 auto\"},\n  \"status\": \"PHASE_A_DONE_AWAITING_PLAN_READY\",\n  \"apply_executed\": false\n}\nEOF\nsha256sum evidence/e2e-complex-auto-plan.json",
+        "description": "Publish plan summary comment to PR and write phase A summary JSON"
+      }
+    },
+    {
+      "tool_use_id": "toolu_01NAxYAuArGLMgbmD1Qz764p",
+      "type": "tool_result",
+      "content": "https://github.com/komleff/overgate-rc4-e2e-complex-20261104/pull/1#issuecomment-6610936145\n7bc8599a877bf2af7e962e20f51d6ec8d459188c2065f16db860ef5c8e926931 *evidence/e2e-complex-auto-plan.json\nShell cwd was reset to C:\\Users\\komle\\Мои проекты\\overgate e2e auto",
+      "is_error": false
+    },
+    {
+      "type": "result",
+      "subtype": "success",
+      "is_error": false,
+      "api_error_status": null,
+      "duration_ms": 220245,
+      "num_turns": 14,
+      "result": "Фаза A завершена. Остановился перед apply: approval не выдавал, reviewers не запускал, managed payload в target не записан.\n\n**Что сделано**\n- Source проверен: `D:/CodexArtifacts/overgate-rc4-winqa-20261103/source` на exact SHA `403f95b8a7fae50957a99c16a211a8ef7217cb22` (v4.0.0-rc.3-18-g403f95b), `git status --porcelain` чист (только ignored `__pycache__`).\n- Прочитаны QUICKSTART.md и `.agents/INSTALL.md`. Product authority: оператор, проект состоит из README.\n- Ветка `qa/install-e2e-auto` создана и запушена из shell (один planning-marker commit, main не тронут).\n- Draft PR открыт через gh, в него опубликованы Verification Contract (exact bytes) и plan summary.\n- Inventory plan сгенерирован нативным Python; target не изменён.\n\n**Точные данные**\n\n| Поле | Значение |\n|---|---|\n| Draft PR | https://github.com/komleff/overgate-rc4-e2e-complex-20261104/pull/1 |\n| Contract comment | https://github.com/komleff/overgate-rc4-e2e-complex-20261104/pull/1#issuecomment-6610922916 |\n| Plan comment | https://github.com/komleff/overgate-rc4-e2e-complex-20261104/pull/1#issuecomment-6610936145 |\n| Target repo / branch | komleff/overgate-rc4-e2e-complex-20261104 / `qa/install-e2e-auto` |\n| Target main SHA | `6ae19d5712ec60c26a2ed50cae3dde2d3cf28578` |\n| Target branch HEAD | `b6816a9560a79de2e962ff1f8764891e1e475bb5` |\n| Source SHA | `403f95b8a7fae50957a99c16a211a8ef7217cb22` |\n| Contract | `D:/CodexArtifacts/overgate-rc4-winqa-20261103/evidence/e2e-complex-auto-contract.md` |\n| Contract SHA256 | `c3f3ed663a9d9969455d213db85bc503ca620f479f9521bde24f87b805c66d1a` |\n| Plan | `D:/CodexArtifacts/overgate-rc4-winqa-20261103/evidence/e2e-complex-auto-plan.json` |\n| Plan SHA256 | `7bc8599a877bf2af7e962e20f51d6ec8d459188c2065f16db860ef5c8e926931` |\n| Conflicts / notes / operations | 0 / 0 / 78 (все `before: null`, fresh) |\n| mode / beads / manifest | auto (requested_mode null) / true / 4.0.0-rc.4 |\n\n**Версии**: bd 1.2.2 (6c124203e); native Python 3.14.0 (`py -3`, C:\\Python314); Git Bash GNU bash 5.2.37 msys; git 2.51.2.windows.1; gh 2.85.0; jq 1.8.2; node v24.11.0; `claude --version` в PATH сообщает 2.1.139, harness portable 2.1.317 auto.\n\nДополнительные evidence: `evidence/e2e-complex-auto-plan.txt`, `e2e-complex-auto-contract-publish.txt`, `e2e-complex-auto-plan-publish.txt`, `e2e-complex-auto-phase-a-summary.json`.\n\n**Замечание**: Draft PR body указывает contract по пути файла, а plan-команда ссылалась на этот PR, поэтому plan binding к URL PR корректен. WB-01 не трогался. Дальше нужен PLAN_READY от независимого reviewer и approval JSON от PM, привязанный к plan SHA256 выше.",
+      "permission_denials": [],
+      "session_id": "80fef645-e5ae-40f4-b3c2-baa904e51ace",
+      "modelUsage": {
+        "claude-fable-5-1": {
+          "inputTokens": 418,
+          "outputTokens": 9436,
+          "cacheReadInputTokens": 855519,
+          "cacheCreationInputTokens": 70186,
+          "webSearchRequests": 0,
+          "costUSD": 2.09357975,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 64000,
+          "thinkingTokens": 439,
+          "cacheCreationEphemeral5mInputTokens": 0,
+          "cacheCreationEphemeral1hInputTokens": 70186,
+          "canonicalModel": "claude-fable-5-1",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      }
     }
   ]
 }

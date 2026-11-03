@@ -1,0 +1,8 @@
+{"command": ["git", "status", "--short", "--branch"], "cwd": "D:/GitHub/overgate", "exit_code": 0}
+STDOUT:
+## No commits yet on main
+?? README.md
+?? docs/
+?? overgate-docs/
+
+STDERR:

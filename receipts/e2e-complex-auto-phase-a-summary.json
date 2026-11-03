@@ -1,0 +1,23 @@
+{
+  "scenario": "e2e-complex-auto",
+  "source": "D:/CodexArtifacts/overgate-rc4-winqa-20261103/source",
+  "source_sha": "403f95b8a7fae50957a99c16a211a8ef7217cb22",
+  "source_clean": true,
+  "target": "C:\Users\komle\Мои проекты\overgate e2e auto",
+  "repo": "komleff/overgate-rc4-e2e-complex-20261104",
+  "branch": "qa/install-e2e-auto",
+  "base_main_sha": "6ae19d5712ec60c26a2ed50cae3dde2d3cf28578",
+  "branch_head_sha": "b6816a9560a79de2e962ff1f8764891e1e475bb5",
+  "pr_url": "https://github.com/komleff/overgate-rc4-e2e-complex-20261104/pull/1",
+  "contract": "D:/CodexArtifacts/overgate-rc4-winqa-20261103/evidence/e2e-complex-auto-contract.md",
+  "contract_sha256": "c3f3ed663a9d9969455d213db85bc503ca620f479f9521bde24f87b805c66d1a",
+  "plan": "D:/CodexArtifacts/overgate-rc4-winqa-20261103/evidence/e2e-complex-auto-plan.json",
+  "plan_sha256": "7bc8599a877bf2af7e962e20f51d6ec8d459188c2065f16db860ef5c8e926931",
+  "conflicts": 0,
+  "operations": 78,
+  "mode": "auto",
+  "beads": true,
+  "versions": {"git": "2.51.2.windows.1", "bash": "GNU bash 5.2.37(1)-release x86_64-pc-msys (Git Bash)", "python_native": "Python 3.14.0 (py -3 / C:\Python314\python.exe)", "gh": "2.85.0", "jq": "1.8.2", "node": "v24.11.0", "bd": "1.2.2 (6c124203e)", "claude_cli_reported": "2.1.139", "claude_harness": "portable 2.1.317 auto"},
+  "status": "PHASE_A_DONE_AWAITING_PLAN_READY",
+  "apply_executed": false
+}

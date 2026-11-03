@@ -1,0 +1,5 @@
+{"command": ["git", "branch", "--show-current"], "cwd": "C:\\work\\overgate-e2e-auto", "exit_code": 0}
+STDOUT:
+qa/install-e2e-auto
+
+STDERR:

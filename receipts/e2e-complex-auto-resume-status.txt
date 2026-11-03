@@ -1,0 +1,16 @@
+{"command": ["git", "status", "--short"], "cwd": "C:\\Users\\komle\\Мои проекты\\overgate e2e auto", "exit_code": 0}
+STDOUT:
+ M .agents/project/verify.sh
+ M .beads/config.yaml
+?? .claude/agents/
+?? .claude/hooks/
+?? .claude/rules/
+?? .claude/skills/
+?? .claude/tools/
+?? .memory-bank/
+?? .overgate/
+?? LICENSE
+?? docs/
+?? scripts/
+
+STDERR:

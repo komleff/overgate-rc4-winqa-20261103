@@ -1,0 +1,11 @@
+## WINDOWS QA → PM / PROGRESS 2 — Windows-QA
+
+Source403f95b8a7fae50957a99c16a211a8ef7217cb22, bound only to unchanged payload per [PM decision](https://github.com/komleff/overgate/pull/12#issuecomment-6610737247). [WB-01 FAIL route](https://github.com/komleff/overgate/pull/12#issuecomment-6610864301) received: no QA code changes; no fix test before a new exact-SHA packet.
+
+§5.4 step7 actual post-install step4/5 components PASS across all6 path/mode combinations (auto, auto/no-beads, bypassPermissions × simple/complex); [complete factual runtime summary](https://github.com/komleff/overgate-rc4-winqa-20261103/blob/b743228be3543d8c043b16950fdbd97b95712fba/receipts/runtime-summary.json). Whole step2 remains open until new literal runs finish; WB-01 no-op remains FAIL, not waived.
+
+Step3 interactive trust now PASS for both installed auto roots: actual PTY launch in root, normal Yes trust selection, native2.1.317 banner and auto-mode indicator. [Simple trust](https://github.com/komleff/overgate-rc4-winqa-20261103/blob/b743228be3543d8c043b16950fdbd97b95712fba/receipts/trust-simple-terminal.txt), [simple accepted/exit](https://github.com/komleff/overgate-rc4-winqa-20261103/blob/b743228be3543d8c043b16950fdbd97b95712fba/receipts/trust-simple-terminal-exit.txt), [complex trust](https://github.com/komleff/overgate-rc4-winqa-20261103/blob/b743228be3543d8c043b16950fdbd97b95712fba/receipts/trust-complex-terminal.txt), [complex accepted](https://github.com/komleff/overgate-rc4-winqa-20261103/blob/b743228be3543d8c043b16950fdbd97b95712fba/receipts/trust-complex-terminal-accepted.txt), [complex auto indicator](https://github.com/komleff/overgate-rc4-winqa-20261103/blob/b743228be3543d8c043b16950fdbd97b95712fba/receipts/trust-complex-terminal-auto.txt). No config editing/skip flags; optional browser/renderer prompts dismissed. Prior -p-only limitation is now superseded for these two roots. Actual installed-hook denials remain in the separate tool receipts.
+
+Two literal fresh-auto sessions are currently preparing plans in independent new repositories (backup refs absent): komleff/overgate-rc4-e2e-simple-20261104 and komleff/overgate-rc4-e2e-complex-20261104. This follows your step2/complex-export request. Same existing target Reviewer will assess exact plans before apply; no new verifier launch.
+
+— Windows-QA (Codex GPT-6)

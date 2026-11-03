@@ -160,6 +160,125 @@
       "type": "tool_result",
       "content": "!! .claude/hooks/__pycache__/\n---\n2bbca9cdde3ccf0649bc55756f6a12f85aa9b64f",
       "is_error": false
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_0197rvuZ2Eqry72eJhCyZKZq",
+      "name": "Bash",
+      "input": {
+        "command": "cat > /d/CodexArtifacts/overgate-rc4-winqa-20261103/evidence/e2e-simple-auto-contract.md <<'EOF'\n# Verification Contract — OverGate 4.0.0-rc.4 literal fresh install (Windows, simple path, auto)\n\nDate: 2026-11-04 (Asia/Novosibirsk). Role: installer agent (Claude Code, auto). Phase A only: plan + Draft PR; apply is not performed until independent PLAN_READY.\n\n## Target\n- Repo: https://github.com/komleff/overgate-rc4-e2e-simple-20261104\n- Local checkout: C:/work/overgate-e2e-auto (ASCII path, no spaces)\n- main SHA (GitHub auto_init, README only): 2bbca9cdde3ccf0649bc55756f6a12f85aa9b64f\n- Work branch: qa/install-e2e-auto. Agent never pushes main, never merges/finalizes.\n- Product authority: оператор (AGENTS.md absent → template default). Preserved: operator authority, project check commands, custom hooks (none exist in fresh target).\n\n## Source\n- Trusted clean Git checkout: D:/CodexArtifacts/overgate-rc4-winqa-20261103/source\n- Exact SHA: 403f95b8a7fae50957a99c16a211a8ef7217cb22 (v4.0.0-rc.3-18-g403f95b)\n- git status --porcelain: empty (only ignored .claude/hooks/__pycache__/). Source is read-only for this install.\n\n## Environment (recorded, not asserted as PASS)\n- Windows 11 Pro 10.0.26200; Git 2.51.2.windows.1; Git Bash 5.2.37 (msys, native, not WSL)\n- Native Python: py -3 / python = 3.14.0 (C:/Python314)\n- bd 1.2.2 (6c124203e) on PATH; gh 2.85.0 (logged in komleff, https); jq 1.8.2; node v24.11.0\n- Claude Code: session launched explicitly with `claude --permission-mode auto`, portable 2.1.317 (operator-stated); PATH `claude --version` reports 2.1.139 (global, not used by this session).\n- Mode: auto (fresh default; no --mode flag). Beads: enabled (no --no-beads).\n\n## Installer procedure under contract\n1. `install-overgate.py plan --source <source> --source-sha 403f95b8… --target C:/work/overgate-e2e-auto --contract <this file> --target-pr <Draft PR URL> --output D:/CodexArtifacts/overgate-rc4-winqa-20261103/evidence/e2e-simple-auto-plan.json`\n2. Plan SHA256 and conflicts published in the Draft PR. Independent reviewer (separate session) issues PLAN_READY; PM stores approval JSON bound to plan bytes. Installer does not self-approve.\n3. Only after approval: `apply --plan … --approval …`; then strictly `bash scripts/og-init-memory-bank.sh`, `bash scripts/bd-bootstrap.sh`, `bash scripts/og-protect-main.sh`.\n4. Fill `.agents/project/verify.sh` with real project checks (below); run `python3 scripts/check-reference.py` and `bash .agents/project/verify.sh`.\n\n## Acceptance criteria (checked after apply; all NOT RUN in Phase A)\n- AC1 Plan: source_sha == 403f95b8…; conflicts == []; operations order guards/helpers → dispatcher → settings; no writes to target during plan (git status clean after plan).\n- AC2 Apply: backup journal created at `.overgate-backups/<id>/rollback.json` before first write; `.overgate/install-state.json` has source_sha, mode=auto, beads=true, no absolute machine paths.\n- AC3 Managed files byte-equal to source for fresh install (rc.4 fresh claim); `.claude/settings.json` has exactly one managed PreToolUse entry calling `.claude/hooks/pre-bash.sh`, timeout 600, no backslashes.\n- AC4 `.gitignore` == managed fragment bytes exactly (target had no .gitignore). README.md unchanged.\n- AC5 Helpers: Memory Bank 6 files created; bd-bootstrap: bd 1.2.2 accepted, embedded DB, `beads-backup` branch pushed (first export); og-protect-main: exit 0 with readback, or code 2/3/4/5 recorded as R8 in PR and Memory Bank; code 6 = stop.\n- AC6 verify.sh: minimal real project verification of README.md — file exists, non-empty, first line is `# overgate-rc4-e2e-simple-20261104`, contains \"OverGate\"; exit 0. Unfilled template must exit 2 (checked before fill).\n- AC7 `python3 scripts/check-reference.py` exit 0 in target.\n- AC8 Repeat `plan` after apply → all operations before == after.\n- AC9 Live hooks: fresh auto session in target root shows pre-bash guard active (e.g. blocked `git push origin main`). Recorded as receipt, not inferred from file bytes.\n- AC10 Known: QA WB-01 mode-only no-op mismatch on Windows is a known warning; requirements and source/managed code are not modified by this install.\n\n## Out of scope / forbidden\n- bypass, --no-beads, --force; editing source; reading secrets/.env; bypassing hooks/permissions; merge, release, finalize, push main.\nEOF\ncd /c/work/overgate-e2e-auto && git checkout -q -b qa/install-e2e-auto && mkdir -p docs/install && cp /d/CodexArtifacts/overgate-rc4-winqa-20261103/evidence/e2e-simple-auto-contract.md docs/install/verification-contract.md && git add docs/install/verification-contract.md && git commit -q -m \"docs: OverGate rc.4 install Verification Contract (phase A)\n\nCo-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>\" && git push -u origin qa/install-e2e-auto 2>&1 | tail -3 && git rev-parse HEAD",
+        "description": "Write contract, create branch, commit and push"
+      }
+    },
+    {
+      "tool_use_id": "toolu_0197rvuZ2Eqry72eJhCyZKZq",
+      "type": "tool_result",
+      "content": "warning: in the working copy of 'docs/install/verification-contract.md', LF will be replaced by CRLF the next time Git touches it\nbranch 'qa/install-e2e-auto' set up to track 'origin/qa/install-e2e-auto'.\nTo https://github.com/komleff/overgate-rc4-e2e-simple-20261104.git\n * [new branch]      qa/install-e2e-auto -> qa/install-e2e-auto\n81c89121e2d7a38718ddc01baed728b3172be45a",
+      "is_error": false
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01L4yueFd8Ct4AvgRyFRu6AS",
+      "name": "Bash",
+      "input": {
+        "command": "gh pr create --draft --base main --head qa/install-e2e-auto --title \"Install OverGate 4.0.0-rc.4 (exact 403f95b) — literal fresh Windows auto, simple path\" --body \"$(cat <<'EOF'\n## OverGate rc.4 install — Phase A (plan + Verification Contract), apply NOT performed\n\n- Source: trusted clean Git checkout `D:/CodexArtifacts/overgate-rc4-winqa-20261103/source` @ `403f95b8a7fae50957a99c16a211a8ef7217cb22` (status clean)\n- Target main: `2bbca9cdde3ccf0649bc55756f6a12f85aa9b64f` (README only, GitHub auto_init)\n- Branch: `qa/install-e2e-auto`; mode auto (fresh default), Beads enabled; no bypass/no-beads\n- Product authority: оператор. No existing custom hooks / verify commands in target to preserve.\n- Env: Windows 11 10.0.26200, Git 2.51.2.windows.1, Git Bash 5.2.37 native, py -3 3.14.0, bd 1.2.2, gh 2.85.0, jq 1.8.2, node 24.11.0, Claude Code auto (portable 2.1.317 per operator; PATH global 2.1.139 not used)\n\nVerification Contract: `docs/install/verification-contract.md` (same bytes as evidence `e2e-simple-auto-contract.md`).\n\nInventory plan, SHA256 and conflicts: posted in a comment below. Independent PLAN_READY required before `apply`; installer does not self-approve. Merge is left to the operator.\nEOF\n)\" 2>&1 | tail -1",
+        "description": "Open Draft PR on GitHub"
+      }
+    },
+    {
+      "tool_use_id": "toolu_01L4yueFd8Ct4AvgRyFRu6AS",
+      "type": "tool_result",
+      "content": "https://github.com/komleff/overgate-rc4-e2e-simple-20261104/pull/1",
+      "is_error": false
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01UMXWLb87gB8Mf1GvVFamoW",
+      "name": "Bash",
+      "input": {
+        "command": "E=/d/CodexArtifacts/overgate-rc4-winqa-20261103/evidence && py -3 -I /d/CodexArtifacts/overgate-rc4-winqa-20261103/source/scripts/install-overgate.py plan --source /d/CodexArtifacts/overgate-rc4-winqa-20261103/source --source-sha 403f95b8a7fae50957a99c16a211a8ef7217cb22 --target /c/work/overgate-e2e-auto --contract $E/e2e-simple-auto-contract.md --target-pr https://github.com/komleff/overgate-rc4-e2e-simple-20261104/pull/1 --output $E/e2e-simple-auto-plan.json 2>&1 | tail -15; echo \"rc=$?\"; echo ===; git status --porcelain; echo \"target status above\"; sha256sum $E/e2e-simple-auto-plan.json $E/e2e-simple-auto-contract.md; py -3 -I -c \"import json,sys;p=json.load(open(sys.argv[1]));print('keys',list(p));print('conflicts',p.get('conflicts'));print('mode',p.get('mode'),p.get('requested_mode'),'beads',not p.get('no_beads'));ops=p.get('operations',[]);print('ops',len(ops));[print(' ',o.get('action') or o.get('op'),o.get('path')) for o in ops]\" $E/e2e-simple-auto-plan.json",
+        "description": "Generate inventory plan and inspect it"
+      }
+    },
+    {
+      "tool_use_id": "toolu_01UMXWLb87gB8Mf1GvVFamoW",
+      "type": "tool_result",
+      "content": "Plan written; conflicts=0; SHA256=91d371600ade5c3def3c2173b0880a815afd5ffdb21ca92141f1b4a2baac94d5\r\nrc=0\n===\ntarget status above\n91d371600ade5c3def3c2173b0880a815afd5ffdb21ca92141f1b4a2baac94d5 */d/CodexArtifacts/overgate-rc4-winqa-20261103/evidence/e2e-simple-auto-plan.json\n7ad383a990ad45fb2818ba1710d9d015c283b8102459f14713bec7d5f5019090 */d/CodexArtifacts/overgate-rc4-winqa-20261103/evidence/e2e-simple-auto-contract.md\nkeys ['beads', 'branch', 'conflicts', 'contract', 'contract_sha256', 'format', 'manifest_version', 'mode', 'no_beads', 'notes', 'operations', 'requested_mode', 'source', 'source_sha', 'state_before', 'target', 'target_pr']\r\nconflicts []\r\nmode auto None beads True\r\nops 78\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None\r\n  None None",
+      "is_error": false
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01EhQDobSAG1Gn15TicpmUAb",
+      "name": "Bash",
+      "input": {
+        "command": "E=/d/CodexArtifacts/overgate-rc4-winqa-20261103/evidence; py -3 -I -c \"\nimport json,sys;p=json.load(open(sys.argv[1]))\nprint({k:p[k] for k in ('branch','mode','requested_mode','no_beads','beads','manifest_version','format','state_before','notes','target','contract','contract_sha256','target_pr')})\nops=p['operations'];print(ops[0])\nfrom collections import Counter;print(Counter(o.get('kind') or o.get('type') for o in ops))\nfor o in ops: print(' ',o.get('kind') or o.get('type'),o.get('rel') or o.get('target_rel') or o.get('relpath'),(o.get('before') or 'NEW')[:8] if isinstance(o.get('before'),(str,type(None))) else o.get('before'))\n\" $E/e2e-simple-auto-plan.json",
+        "description": "Inspect plan metadata and operations list"
+      }
+    },
+    {
+      "tool_use_id": "toolu_01EhQDobSAG1Gn15TicpmUAb",
+      "type": "tool_result",
+      "content": "{'branch': 'qa/install-e2e-auto', 'mode': 'auto', 'requested_mode': None, 'no_beads': False, 'beads': True, 'manifest_version': '4.0.0-rc.4', 'format': 1, 'state_before': None, 'notes': [], 'target': 'C:\\\\work\\\\overgate-e2e-auto', 'contract': 'D:\\\\CodexArtifacts\\\\overgate-rc4-winqa-20261103\\\\evidence\\\\e2e-simple-auto-contract.md', 'contract_sha256': '7ad383a990ad45fb2818ba1710d9d015c283b8102459f14713bec7d5f5019090', 'target_pr': 'https://github.com/komleff/overgate-rc4-e2e-simple-20261104/pull/1'}\r\n{'after': {'mode': 420, 'sha256': 'fe434b3d5ccf88e0cc76b588ffb62edebe19c39a6d72b2d6f93b2a0a65b1d260'}, 'before': None, 'data': None, 'source': '.agents/PIPELINE_ADR.md', 'target': '.agents/PIPELINE_ADR.md'}\r\nCounter({None: 78})\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW\r\n  None None NEW",
+      "is_error": false
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01948syA5wsd8TPRhJsN7gKf",
+      "name": "Bash",
+      "input": {
+        "command": "E=/d/CodexArtifacts/overgate-rc4-winqa-20261103/evidence; py -3 -I -c \"\nimport json,sys;p=json.load(open(sys.argv[1]))\nfor i,o in enumerate(p['operations']): print(i,o['target'],'before=',o['before'],'mode=',o['after']['mode'],'data' if o['data'] else '')\n\" $E/e2e-simple-auto-plan.json",
+        "description": "List all planned operations with targets"
+      }
+    },
+    {
+      "tool_use_id": "toolu_01948syA5wsd8TPRhJsN7gKf",
+      "type": "tool_result",
+      "content": "0 .agents/PIPELINE_ADR.md before= None mode= 420 \r\n1 .agents/PIPELINE.md before= None mode= 420 \r\n2 .agents/AGENT_ROLES.md before= None mode= 420 \r\n3 .agents/PM_ROLE.md before= None mode= 420 \r\n4 .agents/SV_ROLE.md before= None mode= 420 \r\n5 .agents/PL_ROLE.md before= None mode= 420 \r\n6 .agents/DEV_ROLE.md before= None mode= 420 \r\n7 .agents/QA_ROLE.md before= None mode= 420 \r\n8 .agents/RV_ROLE.md before= None mode= 420 \r\n9 .agents/SKILLS.md before= None mode= 420 \r\n10 .agents/HOW_TO_USE.md before= None mode= 420 \r\n11 .agents/REFERENCES.md before= None mode= 420 \r\n12 .agents/INSTALL.md before= None mode= 420 \r\n13 .agents/HOW_TO_INSTALL.md before= None mode= 420 \r\n14 .agents/distribution-manifest.json before= None mode= 420 \r\n15 .agents/skills/canon-router/SKILL.md before= None mode= 420 \r\n16 .agents/skills/product-gap/SKILL.md before= None mode= 420 \r\n17 .agents/skills/product-handoff/SKILL.md before= None mode= 420 \r\n18 .agents/skills/diagnose/SKILL.md before= None mode= 420 \r\n19 .agents/skills/handoff/SKILL.md before= None mode= 420 \r\n20 .agents/templates/AGENTS.template.md before= None mode= 420 \r\n21 .agents/templates/project-verify.sh before= None mode= 493 \r\n22 .agents/templates/project-authority.md before= None mode= 420 \r\n23 .agents/templates/gitignore.fragment before= None mode= 420 \r\n24 .claude/agents/developer.md before= None mode= 420 \r\n25 .claude/agents/planner.md before= None mode= 420 \r\n26 .claude/agents/reviewer.md before= None mode= 420 \r\n27 .claude/agents/tester.md before= None mode= 420 \r\n28 .claude/skills/verify/SKILL.md before= None mode= 420 \r\n29 .claude/skills/sprint-pr-cycle/SKILL.md before= None mode= 420 \r\n30 .claude/skills/external-review/SKILL.md before= None mode= 420 \r\n31 .claude/skills/finalize-pr/SKILL.md before= None mode= 420 \r\n32 .claude/skills/finalize-pr/finalize-gate.sh before= None mode= 493 \r\n33 .claude/skills/pipeline-audit/SKILL.md before= None mode= 420 \r\n34 .claude/skills/project-manager/SKILL.md before= None mode= 420 \r\n35 .claude/skills/architect/SKILL.md before= None mode= 420 \r\n36 .claude/skills/finalize-pr/validators/strip_code_spans.sh before= None mode= 493 \r\n37 .claude/skills/finalize-pr/validators/test_validate_review_pass.sh before= None mode= 493 \r\n38 .claude/hooks/check-repository-mutation.py before= None mode= 420 \r\n39 .claude/hooks/check-tests-before-commit.sh before= None mode= 493 \r\n40 .claude/hooks/check-merge-ready.py before= None mode= 420 \r\n41 .claude/hooks/commit_command_classifier.py before= None mode= 420 \r\n42 .claude/hooks/shell_grammar.py before= None mode= 420 \r\n43 .claude/hooks/shell_comment_parser.py before= None mode= 420 \r\n44 .claude/hooks/readiness_policy.py before= None mode= 420 \r\n45 .claude/tools/run-python.sh before= None mode= 493 \r\n46 .claude/tools/with-timeout.sh before= None mode= 493 \r\n47 .claude/tools/publish-pr-comment.py before= None mode= 420 \r\n48 .claude/hooks/pre-bash.sh before= None mode= 493 \r\n49 .claude/settings.json before= None mode= 420 data\r\n50 .codex/hooks.json before= None mode= 420 data\r\n51 scripts/check-reference.py before= None mode= 420 \r\n52 scripts/install-overgate.py before= None mode= 493 \r\n53 scripts/bd-read.sh before= None mode= 493 \r\n54 scripts/bd-wt.sh before= None mode= 493 \r\n55 scripts/lib/bd-env.sh before= None mode= 493 \r\n56 scripts/lib/bd-read-engine.mjs before= None mode= 420 \r\n57 scripts/bd-sync-common.sh before= None mode= 493 \r\n58 scripts/bd-sync-export.sh before= None mode= 493 \r\n59 scripts/bd-sync-restore.sh before= None mode= 493 \r\n60 LICENSE before= None mode= 420 \r\n61 .claude/rules/beads.md before= None mode= 420 \r\n62 .claude/rules/tests.md before= None mode= 420 \r\n63 .claude/rules/universal.md before= None mode= 420 \r\n64 .claude/rules/large-payloads.md before= None mode= 420 \r\n65 AGENTS.md before= None mode= 420 \r\n66 .agents/project/verify.sh before= None mode= 493 \r\n67 .gitignore before= None mode= 420 data\r\n68 docs/baselines/2026-10-01-delivery-first-provenance.json before= None mode= 420 \r\n69 scripts/og-init-memory-bank.sh before= None mode= 493 \r\n70 scripts/og-protect-main.sh before= None mode= 493 \r\n71 scripts/bd-bootstrap.sh before= None mode= 493 \r\n72 .agents/templates/memory-bank/projectbrief.md before= None mode= 420 \r\n73 .agents/templates/memory-bank/productContext.md before= None mode= 420 \r\n74 .agents/templates/memory-bank/systemPatterns.md before= None mode= 420 \r\n75 .agents/templates/memory-bank/techContext.md before= None mode= 420 \r\n76 .agents/templates/memory-bank/activeContext.md before= None mode= 420 \r\n77 .agents/templates/memory-bank/progress.md before= None mode= 420",
+      "is_error": false
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01Fmak65xsF3qptwifcaWs9W",
+      "name": "Bash",
+      "input": {
+        "command": "E=/d/CodexArtifacts/overgate-rc4-winqa-20261103/evidence && wc -c $E/e2e-simple-auto-plan.json && { printf '%s\\n' \"## Inventory plan (Phase A) — awaiting independent PLAN_READY, apply NOT run\" \"\" \"- Plan file: \\`D:/CodexArtifacts/overgate-rc4-winqa-20261103/evidence/e2e-simple-auto-plan.json\\`\" \"- Plan SHA256: \\`91d371600ade5c3def3c2173b0880a815afd5ffdb21ca92141f1b4a2baac94d5\\`\" \"- Contract SHA256: \\`7ad383a990ad45fb2818ba1710d9d015c283b8102459f14713bec7d5f5019090\\` (\\`docs/install/verification-contract.md\\` @ \\`81c89121e2d7a38718ddc01baed728b3172be45a\\`)\" \"- source_sha \\`403f95b8a7fae50957a99c16a211a8ef7217cb22\\`, manifest 4.0.0-rc.4, mode auto (requested_mode null), beads true, state_before null (fresh), notes []\" \"- conflicts: 0. operations: 78, all before=null (new files); order guards/helpers → \\`.claude/hooks/pre-bash.sh\\` (op 48) → \\`.claude/settings.json\\` / \\`.codex/hooks.json\\` (ops 49–50). Target working tree unchanged after plan (git status clean).\" \"\" \"<details><summary>exact plan bytes (JSON)</summary>\" \"\" '```json'; cat $E/e2e-simple-auto-plan.json; printf '\\n%s\\n%s\\n' '```' \"</details>\"; } > /tmp/plan-comment.md && gh pr comment 1 --body-file /tmp/plan-comment.md && git status --porcelain && echo \"target clean\"",
+        "description": "Post plan, SHA256 and conflicts as PR comment"
+      }
+    },
+    {
+      "tool_use_id": "toolu_01Fmak65xsF3qptwifcaWs9W",
+      "type": "tool_result",
+      "content": "30250 /d/CodexArtifacts/overgate-rc4-winqa-20261103/evidence/e2e-simple-auto-plan.json\nhttps://github.com/komleff/overgate-rc4-e2e-simple-20261104/pull/1#issuecomment-6610945516\ntarget clean",
+      "is_error": false
+    },
+    {
+      "type": "result",
+      "subtype": "success",
+      "is_error": false,
+      "api_error_status": null,
+      "duration_ms": 247253,
+      "num_turns": 17,
+      "result": "Фаза A завершена. Остановлен перед apply. Managed payload не записан, approval не выдан, reviewers не запускались.\n\n**Артефакты**\n- Draft PR: https://github.com/komleff/overgate-rc4-e2e-simple-20261104/pull/1\n- Plan comment: https://github.com/komleff/overgate-rc4-e2e-simple-20261104/pull/1#issuecomment-6610945516\n- Contract: `D:/CodexArtifacts/overgate-rc4-winqa-20261103/evidence/e2e-simple-auto-contract.md` (копия в PR: `docs/install/verification-contract.md`)\n- Plan: `D:/CodexArtifacts/overgate-rc4-winqa-20261103/evidence/e2e-simple-auto-plan.json`\n\n**SHA**\n\n| Item | Value |\n|---|---|\n| Source SHA (clean, только ignored `__pycache__`) | `403f95b8a7fae50957a99c16a211a8ef7217cb22` |\n| Target main | `2bbca9cdde3ccf0649bc55756f6a12f85aa9b64f` |\n| Branch `qa/install-e2e-auto` HEAD | `81c89121e2d7a38718ddc01baed728b3172be45a` |\n| Plan SHA256 | `91d371600ade5c3def3c2173b0880a815afd5ffdb21ca92141f1b4a2baac94d5` |\n| Contract SHA256 | `7ad383a990ad45fb2818ba1710d9d015c283b8102459f14713bec7d5f5019090` |\n\n**Plan**: conflicts 0, 78 operations, все before=null (fresh), mode auto, beads true, manifest 4.0.0-rc.4. Порядок guards/helpers → pre-bash.sh → settings. Target working tree после plan чист.\n\n**Среда**: Git Bash 5.2.37 native, py -3 Python 3.14.0, bd 1.2.2 (6c124203e), gh 2.85.0 авторизован, jq 1.8.2, node 24.11.0, Windows 11 10.0.26200. На PATH `claude --version` даёт 2.1.139; portable 2.1.317 записан по словам оператора, в контракте отражены оба.\n\n**Далее**: Reviewer проверяет план, PM публикует immutable ссылку и сохраняет approval JSON с plan_sha256 выше. После этого apply, затем helpers по порядку и заполнение verify.sh проверкой README.",
+      "permission_denials": [],
+      "session_id": "912ceb64-c194-40c7-9c76-0b44c4565f7e",
+      "modelUsage": {
+        "claude-fable-5-1": {
+          "inputTokens": 514,
+          "outputTokens": 8924,
+          "cacheReadInputTokens": 866183,
+          "cacheCreationInputTokens": 55153,
+          "webSearchRequests": 0,
+          "costUSD": 1.77094575,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 64000,
+          "thinkingTokens": 982,
+          "cacheCreationEphemeral5mInputTokens": 0,
+          "cacheCreationEphemeral1hInputTokens": 55153,
+          "canonicalModel": "claude-fable-5-1",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      }
     }
   ]
 }

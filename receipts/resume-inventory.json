@@ -1,0 +1,212 @@
+[
+  {
+    "name": "e2e-simple-auto",
+    "target": "C:\\work\\overgate-e2e-auto",
+    "repo": "komleff/overgate-rc4-e2e-simple-20261104",
+    "prompt": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\e2e-simple-auto-phase-a-prompt.txt",
+    "source_sha": "403f95b8a7fae50957a99c16a211a8ef7217cb22",
+    "head": {
+      "exit_code": 0,
+      "stdout": "1f48658ddb88ae43fe91e40c7a0bdcd102642cfb\n",
+      "stderr": ""
+    },
+    "branch": {
+      "exit_code": 0,
+      "stdout": "qa/install-e2e-auto\n",
+      "stderr": ""
+    },
+    "status": {
+      "exit_code": 0,
+      "stdout": " M .agents/project/verify.sh\n M .beads/config.yaml\n?? .claude/agents/\n?? .claude/hooks/\n?? .claude/rules/\n?? .claude/skills/\n?? .claude/tools/\n?? .memory-bank/\n?? .overgate/\n?? LICENSE\n?? docs/baselines/\n?? scripts/\n",
+      "stderr": ""
+    },
+    "index": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "remote": {
+      "exit_code": 0,
+      "stdout": "origin\thttps://github.com/komleff/overgate-rc4-e2e-simple-20261104.git (fetch)\norigin\thttps://github.com/komleff/overgate-rc4-e2e-simple-20261104.git (push)\n",
+      "stderr": ""
+    },
+    "remote_refs": {
+      "exit_code": 0,
+      "stdout": "1cd7342be843f3309cdeef93d274915b91125d45\trefs/heads/beads-backup\n2bbca9cdde3ccf0649bc55756f6a12f85aa9b64f\trefs/heads/main\n81c89121e2d7a38718ddc01baed728b3172be45a\trefs/heads/qa/install-e2e-auto\n",
+      "stderr": ""
+    },
+    "git_locks": [],
+    "beads_metadata_present": true,
+    "beads_metadata": {
+      "database": "dolt",
+      "backend": "dolt",
+      "dolt_mode": "embedded",
+      "dolt_database": "overgate_e2e_auto",
+      "project_id": "0bb6d84f-8e5e-40a7-8b44-5c43ff6e95ab"
+    },
+    "beads_lock_paths": [
+      ".beads\\embeddeddolt\\.lock"
+    ],
+    "install_state_present": true,
+    "install_state_binding": {
+      "format": 2,
+      "source_sha": "403f95b8a7fae50957a99c16a211a8ef7217cb22",
+      "mode": "auto",
+      "beads": true
+    },
+    "memory_files": [
+      "activeContext.md",
+      "productContext.md",
+      "progress.md",
+      "projectbrief.md",
+      "systemPatterns.md",
+      "techContext.md"
+    ],
+    "project_verify_exists": true,
+    "project_verify_text": "#!/usr/bin/env bash\n# Project verification for overgate-rc4-e2e-simple-20261104: README.md must exist and be non-empty.\nset -euo pipefail\ncd \"$(dirname \"$0\")/../..\"\npy -3 - <<'PY'\nimport os, sys\npath = \"README.md\"\nif not os.path.isfile(path):\n    print(\"FAIL: README.md missing\", file=sys.stderr); sys.exit(1)\nif os.path.getsize(path) == 0:\n    print(\"FAIL: README.md empty\", file=sys.stderr); sys.exit(1)\nprint(\"OK: README.md exists and is non-empty\")\nPY\n",
+    "protection": {
+      "url": "https://api.github.com/repos/komleff/overgate-rc4-e2e-simple-20261104/branches/main/protection",
+      "required_pull_request_reviews": {
+        "url": "https://api.github.com/repos/komleff/overgate-rc4-e2e-simple-20261104/branches/main/protection/required_pull_request_reviews",
+        "dismiss_stale_reviews": false,
+        "require_code_owner_reviews": false,
+        "require_last_push_approval": false,
+        "required_approving_review_count": 0
+      },
+      "required_signatures": {
+        "url": "https://api.github.com/repos/komleff/overgate-rc4-e2e-simple-20261104/branches/main/protection/required_signatures",
+        "enabled": false
+      },
+      "enforce_admins": {
+        "url": "https://api.github.com/repos/komleff/overgate-rc4-e2e-simple-20261104/branches/main/protection/enforce_admins",
+        "enabled": true
+      },
+      "required_linear_history": {
+        "enabled": false
+      },
+      "allow_force_pushes": {
+        "enabled": false
+      },
+      "allow_deletions": {
+        "enabled": false
+      },
+      "block_creations": {
+        "enabled": false
+      },
+      "required_conversation_resolution": {
+        "enabled": false
+      },
+      "lock_branch": {
+        "enabled": false
+      },
+      "allow_fork_syncing": {
+        "enabled": false
+      }
+    }
+  },
+  {
+    "name": "e2e-complex-auto",
+    "target": "C:\\Users\\komle\\Мои проекты\\overgate e2e auto",
+    "repo": "komleff/overgate-rc4-e2e-complex-20261104",
+    "prompt": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\e2e-complex-auto-phase-a-prompt.txt",
+    "source_sha": "403f95b8a7fae50957a99c16a211a8ef7217cb22",
+    "head": {
+      "exit_code": 0,
+      "stdout": "f5a7df7b0186f98182043a38d35205f7e009ebb2\n",
+      "stderr": ""
+    },
+    "branch": {
+      "exit_code": 0,
+      "stdout": "qa/install-e2e-auto\n",
+      "stderr": ""
+    },
+    "status": {
+      "exit_code": 0,
+      "stdout": " M .agents/project/verify.sh\n M .beads/config.yaml\n?? .claude/agents/\n?? .claude/hooks/\n?? .claude/rules/\n?? .claude/skills/\n?? .claude/tools/\n?? .memory-bank/\n?? .overgate/\n?? LICENSE\n?? docs/\n?? scripts/\n",
+      "stderr": ""
+    },
+    "index": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "remote": {
+      "exit_code": 0,
+      "stdout": "origin\thttps://github.com/komleff/overgate-rc4-e2e-complex-20261104.git (fetch)\norigin\thttps://github.com/komleff/overgate-rc4-e2e-complex-20261104.git (push)\n",
+      "stderr": ""
+    },
+    "remote_refs": {
+      "exit_code": 0,
+      "stdout": "4df707803cf9621d5244b646ed2591eb2b4ae504\trefs/heads/beads-backup\n6ae19d5712ec60c26a2ed50cae3dde2d3cf28578\trefs/heads/main\nb6816a9560a79de2e962ff1f8764891e1e475bb5\trefs/heads/qa/install-e2e-auto\n",
+      "stderr": ""
+    },
+    "git_locks": [],
+    "beads_metadata_present": true,
+    "beads_metadata": {
+      "database": "dolt",
+      "backend": "dolt",
+      "dolt_mode": "embedded",
+      "dolt_database": "overgate_e2e_auto",
+      "project_id": "8f9c9fcb-62d1-4787-b86a-fb92d8e79bf0"
+    },
+    "beads_lock_paths": [
+      ".beads\\embeddeddolt\\.lock"
+    ],
+    "install_state_present": true,
+    "install_state_binding": {
+      "format": 2,
+      "source_sha": "403f95b8a7fae50957a99c16a211a8ef7217cb22",
+      "mode": "auto",
+      "beads": true
+    },
+    "memory_files": [
+      "activeContext.md",
+      "productContext.md",
+      "progress.md",
+      "projectbrief.md",
+      "systemPatterns.md",
+      "techContext.md"
+    ],
+    "project_verify_exists": true,
+    "project_verify_text": "#!/usr/bin/env bash\n# Project-owned verification: README.md must exist, be non-empty and carry the project title.\nset -u\ncd \"$(dirname \"$0\")/../..\" || exit 1\npy -3 -I - <<'PY'\nimport sys\nfrom pathlib import Path\nreadme = Path(\"README.md\")\nif not readme.is_file():\n    print(\"FAIL: README.md missing\", file=sys.stderr); sys.exit(1)\ntext = readme.read_text(encoding=\"utf-8\")\nif not text.strip():\n    print(\"FAIL: README.md empty\", file=sys.stderr); sys.exit(1)\nif \"overgate-rc4-e2e-complex-20261104\" not in text:\n    print(\"FAIL: README.md lacks project title\", file=sys.stderr); sys.exit(1)\nprint(\"PASS: README.md exists, non-empty, title present\")\nPY\n",
+    "protection": {
+      "url": "https://api.github.com/repos/komleff/overgate-rc4-e2e-complex-20261104/branches/main/protection",
+      "required_pull_request_reviews": {
+        "url": "https://api.github.com/repos/komleff/overgate-rc4-e2e-complex-20261104/branches/main/protection/required_pull_request_reviews",
+        "dismiss_stale_reviews": false,
+        "require_code_owner_reviews": false,
+        "require_last_push_approval": false,
+        "required_approving_review_count": 0
+      },
+      "required_signatures": {
+        "url": "https://api.github.com/repos/komleff/overgate-rc4-e2e-complex-20261104/branches/main/protection/required_signatures",
+        "enabled": false
+      },
+      "enforce_admins": {
+        "url": "https://api.github.com/repos/komleff/overgate-rc4-e2e-complex-20261104/branches/main/protection/enforce_admins",
+        "enabled": true
+      },
+      "required_linear_history": {
+        "enabled": false
+      },
+      "allow_force_pushes": {
+        "enabled": false
+      },
+      "allow_deletions": {
+        "enabled": false
+      },
+      "block_creations": {
+        "enabled": false
+      },
+      "required_conversation_resolution": {
+        "enabled": false
+      },
+      "lock_branch": {
+        "enabled": false
+      },
+      "allow_fork_syncing": {
+        "enabled": false
+      }
+    }
+  }
+]
