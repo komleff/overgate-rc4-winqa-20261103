@@ -1,0 +1,5 @@
+{"command": ["C:/Program Files/Git/bin/bash.exe", ".agents/project/verify.sh"], "cwd": "C:\\Users\\komle\\Мои проекты\\og B no-beads", "exit_code": 0}
+STDOUT:
+PASS: README and exact B/mode/Beads
+
+STDERR:

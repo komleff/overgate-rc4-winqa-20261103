@@ -1,0 +1,55 @@
+{
+  "case": "literal-b-complex-auto",
+  "stage": "final",
+  "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e",
+  "target": "C:\\Users\\komle\\Мои проекты\\og B auto",
+  "repo": "komleff/overgate-rc4-b-complex-auto-20261104",
+  "pr": "https://github.com/komleff/overgate-rc4-b-complex-auto-20261104/pull/1",
+  "state": {
+    "format": 2,
+    "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e",
+    "mode": "auto",
+    "beads": true
+  },
+  "noop_operations": 73,
+  "remote_refs": {
+    "refs/heads/beads-backup": "8a3376307f4d3800fee630583ea3c1da80fdd9b6",
+    "refs/heads/install/overgate-b": "a216fae295810d1965a0004e6212d3f9818e5881",
+    "refs/heads/main": "c6abdc32a84f02458daa34ddb0e0893b2af9cda6"
+  },
+  "backup_sha": "8a3376307f4d3800fee630583ea3c1da80fdd9b6",
+  "runtime_init": {
+    "model": "claude-fable-5-1",
+    "permissionMode": "auto",
+    "claude_code_version": "2.1.317",
+    "cwd": "C:\\Users\\komle\\Мои проекты\\og B auto"
+  },
+  "head": "a216fae295810d1965a0004e6212d3f9818e5881",
+  "branch": "install/overgate-b",
+  "pr_readback": {
+    "headRefOid": "a216fae295810d1965a0004e6212d3f9818e5881",
+    "isDraft": true,
+    "state": "OPEN",
+    "url": "https://github.com/komleff/overgate-rc4-b-complex-auto-20261104/pull/1"
+  },
+  "checks": {
+    "exact_source_mode_strict_beads": true,
+    "default_mode": true,
+    "memory_six_exact": true,
+    "project_verify": true,
+    "checker": true,
+    "noop": true,
+    "bd_ready": true,
+    "first_backup_present": true,
+    "embedded_database": true,
+    "protection": true,
+    "actual_runtime_mode": true,
+    "A_runtime_reuse_binding": true,
+    "working_branch": true,
+    "clean": true,
+    "index_empty": true,
+    "remote_head": true,
+    "draft_pr_head": true
+  },
+  "result": "PASS"
+}

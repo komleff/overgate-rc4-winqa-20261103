@@ -1,0 +1,23 @@
+[
+  {
+    "case": "literal-b-simple-bypass",
+    "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e",
+    "exit_code": 0,
+    "result": "PASS",
+    "final_audit_exists": true
+  },
+  {
+    "case": "literal-b-complex-auto",
+    "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e",
+    "exit_code": 0,
+    "result": "PASS",
+    "final_audit_exists": true
+  },
+  {
+    "case": "literal-b-complex-no-beads",
+    "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e",
+    "exit_code": 0,
+    "result": "PASS",
+    "final_audit_exists": true
+  }
+]

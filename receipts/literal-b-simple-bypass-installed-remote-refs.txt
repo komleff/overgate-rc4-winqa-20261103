@@ -1,0 +1,7 @@
+{"command": ["git", "ls-remote", "--heads", "origin"], "cwd": "C:\\work\\og-b-simple-bypass", "exit_code": 0}
+STDOUT:
+d2f876b9047dec841cfea9634e0c04dd8da70df0	refs/heads/beads-backup
+4e2e575aff51d84a81fb0468b2be14e643de222d	refs/heads/install/overgate-b
+f058ad4a0f168ef19c7eff420cc26223980fe2f1	refs/heads/main
+
+STDERR:

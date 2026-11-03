@@ -15,5 +15,6 @@
   ],
   "started": "2026-11-04T02:16:35+0700",
   "prompt_file": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\literal-b-simple-bypass-worker-prompt.txt",
-  "prompt_text_utf8_sha256": "92fc6dd784a5317a05e0b394e7e887ba0f57ca1d3ac21a8195b3b112e4dcdde7"
+  "prompt_text_utf8_sha256": "92fc6dd784a5317a05e0b394e7e887ba0f57ca1d3ac21a8195b3b112e4dcdde7",
+  "exit_code": 0
 }

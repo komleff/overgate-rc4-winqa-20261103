@@ -1,0 +1,4 @@
+{"command": ["git", "diff", "--cached", "--name-status"], "cwd": "C:\\Users\\komle\\Мои проекты\\og B auto", "exit_code": 0}
+STDOUT:
+
+STDERR:

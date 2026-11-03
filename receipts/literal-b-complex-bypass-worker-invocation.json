@@ -1,0 +1,19 @@
+{
+  "cwd": "C:\\Users\\komle\\\u041c\u043e\u0438 \u043f\u0440\u043e\u0435\u043a\u0442\u044b\\og B bypass",
+  "mode": "bypassPermissions",
+  "command": [
+    "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\tools\\claude-runtime\\node_modules\\.bin\\claude.cmd",
+    "--permission-mode",
+    "bypassPermissions",
+    "--effort",
+    "low",
+    "--print",
+    "--verbose",
+    "--output-format",
+    "stream-json",
+    "--include-hook-events"
+  ],
+  "started": "2026-11-04T02:27:12+0700",
+  "prompt_file": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\literal-b-complex-bypass-worker-prompt.txt",
+  "prompt_text_utf8_sha256": "217f351a393b0e377bef657f442d35ea6480f4dd818a28c5e48ae1cd61e4d92e"
+}

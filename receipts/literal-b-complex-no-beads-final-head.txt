@@ -1,0 +1,5 @@
+{"command": ["git", "rev-parse", "HEAD"], "cwd": "C:\\Users\\komle\\Мои проекты\\og B no-beads", "exit_code": 0}
+STDOUT:
+800a38ece4cac2c8ad5fbe3dc1e1961b0df003c9
+
+STDERR:

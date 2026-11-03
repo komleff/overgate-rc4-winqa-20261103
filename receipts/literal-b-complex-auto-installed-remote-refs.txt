@@ -1,0 +1,7 @@
+{"command": ["git", "ls-remote", "--heads", "origin"], "cwd": "C:\\Users\\komle\\Мои проекты\\og B auto", "exit_code": 0}
+STDOUT:
+8a3376307f4d3800fee630583ea3c1da80fdd9b6	refs/heads/beads-backup
+e7dfb8ea1ed87801b1090259f0086dec67224d02	refs/heads/install/overgate-b
+c6abdc32a84f02458daa34ddb0e0893b2af9cda6	refs/heads/main
+
+STDERR:

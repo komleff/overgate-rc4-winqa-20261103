@@ -1,0 +1,5 @@
+{"command": ["gh", "pr", "view", "1", "--json", "url,state,isDraft,headRefOid"], "cwd": "C:\\work\\og-b-simple-bypass", "exit_code": 0}
+STDOUT:
+{"headRefOid":"187a377272efbc75c2c8ef99152a43a55ae52780","isDraft":true,"state":"OPEN","url":"https://github.com/komleff/overgate-rc4-b-simple-bypass-20261104/pull/1"}
+
+STDERR:

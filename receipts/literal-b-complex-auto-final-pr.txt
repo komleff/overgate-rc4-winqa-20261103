@@ -1,0 +1,5 @@
+{"command": ["gh", "pr", "view", "1", "--json", "url,state,isDraft,headRefOid"], "cwd": "C:\\Users\\komle\\Мои проекты\\og B auto", "exit_code": 0}
+STDOUT:
+{"headRefOid":"a216fae295810d1965a0004e6212d3f9818e5881","isDraft":true,"state":"OPEN","url":"https://github.com/komleff/overgate-rc4-b-complex-auto-20261104/pull/1"}
+
+STDERR:

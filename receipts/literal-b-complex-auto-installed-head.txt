@@ -1,0 +1,5 @@
+{"command": ["git", "rev-parse", "HEAD"], "cwd": "C:\\Users\\komle\\Мои проекты\\og B auto", "exit_code": 0}
+STDOUT:
+98bddddebce614937e1b055fcf48c9f3c88bdcaf
+
+STDERR:

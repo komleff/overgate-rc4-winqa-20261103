@@ -1,5 +1,6 @@
 {
   "source_sha": "403f95b8a7fae50957a99c16a211a8ef7217cb22",
+  "source_binding_method": "Original A source pin; API-only failures are not execution PASS.",
   "notice": "Only factual runtime init, tool calls/results and final report retained. Internal reasoning and OAuth flow are excluded.",
   "events": [
     {

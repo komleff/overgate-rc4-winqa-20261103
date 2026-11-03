@@ -1,5 +1,6 @@
 {
-  "source_sha": "403f95b8a7fae50957a99c16a211a8ef7217cb22",
+  "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e",
+  "source_binding_method": "Actual approved-upgrade execution result before phase C; original phase A/B stays source A.",
   "notice": "Only factual runtime init, tool calls/results and final report retained. Internal reasoning and OAuth flow are excluded.",
   "events": [
     {

@@ -1,0 +1,20 @@
+{
+  "cwd": "C:\\Users\\komle\\\u041c\u043e\u0438 \u043f\u0440\u043e\u0435\u043a\u0442\u044b\\og B no-beads",
+  "mode": "auto",
+  "command": [
+    "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\tools\\claude-runtime\\node_modules\\.bin\\claude.cmd",
+    "--permission-mode",
+    "auto",
+    "--effort",
+    "low",
+    "--print",
+    "--verbose",
+    "--output-format",
+    "stream-json",
+    "--include-hook-events"
+  ],
+  "started": "2026-11-04T02:24:00+0700",
+  "prompt_file": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\literal-b-complex-no-beads-worker-prompt.txt",
+  "prompt_text_utf8_sha256": "c2692a7878efeb5acc31dc6043e5785c2da2bc881dd1b43a1eb2af8fb38d50d4",
+  "exit_code": 0
+}

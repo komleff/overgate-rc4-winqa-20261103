@@ -1,0 +1,5 @@
+{"command": ["git", "rev-parse", "HEAD"], "cwd": "C:\\work\\og-b-simple-bypass", "exit_code": 0}
+STDOUT:
+9ae905b15622936a1c97324c93366dc8e1f9eb69
+
+STDERR:

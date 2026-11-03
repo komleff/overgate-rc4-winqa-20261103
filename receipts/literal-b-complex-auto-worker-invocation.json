@@ -1,0 +1,20 @@
+{
+  "cwd": "C:\\Users\\komle\\\u041c\u043e\u0438 \u043f\u0440\u043e\u0435\u043a\u0442\u044b\\og B auto",
+  "mode": "auto",
+  "command": [
+    "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\tools\\claude-runtime\\node_modules\\.bin\\claude.cmd",
+    "--permission-mode",
+    "auto",
+    "--effort",
+    "low",
+    "--print",
+    "--verbose",
+    "--output-format",
+    "stream-json",
+    "--include-hook-events"
+  ],
+  "started": "2026-11-04T02:20:27+0700",
+  "prompt_file": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\literal-b-complex-auto-worker-prompt.txt",
+  "prompt_text_utf8_sha256": "273f9814d6e3cdf153046151e8035acbdb73bbe806a48e99bedb5ebea95c54df",
+  "exit_code": 0
+}

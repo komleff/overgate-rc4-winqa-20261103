@@ -1,0 +1,10 @@
+{
+  "correction": "Collector previously put a constant original-A source_sha in the synthetic transcript envelope, including actual B phase-C/literal-B sessions. Fixed envelope is derived from exact reviewed case inventory or actual approved-upgrade result. Raw tool calls/results, actual install-state/target SHAs are unchanged. Original A sessions remain A; this is not relabelling A execution as B. Older immutable bundles remain available for audit.",
+  "affected_labels": [
+    "e2e-simple-phase-c",
+    "e2e-complex-phase-c",
+    "literal-b-*-worker*"
+  ],
+  "raw_jsonl_modified": false,
+  "source_A_relabelled": false
+}

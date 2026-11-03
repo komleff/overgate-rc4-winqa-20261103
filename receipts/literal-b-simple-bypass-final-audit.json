@@ -1,0 +1,55 @@
+{
+  "case": "literal-b-simple-bypass",
+  "stage": "final",
+  "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e",
+  "target": "C:\\work\\og-b-simple-bypass",
+  "repo": "komleff/overgate-rc4-b-simple-bypass-20261104",
+  "pr": "https://github.com/komleff/overgate-rc4-b-simple-bypass-20261104/pull/1",
+  "state": {
+    "format": 2,
+    "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e",
+    "mode": "bypass",
+    "beads": true
+  },
+  "noop_operations": 73,
+  "remote_refs": {
+    "refs/heads/beads-backup": "d2f876b9047dec841cfea9634e0c04dd8da70df0",
+    "refs/heads/install/overgate-b": "187a377272efbc75c2c8ef99152a43a55ae52780",
+    "refs/heads/main": "f058ad4a0f168ef19c7eff420cc26223980fe2f1"
+  },
+  "backup_sha": "d2f876b9047dec841cfea9634e0c04dd8da70df0",
+  "runtime_init": {
+    "model": "claude-fable-5-1",
+    "permissionMode": "bypassPermissions",
+    "claude_code_version": "2.1.317",
+    "cwd": "C:\\work\\og-b-simple-bypass"
+  },
+  "head": "187a377272efbc75c2c8ef99152a43a55ae52780",
+  "branch": "install/overgate-b",
+  "pr_readback": {
+    "headRefOid": "187a377272efbc75c2c8ef99152a43a55ae52780",
+    "isDraft": true,
+    "state": "OPEN",
+    "url": "https://github.com/komleff/overgate-rc4-b-simple-bypass-20261104/pull/1"
+  },
+  "checks": {
+    "exact_source_mode_strict_beads": true,
+    "default_mode": true,
+    "memory_six_exact": true,
+    "project_verify": true,
+    "checker": true,
+    "noop": true,
+    "bd_ready": true,
+    "first_backup_present": true,
+    "embedded_database": true,
+    "protection": true,
+    "actual_runtime_mode": true,
+    "A_runtime_reuse_binding": true,
+    "working_branch": true,
+    "clean": true,
+    "index_empty": true,
+    "remote_head": true,
+    "draft_pr_head": true
+  },
+  "result": "PASS"
+}

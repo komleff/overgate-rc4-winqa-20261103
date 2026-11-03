@@ -4,6 +4,20 @@ from prepare import B,E,S,SHA,REPO,run
 R=B/'evidence-repo'
 def sanitize_cli(p):
  events=[]; model=None;mode=None;version=None;calls={};results={};final=None
+ bound_sha=SHA;binding_method='Original A source pin; API-only failures are not execution PASS.'
+ literal_index=E/'literal-b-targets.json'
+ if literal_index.exists():
+  for case in json.loads(literal_index.read_text(encoding='utf-8')):
+   if p.stem.startswith(case['name']+'-worker'):
+    plan=json.loads(Path(case['plan']).read_bytes())
+    assert hashlib.sha256(Path(case['plan']).read_bytes()).hexdigest()==case['plan_sha256']
+    assert plan['source_sha']==case['source_sha']
+    bound_sha=plan['source_sha'];binding_method='Exact independently reviewed fresh-case inventory pin; actual tool calls and final install-state remain authoritative.';break
+ if p.stem in {'e2e-simple-phase-c','e2e-complex-phase-c'}:
+  pc='simple' if p.stem.startswith('e2e-simple') else 'complex'
+  upgrade=json.loads((E/('fix-'+pc+'-upgrade-results.json')).read_text(encoding='utf-8'))
+  assert upgrade['apply_rc']==0
+  bound_sha=upgrade['source_sha'];binding_method='Actual approved-upgrade execution result before phase C; original phase A/B stays source A.'
  for line in p.read_text(encoding='utf-8').splitlines():
   try:x=json.loads(line)
   except ValueError:continue
@@ -21,7 +35,7 @@ def sanitize_cli(p):
   elif typ=='result':
    final={k:x.get(k) for k in ['type','subtype','is_error','api_error_status','duration_ms','num_turns','result','permission_denials','session_id','modelUsage']};events.append(final)
  out=E/(p.stem+'-receipts.json')
- out.write_text(json.dumps({'source_sha':SHA,'notice':'Only factual runtime init, tool calls/results and final report retained. Internal reasoning and OAuth flow are excluded.','events':events},ensure_ascii=False,indent=2),encoding='utf-8')
+ out.write_text(json.dumps({'source_sha':bound_sha,'source_binding_method':binding_method,'notice':'Only factual runtime init, tool calls/results and final report retained. Internal reasoning and OAuth flow are excluded.','events':events},ensure_ascii=False,indent=2),encoding='utf-8')
  summary={'file':out.name,'model':model,'mode':mode,'cli_version':version,'finished':final is not None,'final':final,'tool_count':len(calls),'errors':[],'commands':[]}
  for i,c in calls.items():
   outcome=results.get(i,{})
