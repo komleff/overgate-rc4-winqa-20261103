@@ -1,0 +1,183 @@
+[
+  {
+    "case": "literal-b-simple-auto",
+    "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e",
+    "result": "FAIL",
+    "reason": "WB-02 hook deny, stopped; no retry",
+    "path": "C:\\work\\og-b-simple-auto",
+    "pr": "https://github.com/komleff/overgate-rc4-b-simple-auto-20261104/pull/1"
+  },
+  {
+    "case": "literal-b-simple-no-beads",
+    "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e",
+    "result": "PASS",
+    "path": "C:\\work\\og-b-simple-no-beads",
+    "pr": "https://github.com/komleff/overgate-rc4-b-simple-no-beads-20261104/pull/1",
+    "head": "e9c1080592dc9f391ecb5e9b7a9f0d6de07be0db",
+    "backup_sha": null,
+    "runtime": {
+      "model": "claude-fable-5-1",
+      "permissionMode": "auto",
+      "claude_code_version": "2.1.317",
+      "cwd": "C:\\work\\og-b-simple-no-beads"
+    },
+    "checks": {
+      "exact_source_mode_strict_beads": true,
+      "default_mode": true,
+      "memory_six_exact": true,
+      "project_verify": true,
+      "checker": true,
+      "noop": true,
+      "no_beads_payload_or_db": true,
+      "no_backup": true,
+      "protection": true,
+      "actual_runtime_mode": true,
+      "A_runtime_reuse_binding": true,
+      "working_branch": true,
+      "clean": true,
+      "index_empty": true,
+      "remote_head": true,
+      "draft_pr_head": true
+    },
+    "independent_readback_exit": 0
+  },
+  {
+    "case": "literal-b-simple-bypass",
+    "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e",
+    "result": "PASS",
+    "path": "C:\\work\\og-b-simple-bypass",
+    "pr": "https://github.com/komleff/overgate-rc4-b-simple-bypass-20261104/pull/1",
+    "head": "187a377272efbc75c2c8ef99152a43a55ae52780",
+    "backup_sha": "d2f876b9047dec841cfea9634e0c04dd8da70df0",
+    "runtime": {
+      "model": "claude-fable-5-1",
+      "permissionMode": "bypassPermissions",
+      "claude_code_version": "2.1.317",
+      "cwd": "C:\\work\\og-b-simple-bypass"
+    },
+    "checks": {
+      "exact_source_mode_strict_beads": true,
+      "default_mode": true,
+      "memory_six_exact": true,
+      "project_verify": true,
+      "checker": true,
+      "noop": true,
+      "bd_ready": true,
+      "first_backup_present": true,
+      "embedded_database": true,
+      "protection": true,
+      "actual_runtime_mode": true,
+      "A_runtime_reuse_binding": true,
+      "working_branch": true,
+      "clean": true,
+      "index_empty": true,
+      "remote_head": true,
+      "draft_pr_head": true
+    },
+    "independent_readback_exit": 0
+  },
+  {
+    "case": "literal-b-complex-auto",
+    "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e",
+    "result": "PASS",
+    "path": "C:\\Users\\komle\\Мои проекты\\og B auto",
+    "pr": "https://github.com/komleff/overgate-rc4-b-complex-auto-20261104/pull/1",
+    "head": "a216fae295810d1965a0004e6212d3f9818e5881",
+    "backup_sha": "8a3376307f4d3800fee630583ea3c1da80fdd9b6",
+    "runtime": {
+      "model": "claude-fable-5-1",
+      "permissionMode": "auto",
+      "claude_code_version": "2.1.317",
+      "cwd": "C:\\Users\\komle\\Мои проекты\\og B auto"
+    },
+    "checks": {
+      "exact_source_mode_strict_beads": true,
+      "default_mode": true,
+      "memory_six_exact": true,
+      "project_verify": true,
+      "checker": true,
+      "noop": true,
+      "bd_ready": true,
+      "first_backup_present": true,
+      "embedded_database": true,
+      "protection": true,
+      "actual_runtime_mode": true,
+      "A_runtime_reuse_binding": true,
+      "working_branch": true,
+      "clean": true,
+      "index_empty": true,
+      "remote_head": true,
+      "draft_pr_head": true
+    },
+    "independent_readback_exit": 0
+  },
+  {
+    "case": "literal-b-complex-no-beads",
+    "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e",
+    "result": "PASS",
+    "path": "C:\\Users\\komle\\Мои проекты\\og B no-beads",
+    "pr": "https://github.com/komleff/overgate-rc4-b-complex-no-beads-20261104/pull/1",
+    "head": "800a38ece4cac2c8ad5fbe3dc1e1961b0df003c9",
+    "backup_sha": null,
+    "runtime": {
+      "model": "claude-fable-5-1",
+      "permissionMode": "auto",
+      "claude_code_version": "2.1.317",
+      "cwd": "C:\\Users\\komle\\Мои проекты\\og B no-beads"
+    },
+    "checks": {
+      "exact_source_mode_strict_beads": true,
+      "default_mode": true,
+      "memory_six_exact": true,
+      "project_verify": true,
+      "checker": true,
+      "noop": true,
+      "no_beads_payload_or_db": true,
+      "no_backup": true,
+      "protection": true,
+      "actual_runtime_mode": true,
+      "A_runtime_reuse_binding": true,
+      "working_branch": true,
+      "clean": true,
+      "index_empty": true,
+      "remote_head": true,
+      "draft_pr_head": true
+    },
+    "independent_readback_exit": 0
+  },
+  {
+    "case": "literal-b-complex-bypass",
+    "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e",
+    "result": "PASS",
+    "path": "C:\\Users\\komle\\Мои проекты\\og B bypass",
+    "pr": "https://github.com/komleff/overgate-rc4-b-complex-bypass-20261104/pull/1",
+    "head": "0393b61edf2cce91a84f6358a73cd4b4f4ca5c0e",
+    "backup_sha": "ad35060dd351f4f54613bde5572e0b49d6f36dcd",
+    "runtime": {
+      "model": "claude-fable-5-1",
+      "permissionMode": "bypassPermissions",
+      "claude_code_version": "2.1.317",
+      "cwd": "C:\\Users\\komle\\Мои проекты\\og B bypass"
+    },
+    "checks": {
+      "exact_source_mode_strict_beads": true,
+      "default_mode": true,
+      "memory_six_exact": true,
+      "project_verify": true,
+      "checker": true,
+      "noop": true,
+      "bd_ready": true,
+      "first_backup_present": true,
+      "embedded_database": true,
+      "protection": true,
+      "actual_runtime_mode": true,
+      "A_runtime_reuse_binding": true,
+      "working_branch": true,
+      "clean": true,
+      "index_empty": true,
+      "remote_head": true,
+      "draft_pr_head": true
+    },
+    "independent_readback_exit": 0
+  }
+]
