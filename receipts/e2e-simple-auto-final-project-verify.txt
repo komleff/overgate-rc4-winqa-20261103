@@ -1,0 +1,5 @@
+{"command": ["C:/Program Files/Git/bin/bash.exe", ".agents/project/verify.sh"], "cwd": "C:\\work\\overgate-e2e-auto", "exit_code": 0}
+STDOUT:
+OK: README.md non-empty; install-state source_sha=2343df83a3a26ae83bc66d4009dd67a913eeea4e mode=auto beads=True
+
+STDERR:

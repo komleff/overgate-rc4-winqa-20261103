@@ -1,0 +1,5 @@
+{"command": ["C:\\Python314\\python.exe", "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\source-2343df8\\scripts\\install-overgate.py", "plan", "--source", "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\source-2343df8", "--source-sha", "2343df83a3a26ae83bc66d4009dd67a913eeea4e", "--target", "C:\\Users\\komle\\Мои проекты\\overgate e2e auto", "--contract", "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\fix-complex-upgrade-contract.md", "--target-pr", "https://github.com/komleff/overgate-rc4-e2e-complex-20261104/pull/1", "--output", "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\e2e-complex-auto-final-noop-plan.json"], "cwd": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103", "exit_code": 0}
+STDOUT:
+Plan written; conflicts=0; SHA256=f64a0701b4c370e2a741c3012d300ac22e9ea2eebf12672733b709d22b304538
+
+STDERR:

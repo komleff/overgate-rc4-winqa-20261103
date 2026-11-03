@@ -1,0 +1,5 @@
+{"command": ["gh", "pr", "view", "1", "--json", "url,state,isDraft,headRefOid"], "cwd": "C:\\Users\\komle\\Мои проекты\\overgate e2e auto", "exit_code": 0}
+STDOUT:
+{"headRefOid":"95222cc9ecbb33fc4a96d9868b989ec033e242d7","isDraft":true,"state":"OPEN","url":"https://github.com/komleff/overgate-rc4-e2e-complex-20261104/pull/1"}
+
+STDERR:

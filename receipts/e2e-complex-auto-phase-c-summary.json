@@ -1,0 +1,40 @@
+{
+  "name": "e2e-complex-auto-phase-c",
+  "kind": "continuation_via_approved_upgrade",
+  "note": "Phase C completes the install begun by the interrupted fresh Claude auto run on 403 (historical WB-01 FAIL unchanged). Managed payload upgraded to 2343 by independently approved fix-complex-upgrade; this phase only finished project-owned verify.sh, QA artifact, commit and push.",
+  "agent": {"tool": "Claude Code 2.1.317", "model": "claude-fable-5-1", "bd": "1.2.2", "shell": "Git Bash"},
+  "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e",
+  "source_clone": "D:/CodexArtifacts/overgate-rc4-winqa-20261103/source-2343df8",
+  "upgrade_evidence": {
+    "plan": "evidence/fix-complex-upgrade-plan.json",
+    "approval": "evidence/fix-complex-upgrade-approval.json",
+    "results": "evidence/fix-complex-upgrade-results.json"
+  },
+  "target": {
+    "path": "C:/Users/komle/Мои проекты/overgate e2e auto",
+    "repo": "komleff/overgate-rc4-e2e-complex-20261104",
+    "branch": "qa/install-e2e-auto",
+    "head_before": "b6816a92",
+    "head_after": "95222cc9ecbb33fc4a96d9868b989ec033e242d7",
+    "remote_branch_sha": "95222cc9ecbb33fc4a96d9868b989ec033e242d7",
+    "working_tree_clean_after_push": true,
+    "pr": "https://github.com/komleff/overgate-rc4-e2e-complex-20261104/pull/1",
+    "pr_state": "OPEN", "pr_draft": true, "pr_head_oid": "95222cc9ecbb33fc4a96d9868b989ec033e242d7"
+  },
+  "install_state": {"format": 2, "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e", "mode": "auto", "beads": true, "beads_is_strict_bool": true},
+  "checks": [
+    {"cmd": "bash .agents/project/verify.sh", "exit": 0, "output": "PASS: README.md ok; install-state source_sha/mode=auto/beads=True ok", "notes": "first draft failed exit 1 (f-string backslash SyntaxError), rewritten without f-strings; LF, py -3 -I"},
+    {"cmd": "bd --sandbox ready --json", "exit": 0, "output": "[]"},
+    {"cmd": "git ls-remote --heads origin beads-backup", "exit": 0, "sha": "4df707803cf9621d5244b646ed2591eb2b4ae504"},
+    {"cmd": "gh api repos/.../branches/main/protection", "exit": 0, "enforce_admins": true, "pr_required": true, "allow_force_pushes": false, "allow_deletions": false},
+    {"cmd": "ls .memory-bank | wc -l", "exit": 0, "memory_bank_file_count": 6},
+    {"cmd": "git add .", "exit": 0},
+    {"cmd": "git commit -m \"test: complete Windows auto install on 2343\"", "exit": 0, "commit": "95222cc", "files_changed": 53, "hooks": "passed, no denial"},
+    {"cmd": "git push origin qa/install-e2e-auto", "exit": 0, "range": "b6816a9..95222cc"}
+  ],
+  "hook_incidents": [
+    {"cmd": "sed -i with escaped quotes on verify.sh", "result": "blocked by pre-bash hook as ambiguous commit-hiding command (exit 2)", "resolution": "file rewritten via printf; no bypass"}
+  ],
+  "not_repeated": ["apply", "bd init/bootstrap", "memory/protection helpers", "plan/review", "source fixes", "full suites", "first exports", "negative guard probes"],
+  "readiness_declaration": false
+}

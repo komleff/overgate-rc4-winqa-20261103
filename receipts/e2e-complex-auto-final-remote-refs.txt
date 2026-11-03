@@ -1,0 +1,7 @@
+{"command": ["git", "ls-remote", "--heads", "origin"], "cwd": "C:\\Users\\komle\\Мои проекты\\overgate e2e auto", "exit_code": 0}
+STDOUT:
+4df707803cf9621d5244b646ed2591eb2b4ae504	refs/heads/beads-backup
+6ae19d5712ec60c26a2ed50cae3dde2d3cf28578	refs/heads/main
+95222cc9ecbb33fc4a96d9868b989ec033e242d7	refs/heads/qa/install-e2e-auto
+
+STDERR:

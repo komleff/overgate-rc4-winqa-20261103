@@ -1,0 +1,29 @@
+Normal Yes trust selection, no config editing. Exact output:
+[?2004h[>4m[?2031l[?2004l[H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[80C[?2004h[?2031h[?1004h]0;✳ Claude Code[1;2H▐▛███▛█[3CClaude[1CCode[1Cv2.1.317
+▝▜██████▀[2CFable[1C5.1[1Cwith[1Clow[1Ceffort[1C·[1CClaude[1CMax[3;2H▝▝[3C▝▝[3CC:\work\overgate-e2e-auto[5;1H‼[1CDeny[1Crule[1CWrite(.git/**)[1Cnever[1Cmatches[1C·[1Cuse[1CEdit(.git/**)
+‼[1CDeny[1Crule[1CWrite(.gitignore)[1Cnever[1Cmatches[1C·[1Cuse[1CEdit(.gitignore)
+‼[1CDeny[1Crule[1CWrite(.gitattributes)[1Cnever[1Cmatches[1C·[1Cuse[1CEdit(.gitattributes)[9;3HGet[1Cto[1Cfinished[1Cwork[1Csooner[1Cwith[1COpus[1C5.5.[1CSwitch[1Canytime[1Cwith[1C/model.[11;1H────────────────────────────────────────────────────────────────────────────────
+> Try[1C"create[1Ca[1Cutil[1Clogging.py[1Cthat..."
+────────────────────────────────────────────────────────────────────────────────[14;3H⏵⏵[1Cauto[1Cmode[1Con[1C(shift+tab[1Cto[1Ccycle)[1C·[1C←[1Cfor[1Cagents[10C○[1Clow[1C·[1C/effort[12;3H[?25h[>0q

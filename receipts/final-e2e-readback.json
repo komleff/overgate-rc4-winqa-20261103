@@ -1,0 +1,70 @@
+[
+  {
+    "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e",
+    "target": "C:\\work\\overgate-e2e-auto",
+    "repo": "komleff/overgate-rc4-e2e-simple-20261104",
+    "pr": "https://github.com/komleff/overgate-rc4-e2e-simple-20261104/pull/1",
+    "head": "5d58b5a8f573e56f2496982c75dcd2afe72d3678",
+    "branch": "qa/install-e2e-auto",
+    "clean": true,
+    "index_empty": true,
+    "remote_head": "5d58b5a8f573e56f2496982c75dcd2afe72d3678",
+    "branch_published": true,
+    "backup_sha": "1cd7342be843f3309cdeef93d274915b91125d45",
+    "state": {
+      "format": 2,
+      "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e",
+      "mode": "auto",
+      "beads": true
+    },
+    "strict_state_pass": true,
+    "memory_six": true,
+    "project_verify_rc": 0,
+    "checker_rc": 0,
+    "final_noop_pass": true,
+    "noop_operations": 73,
+    "protection_pass": true,
+    "draft_pr": {
+      "headRefOid": "5d58b5a8f573e56f2496982c75dcd2afe72d3678",
+      "isDraft": true,
+      "state": "OPEN",
+      "url": "https://github.com/komleff/overgate-rc4-e2e-simple-20261104/pull/1"
+    },
+    "draft_pr_binding": true,
+    "result": "PASS"
+  },
+  {
+    "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e",
+    "target": "C:\\Users\\komle\\Мои проекты\\overgate e2e auto",
+    "repo": "komleff/overgate-rc4-e2e-complex-20261104",
+    "pr": "https://github.com/komleff/overgate-rc4-e2e-complex-20261104/pull/1",
+    "head": "95222cc9ecbb33fc4a96d9868b989ec033e242d7",
+    "branch": "qa/install-e2e-auto",
+    "clean": true,
+    "index_empty": true,
+    "remote_head": "95222cc9ecbb33fc4a96d9868b989ec033e242d7",
+    "branch_published": true,
+    "backup_sha": "4df707803cf9621d5244b646ed2591eb2b4ae504",
+    "state": {
+      "format": 2,
+      "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e",
+      "mode": "auto",
+      "beads": true
+    },
+    "strict_state_pass": true,
+    "memory_six": true,
+    "project_verify_rc": 0,
+    "checker_rc": 0,
+    "final_noop_pass": true,
+    "noop_operations": 73,
+    "protection_pass": true,
+    "draft_pr": {
+      "headRefOid": "95222cc9ecbb33fc4a96d9868b989ec033e242d7",
+      "isDraft": true,
+      "state": "OPEN",
+      "url": "https://github.com/komleff/overgate-rc4-e2e-complex-20261104/pull/1"
+    },
+    "draft_pr_binding": true,
+    "result": "PASS"
+  }
+]

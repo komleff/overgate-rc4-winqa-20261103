@@ -1,0 +1,29 @@
+Normal Yes trust selection. Native CLI root/auto-mode indicator. Exact output:
+[?2004h[>4m[?2031l[?2004l[H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[80C[?2004h[?2031h[?1004h]0;✳ Claude Code[1;2H▐▛███▛█[3CClaude[1CCode[1Cv2.1.317
+▝▜██████▀[2CFable[1C5.1[1Cwith[1Clow[1Ceffort[1C·[1CClaude[1CMax[3;2H▝▝[3C▝▝[3C~\Мои[1Cпроекты\overgate[1Ce2e[1Cauto[5;1H‼[1CDeny[1Crule[1CWrite(.git/**)[1Cnever[1Cmatches[1C·[1Cuse[1CEdit(.git/**)
+‼[1CDeny[1Crule[1CWrite(.gitignore)[1Cnever[1Cmatches[1C·[1Cuse[1CEdit(.gitignore)
+‼[1CDeny[1Crule[1CWrite(.gitattributes)[1Cnever[1Cmatches[1C·[1Cuse[1CEdit(.gitattributes)[9;3HSonnet[1C5.5[1Cis[1Chere,[1Cand[1Cit's[1Cfaster[1Cand[1Cexcels[1Cat[1Cwell-scoped[1Ctasks.[1COpus[1C5.5[10;3His[1Cstill[1Cyour[1Cdefault.[1CSwitch[1Cwith[1C/model.[12;1H────────────────────────────────────────────────────────────────────────────────
+> Try[1C"write[1Ca[1Ctest[1Cfor[1C<filepath>"
+────────────────────────────────────────────────────────────────────────────────[15;3H⏵⏵[1Cauto[1Cmode[1Con[1C(shift+tab[1Cto[1Ccycle)[1C·[1C←[1Cfor[1Cagents[10C○[1Clow[1C·[1C/effort[13;3H[?25h[>0q

@@ -1,0 +1,44 @@
+{
+  "name": "e2e-simple-auto-phase-c",
+  "kind": "continuation_after_approved_upgrade",
+  "note": "Continuation of interrupted fresh auto install 403 (WB-01 FAIL kept as-is) via independently approved upgrade to 2343; not a whole fresh literal 2343 install.",
+  "date": "2026-11-04",
+  "agent": {"tool": "Claude Code", "version": "2.1.317", "model": "claude-fable-5-1", "bd_version": "1.2.2", "shell": "native Git Bash"},
+  "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e",
+  "source_clone": "D:/CodexArtifacts/overgate-rc4-winqa-20261103/source-2343df8",
+  "upgrade_evidence": {
+    "plan": "evidence/fix-simple-upgrade-plan.json",
+    "approval": "evidence/fix-simple-upgrade-approval.json",
+    "results": "evidence/fix-simple-upgrade-results.json",
+    "results_apply_rc": 0,
+    "results_noop_pass": true,
+    "results_checker_rc": 0
+  },
+  "target": {
+    "repo": "komleff/overgate-rc4-e2e-simple-20261104",
+    "path": "C:/work/overgate-e2e-auto",
+    "branch": "qa/install-e2e-auto",
+    "head_before": "81c8912",
+    "head_after": "5d58b5a8f573e56f2496982c75dcd2afe72d3678",
+    "remote_branch_sha": "5d58b5a8f573e56f2496982c75dcd2afe72d3678",
+    "pr": {"url": "https://github.com/komleff/overgate-rc4-e2e-simple-20261104/pull/1", "number": 1, "state": "OPEN", "isDraft": true, "headRefOid": "5d58b5a8f573e56f2496982c75dcd2afe72d3678"},
+    "git_status_dirty_entries_after": 0,
+    "index_staged_after": 0
+  },
+  "install_state": {"format": 2, "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e", "mode": "auto", "beads": true, "manifest_version": "4.0.0-rc.4"},
+  "checks": {
+    "project_verify": {"command": "bash .agents/project/verify.sh", "exit_code": 0, "checks": ["README.md exists non-empty", "install-state source_sha == 2343df83a3a26ae83bc66d4009dd67a913eeea4e", "mode == auto", "beads is bool True"], "interpreter": "py -3", "line_endings": "LF"},
+    "project_verify_first_attempt": {"exit_code": 1, "reason": "SyntaxError: escaped quotes inside f-string on target py -3; rewritten, rerun exit 0"},
+    "bd_sandbox_ready_json": {"command": "bd --sandbox ready --json", "exit_code": 0, "output": "[]"},
+    "beads_backup_branch": {"command": "git ls-remote --heads origin beads-backup", "exit_code": 0, "sha": "1cd7342be843f3309cdeef93d274915b91125d45"},
+    "protection_main": {"exit_code": 0, "enforce_admins": true, "pr_required": true, "allow_force_pushes": false, "allow_deletions": false},
+    "memory_bank_files": 6,
+    "commit": {"command": "git commit -m \"test: complete Windows auto install on 2343\"", "exit_code": 0, "files_changed": 53, "hooks": "passed, no denial"},
+    "push": {"command": "git push origin qa/install-e2e-auto", "exit_code": 0, "range": "81c8912..5d58b5a"}
+  },
+  "hook_denials": [
+    {"command": "sed -i with nested quoting on verify.sh", "result": "blocked by pre-bash commit classifier (ambiguous); not bypassed; file rewritten via printf instead"}
+  ],
+  "not_repeated": ["apply", "bd init/bootstrap", "memory/protection helpers", "plan/review", "source fixes", "full suites", "first exports", "negative guard probes"],
+  "readiness_declared": false
+}

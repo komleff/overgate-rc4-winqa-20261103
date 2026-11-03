@@ -18,6 +18,6 @@ print((base/'evidence'/f'{label}.stderr.txt').read_text(encoding='utf-8')[-2500:
 for line in (base/'evidence'/f'{label}.jsonl').read_text(encoding='utf-8').splitlines():
  try:
   e=json.loads(line)
-  if e.get('type')=='result': print(json.dumps(e,ensure_ascii=False))
+  if e.get('type')=='result': print(json.dumps({k:e.get(k) for k in ['type','subtype','is_error','api_error_status','session_id','duration_ms','result']},ensure_ascii=True)[:3200])
  except ValueError: pass
 sys.exit(p.returncode)

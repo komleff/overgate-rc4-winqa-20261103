@@ -1,0 +1,7 @@
+Exit after successful ordinary workspace trust. Exact output:
+]0;◐ Claude Code[?25l[12;1H> /exit[K
+[K
+✽ Fermenting… (running SessionStart hooks… 1/2 · 0s)[K[15;3H[K
+────────────────────────────────────────────────────────────────────────────────
+> 
+────────────────────────────────────────────────────────────────────────────────[19;3H⏵⏵[1Cauto[1Cmode[1Con[1C(shift+tab[1Cto[1Ccycle)[1C·[1Cesc[1Cto[1Cinterrupt[1C·[1C←[1Cfor[1Cagents[20;64H○[1Clow[1C·[1C/effort[17;3H[?25h[?1006l[?1003l[?1002l[?1000l[>4m[?2031l[?2004l[?1016l[?25l[21;1H]0;[?25h]0;✳ Claude Code

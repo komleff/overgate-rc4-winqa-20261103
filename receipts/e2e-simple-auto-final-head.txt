@@ -1,0 +1,5 @@
+{"command": ["git", "rev-parse", "HEAD"], "cwd": "C:\\work\\overgate-e2e-auto", "exit_code": 0}
+STDOUT:
+5d58b5a8f573e56f2496982c75dcd2afe72d3678
+
+STDERR:

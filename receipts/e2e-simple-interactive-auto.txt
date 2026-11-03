@@ -1,0 +1,2 @@
+Optional renderer prompt dismissed. Native root and auto indicator:
+

@@ -1,0 +1,18 @@
+{
+  "cwd": "C:/Users/komle/\u041c\u043e\u0438 \u043f\u0440\u043e\u0435\u043a\u0442\u044b/overgate e2e auto",
+  "mode": "auto",
+  "command": [
+    "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\tools\\claude-runtime\\node_modules\\.bin\\claude.cmd",
+    "--permission-mode",
+    "auto",
+    "--effort",
+    "low",
+    "--print",
+    "--verbose",
+    "--output-format",
+    "stream-json",
+    "--include-hook-events"
+  ],
+  "started": "2026-11-04T01:05:59+0700",
+  "exit_code": 0
+}
