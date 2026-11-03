@@ -1,0 +1,1 @@
+Ignoring 11 permissions.allow entries from .claude/settings.json: this workspace has not been trusted. Run Claude Code interactively here once and accept the trust dialog, or set projects["C:/work/demo-bypass"].hasTrustDialogAccepted: true in C:\Users\komle\.claude.json.

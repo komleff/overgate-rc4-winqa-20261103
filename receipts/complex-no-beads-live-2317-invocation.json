@@ -13,5 +13,6 @@
     "stream-json",
     "--include-hook-events"
   ],
-  "started": "2026-11-04T00:15:35+0700"
+  "started": "2026-11-04T00:15:35+0700",
+  "exit_code": 0
 }

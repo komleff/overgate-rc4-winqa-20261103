@@ -1,0 +1,18 @@
+{
+  "cwd": "C:\\work\\demo-bypass",
+  "mode": "bypassPermissions",
+  "command": [
+    "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\tools\\claude-runtime\\node_modules\\.bin\\claude.cmd",
+    "--permission-mode",
+    "bypassPermissions",
+    "--effort",
+    "low",
+    "--print",
+    "--verbose",
+    "--output-format",
+    "stream-json",
+    "--include-hook-events"
+  ],
+  "started": "2026-11-04T00:20:08+0700",
+  "exit_code": 0
+}

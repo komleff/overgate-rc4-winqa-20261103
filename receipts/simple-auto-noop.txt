@@ -1,0 +1,5 @@
+{"command": ["C:\\Python314\\python.exe", "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\source\\scripts\\install-overgate.py", "plan", "--source", "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\source", "--source-sha", "403f95b8a7fae50957a99c16a211a8ef7217cb22", "--target", "C:\\work\\demo", "--contract", "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\simple-auto-contract.md", "--target-pr", "https://github.com/komleff/overgate-rc4-winqa-20261103/pull/1", "--output", "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\simple-auto-noop-plan.json"], "cwd": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103", "exit_code": 0}
+STDOUT:
+Plan written; conflicts=0; SHA256=a27c4e0e6d3bbf1a6ebe080e3dbd27fe17097ba5f6cafb098c717602d2fbd01c
+
+STDERR:

@@ -1,0 +1,21 @@
+{
+  "source_sha": "403f95b8a7fae50957a99c16a211a8ef7217cb22",
+  "target": "C:\\work\\demo-rollback",
+  "target_sha": "529a6313d30d55bb2a6531a1a2e08cb8b9d3340d",
+  "stage": "immediately after approved fresh apply; before helpers, Git stage/commit or project edits",
+  "conflicts": [],
+  "operation_count": 73,
+  "mismatch_count": 73,
+  "hash_mismatches": 0,
+  "mode_pairs": [
+    [
+      438,
+      420
+    ],
+    [
+      438,
+      493
+    ]
+  ],
+  "no_op_pass": false
+}
