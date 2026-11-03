@@ -1,0 +1,5 @@
+Affected Windows WB-01 QA. Source 2343df83a3a26ae83bc66d4009dd67a913eeea4e clean Git checkout. Target C:\Users\komle\Мои проекты\demo app-rollback branch qa/complex-rollback.
+Operator retains product authority. Existing source403 FAIL is not erased. No merge/release/finalize or working checkout changes.
+Runtime/controller delta: Windows observable-mode normalization changes the managed scripts/install-overgate.py payload. Upgrade must replace that exact source file; remaining payload paths and guards are unaffected. No whole-payload equivalence is claimed across the fix.
+Require approved fresh apply, immediately re-plan => every operation.before==after, conflicts0, state source_sha exact2343, mode auto, beads is True; preserve bytes/conflict checks.
+Fresh in previously rolled-back disposable fixture, no helpers/project edits. Negative changed-byte conflict must refuse without target writes; stale original plan apply must refuse before backup/write; restore any controlled bytes exactly, then immediate rollback must restore all before bytes and absent state.
