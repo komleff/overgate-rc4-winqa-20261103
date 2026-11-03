@@ -1,0 +1,90 @@
+[
+  {
+    "name": "simple-auto",
+    "target": "C:\\work\\demo",
+    "mode": "auto",
+    "pr": "https://github.com/komleff/overgate-rc4-winqa-20261103/pull/1",
+    "plan": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\simple-auto-plan.json",
+    "contract": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\simple-auto-contract.md",
+    "plan_sha256": "8c875d7f443187400088d454daa764e78c6bf4bd0ebc8f5f199055c7c2a47276",
+    "target_before_sha": "27fba3d704db70ebf31bf01f1e301903646a2431",
+    "source_sha": "403f95b8a7fae50957a99c16a211a8ef7217cb22"
+  },
+  {
+    "name": "simple-no-beads",
+    "target": "C:\\work\\demo-no-beads",
+    "mode": "no-beads",
+    "pr": "https://github.com/komleff/overgate-rc4-winqa-20261103/pull/2",
+    "plan": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\simple-no-beads-plan.json",
+    "contract": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\simple-no-beads-contract.md",
+    "plan_sha256": "4723ea2ac7330d8a61369bf6f7441d6f35295b96303b3348a62bb563a370a3d0",
+    "target_before_sha": "27d4de16f3128f76ba2a69fbd521431ed525b816",
+    "source_sha": "403f95b8a7fae50957a99c16a211a8ef7217cb22"
+  },
+  {
+    "name": "simple-bypass",
+    "target": "C:\\work\\demo-bypass",
+    "mode": "bypass",
+    "pr": "https://github.com/komleff/overgate-rc4-winqa-20261103/pull/3",
+    "plan": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\simple-bypass-plan.json",
+    "contract": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\simple-bypass-contract.md",
+    "plan_sha256": "c82eef41e3296af782f7d9f0448770d6f3711a5e91d7f23c542716c04131b25a",
+    "target_before_sha": "11fa0b5b311c67b2186d8cd9f46129da1785e48a",
+    "source_sha": "403f95b8a7fae50957a99c16a211a8ef7217cb22"
+  },
+  {
+    "name": "simple-rollback",
+    "target": "C:\\work\\demo-rollback",
+    "mode": "rollback",
+    "pr": "https://github.com/komleff/overgate-rc4-winqa-20261103/pull/4",
+    "plan": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\simple-rollback-plan.json",
+    "contract": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\simple-rollback-contract.md",
+    "plan_sha256": "ba439c0b91eebbff7b966b1ad7ecbebb60db354d1a8addf670a02311693509a1",
+    "target_before_sha": "529a6313d30d55bb2a6531a1a2e08cb8b9d3340d",
+    "source_sha": "403f95b8a7fae50957a99c16a211a8ef7217cb22"
+  },
+  {
+    "name": "complex-auto",
+    "target": "C:\\Users\\komle\\Мои проекты\\demo app",
+    "mode": "auto",
+    "pr": "https://github.com/komleff/overgate-rc4-winqa-20261103/pull/5",
+    "plan": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\complex-auto-plan.json",
+    "contract": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\complex-auto-contract.md",
+    "plan_sha256": "d101433610e6cfae1f773adb0c246f20c08c9f7c242002c9c779be0eecda8d71",
+    "target_before_sha": "ff893af17287be19e773deeb548583ac97097f93",
+    "source_sha": "403f95b8a7fae50957a99c16a211a8ef7217cb22"
+  },
+  {
+    "name": "complex-no-beads",
+    "target": "C:\\Users\\komle\\Мои проекты\\demo app-no-beads",
+    "mode": "no-beads",
+    "pr": "https://github.com/komleff/overgate-rc4-winqa-20261103/pull/6",
+    "plan": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\complex-no-beads-plan.json",
+    "contract": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\complex-no-beads-contract.md",
+    "plan_sha256": "20e8ab884f4f2844d8772f2cd6b2cd7c66b49ca3f32bc9e40e4333753f083b3d",
+    "target_before_sha": "eaaff7a6c3de9ba84e37c3edda2bc422ffc10226",
+    "source_sha": "403f95b8a7fae50957a99c16a211a8ef7217cb22"
+  },
+  {
+    "name": "complex-bypass",
+    "target": "C:\\Users\\komle\\Мои проекты\\demo app-bypass",
+    "mode": "bypass",
+    "pr": "https://github.com/komleff/overgate-rc4-winqa-20261103/pull/7",
+    "plan": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\complex-bypass-plan.json",
+    "contract": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\complex-bypass-contract.md",
+    "plan_sha256": "ebd06bf0777a8c24b7fac078463ebf4761f967f7d64fae39a4c06afdc72f2e0c",
+    "target_before_sha": "7602688568636c786dbf372dfac98ffcfa3f8a28",
+    "source_sha": "403f95b8a7fae50957a99c16a211a8ef7217cb22"
+  },
+  {
+    "name": "complex-rollback",
+    "target": "C:\\Users\\komle\\Мои проекты\\demo app-rollback",
+    "mode": "rollback",
+    "pr": "https://github.com/komleff/overgate-rc4-winqa-20261103/pull/8",
+    "plan": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\complex-rollback-plan.json",
+    "contract": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\complex-rollback-contract.md",
+    "plan_sha256": "51f58c83f9f1b92a60822a5445525517f8a7b22bfb47566c98e704a8e09a6a3b",
+    "target_before_sha": "c5601caf36fc6ddace4b51256971b94378958065",
+    "source_sha": "403f95b8a7fae50957a99c16a211a8ef7217cb22"
+  }
+]
