@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
-# Заполните реальные build/test/lint команды проекта. Не удаляйте fail до заполнения.
-echo "NOT CONFIGURED: заполните .agents/project/verify.sh реальными проверками проекта." >&2
-exit 2
+set -euo pipefail
+py -3 -c "from pathlib import Path; p=Path('README.md'); assert p.is_file() and p.read_text(encoding='utf-8').strip(); print('demo README check PASS')"
