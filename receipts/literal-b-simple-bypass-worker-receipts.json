@@ -1,0 +1,15 @@
+{
+  "source_sha": "403f95b8a7fae50957a99c16a211a8ef7217cb22",
+  "notice": "Only factual runtime init, tool calls/results and final report retained. Internal reasoning and OAuth flow are excluded.",
+  "events": [
+    {
+      "type": "system",
+      "subtype": "init",
+      "cwd": "C:\\work\\og-b-simple-bypass",
+      "session_id": "59037123-a377-4e7f-93a4-ef08fb8e6082",
+      "model": "claude-fable-5-1",
+      "permissionMode": "bypassPermissions",
+      "claude_code_version": "2.1.317"
+    }
+  ]
+}

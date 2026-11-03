@@ -1,0 +1,22 @@
+{
+  "cwd": "C:/work/og-b-simple-no-beads",
+  "mode": "auto",
+  "command": [
+    "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\tools\\claude-runtime\\node_modules\\.bin\\claude.cmd",
+    "--permission-mode",
+    "auto",
+    "--effort",
+    "low",
+    "--print",
+    "--verbose",
+    "--output-format",
+    "stream-json",
+    "--include-hook-events",
+    "--resume",
+    "f60f34ba-f16a-4d0b-ab9d-9a7ddfcc6ced"
+  ],
+  "started": "2026-11-04T02:11:21+0700",
+  "prompt_file": "D:/CodexArtifacts/overgate-rc4-winqa-20261103/literal-b-simple-no-beads-resume-prompt.txt",
+  "prompt_text_utf8_sha256": "00fa3da697003830f6d1e02160388718a49a69e89e4af4704d6073da0d016360",
+  "exit_code": 0
+}

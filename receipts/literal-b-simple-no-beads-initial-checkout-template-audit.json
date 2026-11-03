@@ -1,0 +1,43 @@
+{
+  "case": "literal-b-simple-no-beads",
+  "stage": "installed",
+  "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e",
+  "target": "C:\\work\\og-b-simple-no-beads",
+  "repo": "komleff/overgate-rc4-b-simple-no-beads-20261104",
+  "pr": "https://github.com/komleff/overgate-rc4-b-simple-no-beads-20261104/pull/1",
+  "state": {
+    "format": 2,
+    "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e",
+    "mode": "auto",
+    "beads": false
+  },
+  "noop_operations": 65,
+  "remote_refs": {
+    "refs/heads/install/overgate-b": "21ca605ab5635e94337be63cd17fb73bbfe2bd8f",
+    "refs/heads/main": "4004e1bc4680c160ea40f2ea42c394b06543438c"
+  },
+  "bd_ready": "SKIPPED --no-beads",
+  "runtime_init": {
+    "model": "claude-fable-5-1",
+    "permissionMode": "auto",
+    "claude_code_version": "2.1.317",
+    "cwd": "C:\\work\\og-b-simple-no-beads"
+  },
+  "head": "21ca605ab5635e94337be63cd17fb73bbfe2bd8f",
+  "branch": "install/overgate-b",
+  "checks": {
+    "exact_source_mode_strict_beads": true,
+    "default_mode": true,
+    "memory_six_exact": false,
+    "project_verify": true,
+    "checker": true,
+    "noop": true,
+    "no_beads_payload_or_db": true,
+    "no_backup": true,
+    "protection": true,
+    "actual_runtime_mode": true,
+    "A_runtime_reuse_binding": true,
+    "working_branch": true
+  },
+  "result": "FAIL"
+}

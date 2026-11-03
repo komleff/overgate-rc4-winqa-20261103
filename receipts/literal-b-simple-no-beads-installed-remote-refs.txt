@@ -1,0 +1,6 @@
+{"command": ["git", "ls-remote", "--heads", "origin"], "cwd": "C:\\work\\og-b-simple-no-beads", "exit_code": 0}
+STDOUT:
+21ca605ab5635e94337be63cd17fb73bbfe2bd8f	refs/heads/install/overgate-b
+4004e1bc4680c160ea40f2ea42c394b06543438c	refs/heads/main
+
+STDERR:

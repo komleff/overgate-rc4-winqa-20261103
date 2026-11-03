@@ -7,7 +7,7 @@ def audit(name,stage):
  c=next(x for x in json.loads((E/'literal-b-targets.json').read_text(encoding='utf-8')) if x['name']==name);t=Path(c['target']);r={'case':name,'stage':stage,'source_sha':SHA,'target':str(t),'repo':c['repo'],'pr':c['pr']};checks={}
  state=json.loads((t/'.overgate/install-state.json').read_bytes());r['state']={k:state.get(k) for k in ['format','source_sha','mode','beads']};checks['exact_source_mode_strict_beads']=state.get('source_sha')==SHA and state.get('mode')==c['state_mode'] and state.get('beads') is c['beads']
  settings=json.loads((t/'.claude/settings.json').read_bytes());checks['default_mode']=settings['permissions']['defaultMode']==c['runtime_mode']
- checks['memory_six_exact']=len(list((t/'.memory-bank').glob('*.md')))==6 and all((t/'.memory-bank'/p.name).read_bytes()==p.read_bytes() for p in (S/'.agents/templates/memory-bank').glob('*.md'))
+ checks['memory_six_exact']=len(list((t/'.memory-bank').glob('*.md')))==6 and all((t/'.memory-bank'/p.name).read_bytes()==p.read_bytes() for p in (t/'.agents/templates/memory-bank').glob('*.md'))
  checks['project_verify']=run(['C:/Program Files/Git/bin/bash.exe','.agents/project/verify.sh'],t,label=name+'-'+stage+'-project-verify',ok=False).returncode==0
  checks['checker']=run([sys.executable,S/'scripts/check-reference.py','--root',t],label=name+'-'+stage+'-checker',ok=False).returncode==0
  pfile=E/(name+'-'+stage+'-noop-plan.json');args=[sys.executable,S/'scripts/install-overgate.py','plan','--source',S,'--source-sha',SHA,'--target',t,'--contract',c['contract'],'--target-pr',c['pr'],'--output',pfile]

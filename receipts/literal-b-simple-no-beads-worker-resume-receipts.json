@@ -1,0 +1,135 @@
+{
+  "source_sha": "403f95b8a7fae50957a99c16a211a8ef7217cb22",
+  "notice": "Only factual runtime init, tool calls/results and final report retained. Internal reasoning and OAuth flow are excluded.",
+  "events": [
+    {
+      "type": "system",
+      "subtype": "init",
+      "cwd": "C:\\work\\og-b-simple-no-beads",
+      "session_id": "f60f34ba-f16a-4d0b-ab9d-9a7ddfcc6ced",
+      "model": "claude-fable-5-1",
+      "permissionMode": "auto",
+      "claude_code_version": "2.1.317"
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_017YfbTC8utSAxDL9RUzfWLk",
+      "name": "Bash",
+      "input": {
+        "command": "cd C:/work/og-b-simple-no-beads && py -3 D:/CodexArtifacts/overgate-rc4-winqa-20261103/audit-literal-b.py literal-b-simple-no-beads installed",
+        "description": "Run native audit in installed phase",
+        "timeout": 300000
+      }
+    },
+    {
+      "tool_use_id": "toolu_017YfbTC8utSAxDL9RUzfWLk",
+      "type": "tool_result",
+      "content": "{\"case\": \"literal-b-simple-no-beads\", \"stage\": \"installed\", \"source_sha\": \"2343df83a3a26ae83bc66d4009dd67a913eeea4e\", \"target\": \"C:\\\\work\\\\og-b-simple-no-beads\", \"repo\": \"komleff/overgate-rc4-b-simple-no-beads-20261104\", \"pr\": \"https://github.com/komleff/overgate-rc4-b-simple-no-beads-20261104/pull/1\", \"state\": {\"format\": 2, \"source_sha\": \"2343df83a3a26ae83bc66d4009dd67a913eeea4e\", \"mode\": \"auto\", \"beads\": false}, \"noop_operations\": 65, \"remote_refs\": {\"refs/heads/install/overgate-b\": \"21ca605ab5635e94337be63cd17fb73bbfe2bd8f\", \"refs/heads/main\": \"4004e1bc4680c160ea40f2ea42c394b06543438c\"}, \"bd_ready\": \"SKIPPED --no-beads\", \"runtime_init\": {\"model\": \"claude-fable-5-1\", \"permissionMode\": \"auto\", \"claude_code_version\": \"2.1.317\", \"cwd\": \"C:\\\\work\\\\og-b-simple-no-beads\"}, \"head\": \"21ca605ab5635e94337be63cd17fb73bbfe2bd8f\", \"branch\": \"install/overgate-b\", \"checks\": {\"exact_source_mode_strict_beads\": true, \"default_mode\": true, \"memory_six_exact\": true, \"project_verify\": true, \"checker\": true, \"noop\": true, \"no_beads_payload_or_db\": true, \"no_backup\": true, \"protection\": true, \"actual_runtime_mode\": true, \"A_runtime_reuse_binding\": true, \"working_branch\": true}, \"result\": \"PASS\"}",
+      "is_error": false
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01Sqtfgu2nHLBc8726AVDGFY",
+      "name": "Write",
+      "input": {
+        "file_path": "C:\\work\\og-b-simple-no-beads\\qa-literal-b.txt",
+        "content": "Literal fresh Windows QUICKSTART install, case literal-b-simple-no-beads.\nSource: exact B 2343df83a3a26ae83bc66d4009dd67a913eeea4e (clean Git checkout D:/CodexArtifacts/overgate-rc4-winqa-20261103/source-2343df8), first install directly from B, no A->B upgrade, single apply.\nInstaller flags: --no-beads. install-state: format 2, mode auto, beads false.\nRuntime: Claude Code 2.1.317, claude-fable-5-1, permissionMode auto (actual), cwd target root.\nHelpers in order: og-init-memory-bank.sh exit 0 (six files created); bd-bootstrap.sh SKIPPED (--no-beads, no .beads, no bd init/ready); og-protect-main.sh exit 0 (protection verified, readback).\nProject verifier .agents/project/verify.sh filled from exact template: PASS (README, exact source SHA, mode auto, strict beads False).\nNative audit installed: first run FAIL only on memory_six_exact caused by QA oracle error (canonical LF installed templates compared to CRLF source working tree; installer reads frozen Git blobs). Oracle corrected, byte-exact check of all six Memory files vs git show B:template all True (evidence/literal-b-memory-oracle-correction.json); initial audit kept as literal-b-simple-no-beads-initial-checkout-template-audit.json. No product/source/helper/managed payload changed. Re-run audit installed: PASS.\nDraft PR: https://github.com/komleff/overgate-rc4-b-simple-no-beads-20261104/pull/1 (merge left to operator).\n"
+      }
+    },
+    {
+      "tool_use_id": "toolu_01Sqtfgu2nHLBc8726AVDGFY",
+      "type": "tool_result",
+      "content": "File created successfully at: C:\\work\\og-b-simple-no-beads\\qa-literal-b.txt (file state is current in your context — no need to Read it back)"
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01YGz8aynCEAA2WCJbptz3nB",
+      "name": "Bash",
+      "input": {
+        "command": "cd C:/work/og-b-simple-no-beads && git add .",
+        "description": "Stage all changes"
+      }
+    },
+    {
+      "tool_use_id": "toolu_01YGz8aynCEAA2WCJbptz3nB",
+      "type": "tool_result",
+      "content": "warning: in the working copy of '.agents/AGENT_ROLES.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.agents/DEV_ROLE.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.agents/HOW_TO_INSTALL.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.agents/HOW_TO_USE.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.agents/INSTALL.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.agents/PIPELINE.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.agents/PIPELINE_ADR.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.agents/PL_ROLE.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.agents/PM_ROLE.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.agents/QA_ROLE.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.agents/REFERENCES.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.agents/RV_ROLE.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.agents/SKILLS.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.agents/SV_ROLE.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.agents/distribution-manifest.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.agents/project/verify.sh', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.agents/skills/canon-router/SKILL.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.agents/skills/diagnose/SKILL.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.agents/skills/handoff/SKILL.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.agents/skills/product-gap/SKILL.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.agents/skills/product-handoff/SKILL.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.agents/templates/AGENTS.template.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.agents/templates/gitignore.fragment', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.agents/templates/memory-bank/activeContext.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.agents/templates/memory-bank/productContext.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.agents/templates/memory-bank/progress.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.agents/templates/memory-bank/projectbrief.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.agents/templates/memory-bank/systemPatterns.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.agents/templates/memory-bank/techContext.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.agents/templates/project-authority.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.agents/templates/project-verify.sh', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/agents/developer.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/agents/planner.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/agents/reviewer.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/agents/tester.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/hooks/check-merge-ready.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/hooks/check-repository-mutation.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/hooks/check-tests-before-commit.sh', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/hooks/commit_command_classifier.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/hooks/pre-bash.sh', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/hooks/readiness_policy.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/hooks/shell_comment_parser.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/hooks/shell_grammar.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/rules/large-payloads.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/rules/tests.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/rules/universal.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/settings.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/skills/architect/SKILL.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/skills/external-review/SKILL.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/skills/finalize-pr/SKILL.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/skills/finalize-pr/finalize-gate.sh', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/skills/finalize-pr/validators/strip_code_spans.sh', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/skills/finalize-pr/validators/test_validate_review_pass.sh', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/skills/pipeline-audit/SKILL.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/skills/project-manager/SKILL.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/skills/sprint-pr-cycle/SKILL.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/skills/verify/SKILL.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/tools/publish-pr-comment.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/tools/run-python.sh', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/tools/with-timeout.sh', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.codex/hooks.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.memory-bank/activeContext.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.memory-bank/productContext.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.memory-bank/progress.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.memory-bank/projectbrief.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.memory-bank/systemPatterns.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.memory-bank/techContext.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.overgate/install-state.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'AGENTS.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'LICENSE', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/baselines/2026-10-01-delivery-first-provenance.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'qa-literal-b.txt', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/check-reference.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/install-overgate.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/og-init-memory-bank.sh', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/og-protect-main.sh', LF will be replaced by CRLF the next time Git touches it",
+      "is_error": false
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01NDucGmVSpx4KVu86Jh3QCk",
+      "name": "Bash",
+      "input": {
+        "command": "cd C:/work/og-b-simple-no-beads && git commit -m \"test: literal fresh B simple no-beads\"",
+        "description": "Commit staged install payload and QA note"
+      }
+    },
+    {
+      "tool_use_id": "toolu_01NDucGmVSpx4KVu86Jh3QCk",
+      "type": "tool_result",
+      "content": "[install/overgate-b e9c1080] test: literal fresh B simple no-beads\n 77 files changed, 16585 insertions(+)\n create mode 100644 .agents/AGENT_ROLES.md\n create mode 100644 .agents/DEV_ROLE.md\n create mode 100644 .agents/HOW_TO_INSTALL.md\n create mode 100644 .agents/HOW_TO_USE.md\n create mode 100644 .agents/INSTALL.md\n create mode 100644 .agents/PIPELINE.md\n create mode 100644 .agents/PIPELINE_ADR.md\n create mode 100644 .agents/PL_ROLE.md\n create mode 100644 .agents/PM_ROLE.md\n create mode 100644 .agents/QA_ROLE.md\n create mode 100644 .agents/REFERENCES.md\n create mode 100644 .agents/RV_ROLE.md\n create mode 100644 .agents/SKILLS.md\n create mode 100644 .agents/SV_ROLE.md\n create mode 100644 .agents/distribution-manifest.json\n create mode 100644 .agents/project/verify.sh\n create mode 100644 .agents/skills/canon-router/SKILL.md\n create mode 100644 .agents/skills/diagnose/SKILL.md\n create mode 100644 .agents/skills/handoff/SKILL.md\n create mode 100644 .agents/skills/product-gap/SKILL.md\n create mode 100644 .agents/skills/product-handoff/SKILL.md\n create mode 100644 .agents/templates/AGENTS.template.md\n create mode 100644 .agents/templates/gitignore.fragment\n create mode 100644 .agents/templates/memory-bank/activeContext.md\n create mode 100644 .agents/templates/memory-bank/productContext.md\n create mode 100644 .agents/templates/memory-bank/progress.md\n create mode 100644 .agents/templates/memory-bank/projectbrief.md\n create mode 100644 .agents/templates/memory-bank/systemPatterns.md\n create mode 100644 .agents/templates/memory-bank/techContext.md\n create mode 100644 .agents/templates/project-authority.md\n create mode 100644 .agents/templates/project-verify.sh\n create mode 100644 .claude/agents/developer.md\n create mode 100644 .claude/agents/planner.md\n create mode 100644 .claude/agents/reviewer.md\n create mode 100644 .claude/agents/tester.md\n create mode 100644 .claude/hooks/check-merge-ready.py\n create mode 100644 .claude/hooks/check-repository-mutation.py\n create mode 100644 .claude/hooks/check-tests-before-commit.sh\n create mode 100644 .claude/hooks/commit_command_classifier.py\n create mode 100644 .claude/hooks/pre-bash.sh\n create mode 100644 .claude/hooks/readiness_policy.py\n create mode 100644 .claude/hooks/shell_comment_parser.py\n create mode 100644 .claude/hooks/shell_grammar.py\n create mode 100644 .claude/rules/large-payloads.md\n create mode 100644 .claude/rules/tests.md\n create mode 100644 .claude/rules/universal.md\n create mode 100644 .claude/settings.json\n create mode 100644 .claude/skills/architect/SKILL.md\n create mode 100644 .claude/skills/external-review/SKILL.md\n create mode 100644 .claude/skills/finalize-pr/SKILL.md\n create mode 100644 .claude/skills/finalize-pr/finalize-gate.sh\n create mode 100644 .claude/skills/finalize-pr/validators/strip_code_spans.sh\n create mode 100644 .claude/skills/finalize-pr/validators/test_validate_review_pass.sh\n create mode 100644 .claude/skills/pipeline-audit/SKILL.md\n create mode 100644 .claude/skills/project-manager/SKILL.md\n create mode 100644 .claude/skills/sprint-pr-cycle/SKILL.md\n create mode 100644 .claude/skills/verify/SKILL.md\n create mode 100644 .claude/tools/publish-pr-comment.py\n create mode 100644 .claude/tools/run-python.sh\n create mode 100644 .claude/tools/with-timeout.sh\n create mode 100644 .codex/hooks.json\n create mode 100644 .gitignore\n create mode 100644 .memory-bank/activeContext.md\n create mode 100644 .memory-bank/productContext.md\n create mode 100644 .memory-bank/progress.md\n create mode 100644 .memory-bank/projectbrief.md\n create mode 100644 .memory-bank/systemPatterns.md\n create mode 100644 .memory-bank/techContext.md\n create mode 100644 .overgate/install-state.json\n create mode 100644 AGENTS.md\n create mode 100644 LICENSE\n create mode 100644 docs/baselines/2026-10-01-delivery-first-provenance.json\n create mode 100644 qa-literal-b.txt\n create mode 100644 scripts/check-reference.py\n create mode 100644 scripts/install-overgate.py\n create mode 100644 scripts/og-init-memory-bank.sh\n create mode 100644 scripts/og-protect-main.sh",
+      "is_error": false
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01UsqkDHajAu6gx8xP2vCiYT",
+      "name": "Bash",
+      "input": {
+        "command": "cd C:/work/og-b-simple-no-beads && git push origin install/overgate-b",
+        "description": "Push working branch to origin"
+      }
+    },
+    {
+      "tool_use_id": "toolu_01UsqkDHajAu6gx8xP2vCiYT",
+      "type": "tool_result",
+      "content": "To https://github.com/komleff/overgate-rc4-b-simple-no-beads-20261104.git\n   21ca605..e9c1080  install/overgate-b -> install/overgate-b",
+      "is_error": false
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_013Gw8aqafCJ79euGxytFmGS",
+      "name": "Bash",
+      "input": {
+        "command": "cd C:/work/og-b-simple-no-beads && py -3 D:/CodexArtifacts/overgate-rc4-winqa-20261103/audit-literal-b.py literal-b-simple-no-beads final",
+        "description": "Run native audit in final phase",
+        "timeout": 300000
+      }
+    },
+    {
+      "tool_use_id": "toolu_013Gw8aqafCJ79euGxytFmGS",
+      "type": "tool_result",
+      "content": "{\"case\": \"literal-b-simple-no-beads\", \"stage\": \"final\", \"source_sha\": \"2343df83a3a26ae83bc66d4009dd67a913eeea4e\", \"target\": \"C:\\\\work\\\\og-b-simple-no-beads\", \"repo\": \"komleff/overgate-rc4-b-simple-no-beads-20261104\", \"pr\": \"https://github.com/komleff/overgate-rc4-b-simple-no-beads-20261104/pull/1\", \"state\": {\"format\": 2, \"source_sha\": \"2343df83a3a26ae83bc66d4009dd67a913eeea4e\", \"mode\": \"auto\", \"beads\": false}, \"noop_operations\": 65, \"remote_refs\": {\"refs/heads/install/overgate-b\": \"e9c1080592dc9f391ecb5e9b7a9f0d6de07be0db\", \"refs/heads/main\": \"4004e1bc4680c160ea40f2ea42c394b06543438c\"}, \"bd_ready\": \"SKIPPED --no-beads\", \"runtime_init\": {\"model\": \"claude-fable-5-1\", \"permissionMode\": \"auto\", \"claude_code_version\": \"2.1.317\", \"cwd\": \"C:\\\\work\\\\og-b-simple-no-beads\"}, \"head\": \"e9c1080592dc9f391ecb5e9b7a9f0d6de07be0db\", \"branch\": \"install/overgate-b\", \"pr_readback\": {\"headRefOid\": \"e9c1080592dc9f391ecb5e9b7a9f0d6de07be0db\", \"isDraft\": true, \"state\": \"OPEN\", \"url\": \"https://github.com/komleff/overgate-rc4-b-simple-no-beads-20261104/pull/1\"}, \"checks\": {\"exact_source_mode_strict_beads\": true, \"default_mode\": true, \"memory_six_exact\": true, \"project_verify\": true, \"checker\": true, \"noop\": true, \"no_beads_payload_or_db\": true, \"no_backup\": true, \"protection\": true, \"actual_runtime_mode\": true, \"A_runtime_reuse_binding\": true, \"working_branch\": true, \"clean\": true, \"index_empty\": true, \"remote_head\": true, \"draft_pr_head\": true}, \"result\": \"PASS\"}",
+      "is_error": false
+    },
+    {
+      "type": "result",
+      "subtype": "success",
+      "is_error": false,
+      "api_error_status": null,
+      "duration_ms": 93467,
+      "num_turns": 7,
+      "result": "**Result: PASS.** Literal fresh B install завершён, merge за оператором.\n\n- **Audit installed (повтор с исправленным oracle):** PASS, все 12 проверок true, включая memory_six_exact.\n- **qa-literal-b.txt** записан с фактом exact B `2343df83…`, --no-beads, state mode auto / beads false, и с историей ложного oracle FAIL: причина была в сравнении LF installed templates с CRLF source working tree, product/source/helpers не менялись, первичный audit сохранён в evidence.\n- **Commit и push** выполнены отдельными вызовами. Hook не отказывал, retry не было.\n- **Audit final:** PASS, 16 проверок true: tree clean, index empty, remote head и Draft PR head равны локальному HEAD, protection, checker, no-op 65 операций, no beads payload/db, runtime mode auto.\n\n| | |\n|---|---|\n| Draft PR | https://github.com/komleff/overgate-rc4-b-simple-no-beads-20261104/pull/1 (OPEN, isDraft) |\n| Target HEAD | `e9c1080592dc9f391ecb5e9b7a9f0d6de07be0db` = remote install/overgate-b = PR head |\n| Source | B `2343df83a3a26ae83bc66d4009dd67a913eeea4e`, один apply, без A→B |\n| Result | PASS |",
+      "permission_denials": [],
+      "session_id": "f60f34ba-f16a-4d0b-ab9d-9a7ddfcc6ced",
+      "modelUsage": {
+        "claude-fable-5-1": {
+          "inputTokens": 548,
+          "outputTokens": 5931,
+          "thinkingTokens": 298,
+          "cacheReadInputTokens": 1074161,
+          "cacheCreationInputTokens": 62261,
+          "cacheCreationEphemeral5mInputTokens": 0,
+          "cacheCreationEphemeral1hInputTokens": 62261,
+          "webSearchRequests": 0,
+          "costUSD": 1.81579025,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-fable-5-1",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      }
+    }
+  ]
+}

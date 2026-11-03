@@ -1,18 +1,20 @@
-import os,sys,subprocess,json,time
+import os,sys,subprocess,json,time,hashlib
 from pathlib import Path
 base=Path(__file__).parent
-label,cwd,mode,promptfile=sys.argv[1:]
+label,cwd,mode,promptfile=sys.argv[1:5]
 env=os.environ.copy()
 env['PATH']=str(base/'tools/claude-runtime/node_modules/.bin')+';'+str(base/'tools')+';C:/Program Files/Git/bin;C:/Program Files/Git/usr/bin;'+env['PATH']
 env['CLAUDE_CODE_GIT_BASH_PATH']='C:/Program Files/Git/bin/bash.exe'
 env['PYTHONUTF8']='1'
 cmd=[str(base/'tools/claude-runtime/node_modules/.bin/claude.cmd'),'--permission-mode',mode,'--effort','low','--print','--verbose','--output-format','stream-json','--include-hook-events']
-meta={'cwd':cwd,'mode':mode,'command':cmd,'started':time.strftime('%Y-%m-%dT%H:%M:%S%z')}
+if len(sys.argv)>5:cmd+=['--resume',sys.argv[5]]
+prompt_text=Path(promptfile).read_text(encoding='utf-8')
+meta={'cwd':cwd,'mode':mode,'command':cmd,'started':time.strftime('%Y-%m-%dT%H:%M:%S%z'),'prompt_file':promptfile,'prompt_text_utf8_sha256':hashlib.sha256(prompt_text.encode('utf-8')).hexdigest()}
 (base/'evidence'/f'{label}-invocation.json').write_text(json.dumps(meta,indent=2),encoding='utf-8')
 with (base/'evidence'/f'{label}.jsonl').open('w',encoding='utf-8') as out, (base/'evidence'/f'{label}.stderr.txt').open('w',encoding='utf-8') as err:
  if label.startswith('literal-b-'):
   p=subprocess.Popen(cmd,stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=err,text=True,encoding='utf-8',errors='replace',cwd=cwd,env=env)
-  p.stdin.write(Path(promptfile).read_text(encoding='utf-8'));p.stdin.close()
+  p.stdin.write(prompt_text);p.stdin.close()
   for line in p.stdout:
    out.write(line);out.flush()
    try:event=json.loads(line)
@@ -24,7 +26,7 @@ with (base/'evidence'/f'{label}.jsonl').open('w',encoding='utf-8') as out, (base
     break
   p.wait()
  else:
-  p=subprocess.run(cmd,input=Path(promptfile).read_text(encoding='utf-8'),text=True,encoding='utf-8',cwd=cwd,env=env,stdout=out,stderr=err)
+  p=subprocess.run(cmd,input=prompt_text,text=True,encoding='utf-8',cwd=cwd,env=env,stdout=out,stderr=err)
 meta['exit_code']=p.returncode
 (base/'evidence'/f'{label}-invocation.json').write_text(json.dumps(meta,indent=2),encoding='utf-8')
 print(json.dumps(meta))

@@ -1,0 +1,41 @@
+{
+  "qa_harness_error": "Initial oracle compared canonical installed LF template to source working-tree CRLF bytes, not frozen Git blob. Product helper was correct. Correct oracle uses installed managed template, additionally verified against Git blob. No product/source/helper retry or mutation.",
+  "files": [
+    {
+      "name": "activeContext.md",
+      "memory_matches_git_blob": true,
+      "installed_template_matches_git_blob": true,
+      "checkout_template_matches_git_blob": false
+    },
+    {
+      "name": "productContext.md",
+      "memory_matches_git_blob": true,
+      "installed_template_matches_git_blob": true,
+      "checkout_template_matches_git_blob": false
+    },
+    {
+      "name": "progress.md",
+      "memory_matches_git_blob": true,
+      "installed_template_matches_git_blob": true,
+      "checkout_template_matches_git_blob": false
+    },
+    {
+      "name": "projectbrief.md",
+      "memory_matches_git_blob": true,
+      "installed_template_matches_git_blob": true,
+      "checkout_template_matches_git_blob": false
+    },
+    {
+      "name": "systemPatterns.md",
+      "memory_matches_git_blob": true,
+      "installed_template_matches_git_blob": true,
+      "checkout_template_matches_git_blob": false
+    },
+    {
+      "name": "techContext.md",
+      "memory_matches_git_blob": true,
+      "installed_template_matches_git_blob": true,
+      "checkout_template_matches_git_blob": false
+    }
+  ]
+}

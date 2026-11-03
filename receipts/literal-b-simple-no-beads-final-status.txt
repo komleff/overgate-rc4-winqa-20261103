@@ -1,0 +1,4 @@
+{"command": ["git", "status", "--porcelain"], "cwd": "C:\\work\\og-b-simple-no-beads", "exit_code": 0}
+STDOUT:
+
+STDERR:
