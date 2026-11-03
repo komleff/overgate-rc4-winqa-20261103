@@ -1,0 +1,5 @@
+{"command": ["C:\\Python314\\python.exe", "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\source-2343df8\\scripts\\install-overgate.py", "apply", "--plan", "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\fix-complex-fresh-plan.json", "--approval", "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\fix-complex-fresh-approval.json"], "cwd": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103", "exit_code": 1}
+STDOUT:
+
+STDERR:
+STOP: target/source plan drift after Plan Review; regenerate plan in same PR

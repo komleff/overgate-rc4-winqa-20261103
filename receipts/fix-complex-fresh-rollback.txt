@@ -1,0 +1,5 @@
+{"command": ["C:\\Python314\\python.exe", "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\source-2343df8\\scripts\\install-overgate.py", "rollback", "--target", "C:\\Users\\komle\\Мои проекты\\demo app-rollback", "--backup", "C:\\Users\\komle\\Мои проекты\\demo app-rollback\\.overgate-backups\\2886204358a74714a7a606226ee45050\\rollback.json"], "cwd": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103", "exit_code": 0}
+STDOUT:
+Rollback restored managed bytes; project state untouched
+
+STDERR:

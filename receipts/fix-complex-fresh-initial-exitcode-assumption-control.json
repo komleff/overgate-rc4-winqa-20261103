@@ -1,0 +1,36 @@
+{
+  "name": "fix-complex-fresh",
+  "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e",
+  "target": "C:\\Users\\komle\\Мои проекты\\demo app-rollback",
+  "target_pr": "https://github.com/komleff/overgate-rc4-winqa-20261103/pull/8",
+  "target_before_head": "c5601caf36fc6ddace4b51256971b94378958065",
+  "kind": "fresh",
+  "apply_rc": 0,
+  "applied_operations_exact": true,
+  "noop_rc": 0,
+  "noop_conflicts": [],
+  "noop_operation_count": 73,
+  "noop_mismatches": [],
+  "noop_pass": true,
+  "install_state": {
+    "format": 2,
+    "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e",
+    "mode": "auto",
+    "beads": true
+  },
+  "stale_plan_rejected": true,
+  "stale_apply_rc": 1,
+  "stale_no_target_writes": true,
+  "changed_byte_plan_rc": 0,
+  "changed_byte_conflicts": [
+    ".agents/PM_ROLE.md: conflict with project override; no force overwrite"
+  ],
+  "changed_bytes_rejected": false,
+  "conflict_no_target_writes": true,
+  "controlled_file_restored": true,
+  "rollback_rc": 0,
+  "rollback_exact_before_bytes_modes": true,
+  "target_after_head": "c5601caf36fc6ddace4b51256971b94378958065",
+  "superseded_qa_explanation": "INVALID initial probe used preserved PM_ROLE, whose retention is expected; this is not a product defect. Replaced by actual managed PIPELINE_ADR probe in corrected run.",
+  "qa_correction": "PM_ROLE is managed and the initial plan correctly reported conflict1. Initial harness incorrectly required a nonzero plan exit; the plan API intentionally writes a conflicted plan with exit0. No product defect was established. Additional PIPELINE_ADR probe used the correct conflicts predicate and passed. This initial false boolean is superseded, not a product FAIL."
+}

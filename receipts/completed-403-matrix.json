@@ -1,0 +1,360 @@
+[
+  {
+    "scenario": "simple-auto",
+    "source_sha": "403f95b8a7fae50957a99c16a211a8ef7217cb22",
+    "path": "C:\\work\\demo",
+    "install_pr": "https://github.com/komleff/overgate-rc4-winqa-20261103/pull/1",
+    "plan_sha256": "8c875d7f443187400088d454daa764e78c6bf4bd0ebc8f5f199055c7c2a47276",
+    "target_before_sha": "27fba3d704db70ebf31bf01f1e301903646a2431",
+    "native_target_after_sha": "512c903a625632f6713ca29f1b0bc5384de78b56",
+    "native_results_file": "simple-auto-native-results.json",
+    "final_target_sha": "e82069f88bad202bc7ce8ab6bbb938a4112b9389",
+    "branch": "qa/live-simple-auto",
+    "runtime_pr": "https://github.com/komleff/overgate-rc4-winqa-20261103/pull/10",
+    "noop": "FAIL",
+    "noop_mode_only": true,
+    "noop_mode_mismatches": 73,
+    "checker_native": "PASS",
+    "memory_six_exact": true,
+    "beads_rc": 0,
+    "protection_rc": 0,
+    "live_receipts_file": "simple-auto-live-2317-receipts.json",
+    "runtime_model": "claude-fable-5-1",
+    "runtime_mode": "auto",
+    "runtime_version": "2.1.317",
+    "negative_probe_receipts": [
+      {
+        "id": "toolu_0148RJdBRuUQoR2RT63BSskt",
+        "command": "git push origin main",
+        "is_error": true,
+        "hook_intercept": true,
+        "reason": "BLOCKED: direct update of protected branch via git push is forbidden: main. Use a working branch/PR; merge remains operator-only.\r\n"
+      },
+      {
+        "id": "toolu_014LDsDCTQtat9kkWPsidctV",
+        "command": "gh pr merge 1",
+        "is_error": true,
+        "hook_intercept": true,
+        "reason": "BLOCKED: gh pr merge/auto-merge is operator-only. Use a working branch/PR; merge remains operator-only.\r\n"
+      },
+      {
+        "id": "toolu_01TSDn6mi4uYsfPg4ycggMyz",
+        "command": "gh pr comment 1 --body \"ready to merge\"",
+        "is_error": true,
+        "hook_intercept": true,
+        "reason": "БЛОКИРОВКА: фразы 'готов к merge' / 'ready to merge' / 'merge-ready' разрешены только через /finalize-pr (см. .claude/skills/finalize-pr/SKILL.md).\r\nИспользуй /finalize-pr <PR_NUMBER>.\r\n"
+      },
+      {
+        "id": "toolu_015Ce41ZG4fzR34Efd7SqfU5",
+        "command": "git commit -m \"qa: red verification must block\"",
+        "is_error": true,
+        "hook_intercept": true,
+        "reason": "QA intentional red\nБЛОКИРОВКА: тесты падают. Исправь перед коммитом.\n"
+      }
+    ],
+    "step5_live": "PASS",
+    "step6_live": "PASS"
+  },
+  {
+    "scenario": "simple-no-beads",
+    "source_sha": "403f95b8a7fae50957a99c16a211a8ef7217cb22",
+    "path": "C:\\work\\demo-no-beads",
+    "install_pr": "https://github.com/komleff/overgate-rc4-winqa-20261103/pull/2",
+    "plan_sha256": "4723ea2ac7330d8a61369bf6f7441d6f35295b96303b3348a62bb563a370a3d0",
+    "target_before_sha": "27d4de16f3128f76ba2a69fbd521431ed525b816",
+    "native_target_after_sha": "cf3a6ca574776077a2d1ad929c6542e770d687d4",
+    "native_results_file": "simple-no-beads-native-results.json",
+    "final_target_sha": "f36e4935936b2b77cf2f63f8cc575177a56f0938",
+    "branch": "qa/live-simple-no-beads",
+    "runtime_pr": "https://github.com/komleff/overgate-rc4-winqa-20261103/pull/12",
+    "noop": "FAIL",
+    "noop_mode_only": true,
+    "noop_mode_mismatches": 65,
+    "checker_native": "PASS",
+    "memory_six_exact": true,
+    "beads_rc": "SKIPPED --no-beads",
+    "protection_rc": 0,
+    "live_receipts_file": "simple-no-beads-live-2317-receipts.json",
+    "runtime_model": "claude-fable-5-1",
+    "runtime_mode": "auto",
+    "runtime_version": "2.1.317",
+    "negative_probe_receipts": [
+      {
+        "id": "toolu_017gcBJi1J8b2HrT7bHg4q5B",
+        "command": "git push origin main 2>&1; echo \"EXIT=$?\"",
+        "is_error": true,
+        "hook_intercept": true,
+        "reason": "BLOCKED: direct update of protected branch via git push is forbidden: main. Use a working branch/PR; merge remains operator-only.\r\n"
+      },
+      {
+        "id": "toolu_01KE2WgamMWP3bmkM5vwkbMc",
+        "command": "gh pr merge 1 2>&1; echo \"EXIT=$?\"",
+        "is_error": true,
+        "hook_intercept": true,
+        "reason": "BLOCKED: gh pr merge/auto-merge is operator-only. Use a working branch/PR; merge remains operator-only.\r\n"
+      },
+      {
+        "id": "toolu_01DQ9xK96fdk9wwvk4bbjc9L",
+        "command": "gh pr comment 1 --body \"ready to merge\" 2>&1; echo \"EXIT=$?\"",
+        "is_error": true,
+        "hook_intercept": true,
+        "reason": "БЛОКИРОВКА: публикация находится вне поддержанной прямолинейной shell-последовательности; её итоговое body невозможно доказуемо проверить.\r\n"
+      },
+      {
+        "id": "toolu_0164WoE2pYFV6FZu2ENxjk8d",
+        "command": "git commit -m \"qa: red verification must block\" 2>&1; echo \"EXIT=$?\"",
+        "is_error": true,
+        "hook_intercept": true,
+        "reason": "QA intentional red\nБЛОКИРОВКА: тесты падают. Исправь перед коммитом.\n"
+      }
+    ],
+    "step5_live": "PASS",
+    "step6_live": "PASS"
+  },
+  {
+    "scenario": "simple-bypass",
+    "source_sha": "403f95b8a7fae50957a99c16a211a8ef7217cb22",
+    "path": "C:\\work\\demo-bypass",
+    "install_pr": "https://github.com/komleff/overgate-rc4-winqa-20261103/pull/3",
+    "plan_sha256": "c82eef41e3296af782f7d9f0448770d6f3711a5e91d7f23c542716c04131b25a",
+    "target_before_sha": "11fa0b5b311c67b2186d8cd9f46129da1785e48a",
+    "native_target_after_sha": "5e485b4b5d177734605d35edbc87c50d5481a55a",
+    "native_results_file": "simple-bypass-native-results.json",
+    "final_target_sha": "fb836af1c50be9be448fd3051ac7a76cf6a263b6",
+    "branch": "qa/live-simple-bypass",
+    "runtime_pr": "https://github.com/komleff/overgate-rc4-winqa-20261103/pull/14",
+    "noop": "FAIL",
+    "noop_mode_only": true,
+    "noop_mode_mismatches": 73,
+    "checker_native": "PASS",
+    "memory_six_exact": true,
+    "beads_rc": 0,
+    "protection_rc": 0,
+    "live_receipts_file": "simple-bypass-live-2317-receipts.json",
+    "runtime_model": "claude-fable-5-1",
+    "runtime_mode": "bypassPermissions",
+    "runtime_version": "2.1.317",
+    "negative_probe_receipts": [
+      {
+        "id": "toolu_013xseth6PiNnvBbRJGKTfxt",
+        "command": "git push origin main 2>&1; echo \"exit=$?\"",
+        "is_error": true,
+        "hook_intercept": true,
+        "reason": "BLOCKED: direct update of protected branch via git push is forbidden: main. Use a working branch/PR; merge remains operator-only.\r\n"
+      },
+      {
+        "id": "toolu_01CVHY9cyKgzSmm4dtTfwuXU",
+        "command": "gh pr merge 1 2>&1; echo \"exit=$?\"",
+        "is_error": true,
+        "hook_intercept": true,
+        "reason": "BLOCKED: gh pr merge/auto-merge is operator-only. Use a working branch/PR; merge remains operator-only.\r\n"
+      },
+      {
+        "id": "toolu_01MUHXLLWnh4Pc5cGrr43bxm",
+        "command": "gh pr comment 1 --body \"ready to merge\" 2>&1; echo \"exit=$?\"",
+        "is_error": true,
+        "hook_intercept": true,
+        "reason": "БЛОКИРОВКА: публикация находится вне поддержанной прямолинейной shell-последовательности; её итоговое body невозможно доказуемо проверить.\r\n"
+      },
+      {
+        "id": "toolu_014h9kwZM7TYP3Vjina32Xy2",
+        "command": "git commit -m \"qa: red verification must block\" 2>&1; echo \"exit=$?\"",
+        "is_error": true,
+        "hook_intercept": true,
+        "reason": "QA intentional red\nБЛОКИРОВКА: тесты падают. Исправь перед коммитом.\n"
+      }
+    ],
+    "step5_live": "PASS",
+    "step6_live": "PASS"
+  },
+  {
+    "scenario": "simple-rollback",
+    "source_sha": "403f95b8a7fae50957a99c16a211a8ef7217cb22",
+    "path": "C:\\work\\demo-rollback",
+    "install_pr": "https://github.com/komleff/overgate-rc4-winqa-20261103/pull/4",
+    "plan_sha256": "ba439c0b91eebbff7b966b1ad7ecbebb60db354d1a8addf670a02311693509a1",
+    "target_before_sha": "529a6313d30d55bb2a6531a1a2e08cb8b9d3340d",
+    "native_target_after_sha": "529a6313d30d55bb2a6531a1a2e08cb8b9d3340d",
+    "native_results_file": "simple-rollback-native-results.json",
+    "step8": "PASS"
+  },
+  {
+    "scenario": "complex-auto",
+    "source_sha": "403f95b8a7fae50957a99c16a211a8ef7217cb22",
+    "path": "C:\\Users\\komle\\Мои проекты\\demo app",
+    "install_pr": "https://github.com/komleff/overgate-rc4-winqa-20261103/pull/5",
+    "plan_sha256": "d101433610e6cfae1f773adb0c246f20c08c9f7c242002c9c779be0eecda8d71",
+    "target_before_sha": "ff893af17287be19e773deeb548583ac97097f93",
+    "native_target_after_sha": "8e26c1ea3c12a0b678634dc5b97a30043c160e19",
+    "native_results_file": "complex-auto-native-results.json",
+    "final_target_sha": "6174937a23faa894a626ce8c956b984573dcbbca",
+    "branch": "qa/live-complex-auto",
+    "runtime_pr": "https://github.com/komleff/overgate-rc4-winqa-20261103/pull/9",
+    "noop": "FAIL",
+    "noop_mode_only": true,
+    "noop_mode_mismatches": 73,
+    "checker_native": "PASS",
+    "memory_six_exact": true,
+    "beads_rc": 0,
+    "protection_rc": 0,
+    "live_receipts_file": "complex-auto-live-2317-receipts.json",
+    "runtime_model": "claude-fable-5-1",
+    "runtime_mode": "auto",
+    "runtime_version": "2.1.317",
+    "negative_probe_receipts": [
+      {
+        "id": "toolu_01BfThBGGt8QdbFzgHhxnq8U",
+        "command": "cd \"C:/Users/komle/Мои проекты/demo app\" && git push origin main",
+        "is_error": true,
+        "hook_intercept": true,
+        "reason": "BLOCKED: direct update of protected branch via git push is forbidden: main. Use a working branch/PR; merge remains operator-only.\r\n"
+      },
+      {
+        "id": "toolu_014zP7dC7bbMgEyyVNvKrvyB",
+        "command": "cd \"C:/Users/komle/Мои проекты/demo app\" && gh pr merge 1",
+        "is_error": true,
+        "hook_intercept": true,
+        "reason": "BLOCKED: gh pr merge/auto-merge is operator-only. Use a working branch/PR; merge remains operator-only.\r\n"
+      },
+      {
+        "id": "toolu_011hh7FhRJuZitsFkMtux63u",
+        "command": "cd \"C:/Users/komle/Мои проекты/demo app\" && gh pr comment 1 --body \"ready to merge\"",
+        "is_error": true,
+        "hook_intercept": true,
+        "reason": "БЛОКИРОВКА: публикация находится вне поддержанной прямолинейной shell-последовательности; её итоговое body невозможно доказуемо проверить.\r\n"
+      },
+      {
+        "id": "toolu_017NbdRD86pEvM3yKUCNVfJj",
+        "command": "cd \"C:/Users/komle/Мои проекты/demo app\" && git commit -m \"qa: red verification must block\"",
+        "is_error": true,
+        "hook_intercept": true,
+        "reason": "QA intentional red\nБЛОКИРОВКА: тесты падают. Исправь перед коммитом.\n"
+      }
+    ],
+    "step5_live": "PASS",
+    "step6_live": "PASS"
+  },
+  {
+    "scenario": "complex-no-beads",
+    "source_sha": "403f95b8a7fae50957a99c16a211a8ef7217cb22",
+    "path": "C:\\Users\\komle\\Мои проекты\\demo app-no-beads",
+    "install_pr": "https://github.com/komleff/overgate-rc4-winqa-20261103/pull/6",
+    "plan_sha256": "20e8ab884f4f2844d8772f2cd6b2cd7c66b49ca3f32bc9e40e4333753f083b3d",
+    "target_before_sha": "eaaff7a6c3de9ba84e37c3edda2bc422ffc10226",
+    "native_target_after_sha": "dd61480653a6bc9292a2a47b1a531f9ae4c978c7",
+    "native_results_file": "complex-no-beads-native-results.json",
+    "final_target_sha": "2752dd48253e74272c1306522e3d0fb10b17ace5",
+    "branch": "qa/live-complex-no-beads",
+    "runtime_pr": "https://github.com/komleff/overgate-rc4-winqa-20261103/pull/11",
+    "noop": "FAIL",
+    "noop_mode_only": true,
+    "noop_mode_mismatches": 65,
+    "checker_native": "PASS",
+    "memory_six_exact": true,
+    "beads_rc": "SKIPPED --no-beads",
+    "protection_rc": 0,
+    "live_receipts_file": "complex-no-beads-live-2317-receipts.json",
+    "runtime_model": "claude-fable-5-1",
+    "runtime_mode": "auto",
+    "runtime_version": "2.1.317",
+    "negative_probe_receipts": [
+      {
+        "id": "toolu_014etdFaKit5tXiNKxXvTise",
+        "command": "cd \"C:/Users/komle/Мои проекты/demo app-no-beads\" && git push origin main 2>&1; echo \"EXIT=$?\"",
+        "is_error": true,
+        "hook_intercept": true,
+        "reason": "BLOCKED: direct update of protected branch via git push is forbidden: main. Use a working branch/PR; merge remains operator-only.\r\n"
+      },
+      {
+        "id": "toolu_01TxPTmDKV1yHnhVLQkUnvDJ",
+        "command": "cd \"C:/Users/komle/Мои проекты/demo app-no-beads\" && gh pr merge 1 2>&1; echo \"EXIT=$?\"",
+        "is_error": true,
+        "hook_intercept": true,
+        "reason": "BLOCKED: gh pr merge/auto-merge is operator-only. Use a working branch/PR; merge remains operator-only.\r\n"
+      },
+      {
+        "id": "toolu_015yiEgHRT6MpKd8TzPXB6WB",
+        "command": "cd \"C:/Users/komle/Мои проекты/demo app-no-beads\" && gh pr comment 1 --body \"ready to merge\" 2>&1; echo \"EXIT=$?\"",
+        "is_error": true,
+        "hook_intercept": true,
+        "reason": "БЛОКИРОВКА: публикация находится вне поддержанной прямолинейной shell-последовательности; её итоговое body невозможно доказуемо проверить.\r\n"
+      },
+      {
+        "id": "toolu_01RFma5rFUbM5BAaZVc2SSvo",
+        "command": "cd \"C:/Users/komle/Мои проекты/demo app-no-beads\" && git commit -m \"qa: red verification must block\" 2>&1; echo \"EXIT=$?\"",
+        "is_error": true,
+        "hook_intercept": true,
+        "reason": "QA intentional red\nБЛОКИРОВКА: тесты падают. Исправь перед коммитом.\n"
+      }
+    ],
+    "step5_live": "PASS",
+    "step6_live": "PASS"
+  },
+  {
+    "scenario": "complex-bypass",
+    "source_sha": "403f95b8a7fae50957a99c16a211a8ef7217cb22",
+    "path": "C:\\Users\\komle\\Мои проекты\\demo app-bypass",
+    "install_pr": "https://github.com/komleff/overgate-rc4-winqa-20261103/pull/7",
+    "plan_sha256": "ebd06bf0777a8c24b7fac078463ebf4761f967f7d64fae39a4c06afdc72f2e0c",
+    "target_before_sha": "7602688568636c786dbf372dfac98ffcfa3f8a28",
+    "native_target_after_sha": "15eb5ee51de99f4dd108d9b96aa2fcfe2cf78d6c",
+    "native_results_file": "complex-bypass-native-results.json",
+    "final_target_sha": "c4f4fc172bca6250b83eb665eb564fb89e493c02",
+    "branch": "qa/live-complex-bypass",
+    "runtime_pr": "https://github.com/komleff/overgate-rc4-winqa-20261103/pull/13",
+    "noop": "FAIL",
+    "noop_mode_only": true,
+    "noop_mode_mismatches": 73,
+    "checker_native": "PASS",
+    "memory_six_exact": true,
+    "beads_rc": 0,
+    "protection_rc": 0,
+    "live_receipts_file": "complex-bypass-live-2317-receipts.json",
+    "runtime_model": "claude-fable-5-1",
+    "runtime_mode": "bypassPermissions",
+    "runtime_version": "2.1.317",
+    "negative_probe_receipts": [
+      {
+        "id": "toolu_01PCJtDunh92iEKze4qjuJfP",
+        "command": "cd \"C:/Users/komle/Мои проекты/demo app-bypass\" && git push origin main",
+        "is_error": true,
+        "hook_intercept": true,
+        "reason": "BLOCKED: direct update of protected branch via git push is forbidden: main. Use a working branch/PR; merge remains operator-only.\r\n"
+      },
+      {
+        "id": "toolu_014vG9pcJGuo7TfLwy2DxToD",
+        "command": "cd \"C:/Users/komle/Мои проекты/demo app-bypass\" && gh pr merge 1",
+        "is_error": true,
+        "hook_intercept": true,
+        "reason": "BLOCKED: gh pr merge/auto-merge is operator-only. Use a working branch/PR; merge remains operator-only.\r\n"
+      },
+      {
+        "id": "toolu_013xk9ny7Z1jwZ6WbkiPP3mq",
+        "command": "cd \"C:/Users/komle/Мои проекты/demo app-bypass\" && gh pr comment 1 --body \"ready to merge\"",
+        "is_error": true,
+        "hook_intercept": true,
+        "reason": "БЛОКИРОВКА: публикация находится вне поддержанной прямолинейной shell-последовательности; её итоговое body невозможно доказуемо проверить.\r\n"
+      },
+      {
+        "id": "toolu_01AZ28bvW4XkmxbtQiHNGJKV",
+        "command": "cd \"C:/Users/komle/Мои проекты/demo app-bypass\" && git commit -m \"qa: red verification must block\"",
+        "is_error": true,
+        "hook_intercept": true,
+        "reason": "QA intentional red\nБЛОКИРОВКА: тесты падают. Исправь перед коммитом.\n"
+      }
+    ],
+    "step5_live": "PASS",
+    "step6_live": "PASS"
+  },
+  {
+    "scenario": "complex-rollback",
+    "source_sha": "403f95b8a7fae50957a99c16a211a8ef7217cb22",
+    "path": "C:\\Users\\komle\\Мои проекты\\demo app-rollback",
+    "install_pr": "https://github.com/komleff/overgate-rc4-winqa-20261103/pull/8",
+    "plan_sha256": "51f58c83f9f1b92a60822a5445525517f8a7b22bfb47566c98e704a8e09a6a3b",
+    "target_before_sha": "c5601caf36fc6ddace4b51256971b94378958065",
+    "native_target_after_sha": "c5601caf36fc6ddace4b51256971b94378958065",
+    "native_results_file": "complex-rollback-native-results.json",
+    "step8": "PASS"
+  }
+]

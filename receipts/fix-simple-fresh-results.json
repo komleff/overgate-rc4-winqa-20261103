@@ -1,0 +1,35 @@
+{
+  "name": "fix-simple-fresh",
+  "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e",
+  "target": "C:\\work\\demo-rollback",
+  "target_pr": "https://github.com/komleff/overgate-rc4-winqa-20261103/pull/4",
+  "target_before_head": "529a6313d30d55bb2a6531a1a2e08cb8b9d3340d",
+  "kind": "fresh",
+  "apply_rc": 0,
+  "applied_operations_exact": true,
+  "noop_rc": 0,
+  "noop_conflicts": [],
+  "noop_operation_count": 73,
+  "noop_mismatches": [],
+  "noop_pass": true,
+  "install_state": {
+    "format": 2,
+    "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e",
+    "mode": "auto",
+    "beads": true
+  },
+  "stale_plan_rejected": true,
+  "stale_apply_rc": 1,
+  "stale_no_target_writes": true,
+  "controlled_managed_path": ".agents/PIPELINE_ADR.md",
+  "changed_byte_plan_rc": 0,
+  "changed_byte_conflicts": [
+    ".agents/PIPELINE_ADR.md: conflict with project override; no force overwrite"
+  ],
+  "changed_bytes_rejected": true,
+  "conflict_no_target_writes": true,
+  "controlled_file_restored": true,
+  "rollback_rc": 0,
+  "rollback_exact_before_bytes_modes": true,
+  "target_after_head": "529a6313d30d55bb2a6531a1a2e08cb8b9d3340d"
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "name": "fix-simple-fresh",
+    "target": "C:\\work\\demo-rollback",
+    "pr": "https://github.com/komleff/overgate-rc4-winqa-20261103/pull/4",
+    "kind": "fresh",
+    "source": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\source-2343df8",
+    "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e",
+    "before_head": "529a6313d30d55bb2a6531a1a2e08cb8b9d3340d",
+    "contract": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\fix-simple-fresh-contract.md",
+    "plan": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\fix-simple-fresh-plan.json",
+    "plan_exit": 0,
+    "operation_count": 78
+  },
+  {
+    "name": "fix-simple-upgrade",
+    "target": "C:\\work\\overgate-e2e-auto",
+    "pr": "https://github.com/komleff/overgate-rc4-e2e-simple-20261104/pull/1",
+    "kind": "upgrade",
+    "source": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\source-2343df8",
+    "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e",
+    "before_head": "1f48658ddb88ae43fe91e40c7a0bdcd102642cfb",
+    "contract": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\fix-simple-upgrade-contract.md",
+    "plan": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\fix-simple-upgrade-plan.json",
+    "plan_exit": 0,
+    "operation_count": 73
+  },
+  {
+    "name": "fix-complex-fresh",
+    "target": "C:\\Users\\komle\\Мои проекты\\demo app-rollback",
+    "pr": "https://github.com/komleff/overgate-rc4-winqa-20261103/pull/8",
+    "kind": "fresh",
+    "source": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\source-2343df8",
+    "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e",
+    "before_head": "c5601caf36fc6ddace4b51256971b94378958065",
+    "contract": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\fix-complex-fresh-contract.md",
+    "plan": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\fix-complex-fresh-plan.json",
+    "plan_exit": 0,
+    "operation_count": 78
+  },
+  {
+    "name": "fix-complex-upgrade",
+    "target": "C:\\Users\\komle\\Мои проекты\\overgate e2e auto",
+    "pr": "https://github.com/komleff/overgate-rc4-e2e-complex-20261104/pull/1",
+    "kind": "upgrade",
+    "source": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\source-2343df8",
+    "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e",
+    "before_head": "f5a7df7b0186f98182043a38d35205f7e009ebb2",
+    "contract": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\fix-complex-upgrade-contract.md",
+    "plan": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\fix-complex-upgrade-plan.json",
+    "plan_exit": 0,
+    "operation_count": 73
+  }
+]

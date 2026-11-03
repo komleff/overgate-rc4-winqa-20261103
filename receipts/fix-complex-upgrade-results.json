@@ -1,0 +1,24 @@
+{
+  "name": "fix-complex-upgrade",
+  "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e",
+  "target": "C:\\Users\\komle\\Мои проекты\\overgate e2e auto",
+  "target_pr": "https://github.com/komleff/overgate-rc4-e2e-complex-20261104/pull/1",
+  "target_before_head": "f5a7df7b0186f98182043a38d35205f7e009ebb2",
+  "kind": "upgrade",
+  "apply_rc": 0,
+  "applied_operations_exact": true,
+  "noop_rc": 0,
+  "noop_conflicts": [],
+  "noop_operation_count": 73,
+  "noop_mismatches": [],
+  "noop_pass": true,
+  "install_state": {
+    "format": 2,
+    "source_sha": "2343df83a3a26ae83bc66d4009dd67a913eeea4e",
+    "mode": "auto",
+    "beads": true
+  },
+  "checker_rc": 0,
+  "db_helpers_replayed": false,
+  "target_after_head": "f5a7df7b0186f98182043a38d35205f7e009ebb2"
+}
