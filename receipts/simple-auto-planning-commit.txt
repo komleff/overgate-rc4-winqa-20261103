@@ -1,0 +1,7 @@
+{"command": ["git", "commit", "-m", "docs: plan isolated simple-auto Windows QA"], "cwd": "C:\\work\\demo", "exit_code": 0}
+STDOUT:
+[qa/simple-auto 27fba3d] docs: plan isolated simple-auto Windows QA
+ 1 file changed, 10 insertions(+)
+ create mode 100644 qa-install-plan.md
+
+STDERR:

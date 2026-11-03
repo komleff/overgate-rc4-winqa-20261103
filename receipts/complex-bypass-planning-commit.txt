@@ -1,0 +1,7 @@
+{"command": ["git", "commit", "-m", "docs: plan isolated complex-bypass Windows QA"], "cwd": "C:\\Users\\komle\\Мои проекты\\demo app-bypass", "exit_code": 0}
+STDOUT:
+[qa/complex-bypass 7602688] docs: plan isolated complex-bypass Windows QA
+ 1 file changed, 10 insertions(+)
+ create mode 100644 qa-install-plan.md
+
+STDERR:

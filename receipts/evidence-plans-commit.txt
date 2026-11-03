@@ -1,0 +1,23 @@
+{"command": ["git", "commit", "-m", "docs: publish exact Windows QA install plans before review approval"], "cwd": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence-repo", "exit_code": 0}
+STDOUT:
+[qa/evidence 11e1cd9] docs: publish exact Windows QA install plans before review approval
+ 17 files changed, 6390 insertions(+)
+ create mode 100644 plans/complex-auto-contract.md
+ create mode 100644 plans/complex-auto-plan.json
+ create mode 100644 plans/complex-bypass-contract.md
+ create mode 100644 plans/complex-bypass-plan.json
+ create mode 100644 plans/complex-no-beads-contract.md
+ create mode 100644 plans/complex-no-beads-plan.json
+ create mode 100644 plans/complex-rollback-contract.md
+ create mode 100644 plans/complex-rollback-plan.json
+ create mode 100644 plans/simple-auto-contract.md
+ create mode 100644 plans/simple-auto-plan.json
+ create mode 100644 plans/simple-bypass-contract.md
+ create mode 100644 plans/simple-bypass-plan.json
+ create mode 100644 plans/simple-no-beads-contract.md
+ create mode 100644 plans/simple-no-beads-plan.json
+ create mode 100644 plans/simple-rollback-contract.md
+ create mode 100644 plans/simple-rollback-plan.json
+ create mode 100644 plans/targets.json
+
+STDERR:

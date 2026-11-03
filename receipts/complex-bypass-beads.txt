@@ -1,0 +1,6 @@
+{"command": ["C:/Program Files/Git/bin/bash.exe", "scripts/bd-bootstrap.sh"], "cwd": "C:\\Users\\komle\\Мои проекты\\demo app-bypass", "exit_code": 0}
+STDOUT:
+Beads fresh prefix: demo-app-bypass
+Beads: ready; origin/beads-backup exists
+
+STDERR:

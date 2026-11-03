@@ -1,0 +1,12 @@
+{"command": ["powershell", "-NoProfile", "-Command", "Get-CimInstance Win32_OperatingSystem | Format-List Caption,Version,BuildNumber"], "cwd": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103", "exit_code": 0}
+STDOUT:
+
+
+Caption     : Майкрософт Windows 11 Pro
+Version     : 10.0.26200
+BuildNumber : 26200
+
+
+
+
+STDERR:

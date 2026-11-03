@@ -1,0 +1,5 @@
+{"command": ["C:/Program Files/Git/bin/bash.exe", ".claude/hooks/pre-bash.sh"], "cwd": "C:\\work\\demo-bypass", "exit_code": 2}
+STDOUT:
+
+STDERR:
+BLOCKED: direct update of protected branch via git push is forbidden: main. Use a working branch/PR; merge remains operator-only.

@@ -1,0 +1,5 @@
+{"command": ["C:/Program Files/Git/bin/bash.exe", "scripts/og-protect-main.sh"], "cwd": "C:\\work\\demo-no-beads", "exit_code": 0}
+STDOUT:
+Protection: verified komleff/overgate-rc4-winqa-20261103/main no-op; evidence for target PR
+
+STDERR:

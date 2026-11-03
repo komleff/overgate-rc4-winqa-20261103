@@ -1,0 +1,11 @@
+{"command": ["git", "push", "-u", "origin", "qa/evidence"], "cwd": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence-repo", "exit_code": 0}
+STDOUT:
+branch 'qa/evidence' set up to track 'origin/qa/evidence'.
+
+STDERR:
+remote: 
+remote: Create a pull request for 'qa/evidence' on GitHub by visiting:        
+remote:      https://github.com/komleff/overgate-rc4-winqa-20261103/pull/new/qa/evidence        
+remote: 
+To https://github.com/komleff/overgate-rc4-winqa-20261103.git
+ * [new branch]      qa/evidence -> qa/evidence

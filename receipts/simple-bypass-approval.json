@@ -1,0 +1,5 @@
+{
+  "verdict": "PLAN_READY",
+  "plan_sha256": "c82eef41e3296af782f7d9f0448770d6f3711a5e91d7f23c542716c04131b25a",
+  "evidence": "https://github.com/komleff/overgate-rc4-winqa-20261103/pull/3#issuecomment-6610421294"
+}

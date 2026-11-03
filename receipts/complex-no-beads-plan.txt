@@ -1,0 +1,5 @@
+{"command": ["C:\\Python314\\python.exe", "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\source\\scripts\\install-overgate.py", "plan", "--source", "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\source", "--source-sha", "403f95b8a7fae50957a99c16a211a8ef7217cb22", "--target", "C:\\Users\\komle\\Мои проекты\\demo app-no-beads", "--contract", "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\complex-no-beads-contract.md", "--target-pr", "https://github.com/komleff/overgate-rc4-winqa-20261103/pull/6", "--output", "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\complex-no-beads-plan.json", "--no-beads"], "cwd": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103", "exit_code": 0}
+STDOUT:
+Plan written; conflicts=0; SHA256=20e8ab884f4f2844d8772f2cd6b2cd7c66b49ca3f32bc9e40e4333753f083b3d
+
+STDERR:

@@ -1,0 +1,5 @@
+{"command": ["C:/Program Files/Git/bin/bash.exe", "scripts/og-init-memory-bank.sh"], "cwd": "C:\\work\\demo", "exit_code": 0}
+STDOUT:
+Memory Bank: created six files
+
+STDERR:

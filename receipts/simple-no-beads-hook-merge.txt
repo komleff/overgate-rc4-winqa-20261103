@@ -1,0 +1,5 @@
+{"command": ["C:/Program Files/Git/bin/bash.exe", ".claude/hooks/pre-bash.sh"], "cwd": "C:\\work\\demo-no-beads", "exit_code": 2}
+STDOUT:
+
+STDERR:
+BLOCKED: gh pr merge/auto-merge is operator-only. Use a working branch/PR; merge remains operator-only.

@@ -1,0 +1,11 @@
+{"command": ["git", "push", "-u", "origin", "qa/simple-no-beads"], "cwd": "C:\\work\\demo-no-beads", "exit_code": 0}
+STDOUT:
+branch 'qa/simple-no-beads' set up to track 'origin/qa/simple-no-beads'.
+
+STDERR:
+remote: 
+remote: Create a pull request for 'qa/simple-no-beads' on GitHub by visiting:        
+remote:      https://github.com/komleff/overgate-rc4-winqa-20261103/pull/new/qa/simple-no-beads        
+remote: 
+To https://github.com/komleff/overgate-rc4-winqa-20261103.git
+ * [new branch]      qa/simple-no-beads -> qa/simple-no-beads

@@ -1,0 +1,17 @@
+{
+  "cwd": "C:\\work\\demo-no-beads",
+  "mode": "auto",
+  "command": [
+    "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\tools\\claude-runtime\\node_modules\\.bin\\claude.cmd",
+    "--permission-mode",
+    "auto",
+    "--effort",
+    "low",
+    "--print",
+    "--verbose",
+    "--output-format",
+    "stream-json",
+    "--include-hook-events"
+  ],
+  "started": "2026-11-04T00:15:55+0700"
+}

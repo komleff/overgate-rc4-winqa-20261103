@@ -1,0 +1,11 @@
+{"command": ["git", "push", "-u", "origin", "qa/complex-no-beads"], "cwd": "C:\\Users\\komle\\Мои проекты\\demo app-no-beads", "exit_code": 0}
+STDOUT:
+branch 'qa/complex-no-beads' set up to track 'origin/qa/complex-no-beads'.
+
+STDERR:
+remote: 
+remote: Create a pull request for 'qa/complex-no-beads' on GitHub by visiting:        
+remote:      https://github.com/komleff/overgate-rc4-winqa-20261103/pull/new/qa/complex-no-beads        
+remote: 
+To https://github.com/komleff/overgate-rc4-winqa-20261103.git
+ * [new branch]      qa/complex-no-beads -> qa/complex-no-beads

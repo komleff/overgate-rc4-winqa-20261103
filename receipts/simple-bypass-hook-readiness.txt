@@ -1,0 +1,6 @@
+{"command": ["C:/Program Files/Git/bin/bash.exe", ".claude/hooks/pre-bash.sh"], "cwd": "C:\\work\\demo-bypass", "exit_code": 2}
+STDOUT:
+
+STDERR:
+БЛОКИРОВКА: фразы 'готов к merge' / 'ready to merge' / 'merge-ready' разрешены только через /finalize-pr (см. .claude/skills/finalize-pr/SKILL.md).
+Используй /finalize-pr <PR_NUMBER>.

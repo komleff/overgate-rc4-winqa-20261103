@@ -1,0 +1,6 @@
+{"command": ["git", "push", "origin", "qa/complex-no-beads"], "cwd": "C:\\Users\\komle\\Мои проекты\\demo app-no-beads", "exit_code": 0}
+STDOUT:
+
+STDERR:
+To https://github.com/komleff/overgate-rc4-winqa-20261103.git
+   eaaff7a..dd61480  qa/complex-no-beads -> qa/complex-no-beads

@@ -1,0 +1,5 @@
+{"command": ["gh", "pr", "view", "12", "-R", "komleff/overgate", "--json", "headRefOid,baseRefOid,state,isDraft,mergeable"], "cwd": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103", "exit_code": 0}
+STDOUT:
+{"baseRefOid":"fa0681a6e3b842959143a22e66b93d2161c0f13c","headRefOid":"403f95b8a7fae50957a99c16a211a8ef7217cb22","isDraft":true,"mergeable":"MERGEABLE","state":"OPEN"}
+
+STDERR:

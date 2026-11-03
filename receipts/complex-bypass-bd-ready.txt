@@ -1,0 +1,5 @@
+{"command": ["bd", "--sandbox", "ready", "--json"], "cwd": "C:\\Users\\komle\\Мои проекты\\demo app-bypass", "exit_code": 0}
+STDOUT:
+[]
+
+STDERR:

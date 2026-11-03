@@ -1,0 +1,7 @@
+{"command": ["git", "commit", "-m", "docs: plan isolated simple-rollback Windows QA"], "cwd": "C:\\work\\demo-rollback", "exit_code": 0}
+STDOUT:
+[qa/simple-rollback 529a631] docs: plan isolated simple-rollback Windows QA
+ 1 file changed, 10 insertions(+)
+ create mode 100644 qa-install-plan.md
+
+STDERR:

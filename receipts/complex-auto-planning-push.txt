@@ -1,0 +1,11 @@
+{"command": ["git", "push", "-u", "origin", "qa/complex-auto"], "cwd": "C:\\Users\\komle\\Мои проекты\\demo app", "exit_code": 0}
+STDOUT:
+branch 'qa/complex-auto' set up to track 'origin/qa/complex-auto'.
+
+STDERR:
+remote: 
+remote: Create a pull request for 'qa/complex-auto' on GitHub by visiting:        
+remote:      https://github.com/komleff/overgate-rc4-winqa-20261103/pull/new/qa/complex-auto        
+remote: 
+To https://github.com/komleff/overgate-rc4-winqa-20261103.git
+ * [new branch]      qa/complex-auto -> qa/complex-auto

@@ -1,0 +1,5 @@
+{"command": ["jq", "--version"], "cwd": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103", "exit_code": 0}
+STDOUT:
+jq-1.8.2
+
+STDERR:

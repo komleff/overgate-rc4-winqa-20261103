@@ -1,0 +1,5 @@
+{"command": ["C:/Users/komle/AppData/Roaming/npm/claude.cmd", "--version"], "cwd": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103", "exit_code": 0}
+STDOUT:
+2.1.139 (Claude Code)
+
+STDERR:

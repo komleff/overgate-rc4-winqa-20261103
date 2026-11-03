@@ -1,0 +1,6 @@
+{"command": ["gh", "--version"], "cwd": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103", "exit_code": 0}
+STDOUT:
+gh version 2.85.0 (2026-01-14)
+https://github.com/cli/cli/releases/tag/v2.85.0
+
+STDERR:

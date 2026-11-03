@@ -1,0 +1,5 @@
+{"command": ["C:\\Python314\\python.exe", "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\source\\.claude\\tools\\publish-pr-comment.py", "1", "-"], "cwd": "C:\\work\\demo", "exit_code": 2}
+STDOUT:
+
+STDERR:
+publish-pr-comment: отказ: readiness-декларации разрешены только через /finalize-pr

@@ -1,0 +1,6 @@
+{"command": ["git", "push", "origin", "qa/complex-auto"], "cwd": "C:\\Users\\komle\\Мои проекты\\demo app", "exit_code": 0}
+STDOUT:
+
+STDERR:
+To https://github.com/komleff/overgate-rc4-winqa-20261103.git
+   ff893af..8e26c1e  qa/complex-auto -> qa/complex-auto

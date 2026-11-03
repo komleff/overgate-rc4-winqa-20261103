@@ -1,0 +1,5 @@
+{"command": ["C:\\Python314\\python.exe", "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\source\\scripts\\install-overgate.py", "apply", "--plan", "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\complex-rollback-plan.json", "--approval", "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\complex-rollback-approval.json"], "cwd": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103", "exit_code": 0}
+STDOUT:
+Applied frozen source 403f95b8a7fae50957a99c16a211a8ef7217cb22; backup: C:\Users\komle\Мои проекты\demo app-rollback\.overgate-backups\828afb631f0740cdb6d33e51b5f03cc9\rollback.json
+
+STDERR:

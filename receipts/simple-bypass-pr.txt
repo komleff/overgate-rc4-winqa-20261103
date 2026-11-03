@@ -1,0 +1,5 @@
+{"command": ["gh", "pr", "create", "--draft", "--base", "main", "--head", "qa/simple-bypass", "--title", "Windows QA simple-bypass exact403f95b", "--body-file", "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\simple-bypass-pr-body.md"], "cwd": "C:\\work\\demo-bypass", "exit_code": 0}
+STDOUT:
+https://github.com/komleff/overgate-rc4-winqa-20261103/pull/3
+
+STDERR:

@@ -1,0 +1,7 @@
+{"command": ["git", "commit", "-m", "docs: plan isolated complex-rollback Windows QA"], "cwd": "C:\\Users\\komle\\Мои проекты\\demo app-rollback", "exit_code": 0}
+STDOUT:
+[qa/complex-rollback c5601ca] docs: plan isolated complex-rollback Windows QA
+ 1 file changed, 10 insertions(+)
+ create mode 100644 qa-install-plan.md
+
+STDERR:

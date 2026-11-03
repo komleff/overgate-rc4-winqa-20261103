@@ -1,0 +1,13 @@
+{
+  "repository": "komleff/overgate-rc4-winqa-20261103",
+  "local_checkout": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\server-probe",
+  "source_branch": "qa/server-rejection-probe",
+  "attempted_refspec": "HEAD:refs/heads/main",
+  "candidate_sha": "e74242c0cc8b2aed37a51739df872c0d1af21e7b",
+  "main_before_sha": "bd7fda1576137a2adf0dbbd4b611c9b1be96c21f",
+  "main_after_sha": "bd7fda1576137a2adf0dbbd4b611c9b1be96c21f",
+  "exit_code": 1,
+  "enforce_admins": true,
+  "rejected_by_server": true,
+  "no_protection_or_hook_override": true
+}

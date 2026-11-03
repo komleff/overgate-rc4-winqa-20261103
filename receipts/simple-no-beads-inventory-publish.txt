@@ -1,0 +1,5 @@
+{"command": ["gh", "pr", "comment", "https://github.com/komleff/overgate-rc4-winqa-20261103/pull/2", "--body-file", "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\simple-no-beads-inventory-comment.md"], "cwd": "C:\\work\\demo-no-beads", "exit_code": 0}
+STDOUT:
+https://github.com/komleff/overgate-rc4-winqa-20261103/pull/2#issuecomment-6610329677
+
+STDERR:

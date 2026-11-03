@@ -1,0 +1,11 @@
+{"command": ["git", "push", "-u", "origin", "qa/server-rejection-probe"], "cwd": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\server-probe", "exit_code": 0}
+STDOUT:
+branch 'qa/server-rejection-probe' set up to track 'origin/qa/server-rejection-probe'.
+
+STDERR:
+remote: 
+remote: Create a pull request for 'qa/server-rejection-probe' on GitHub by visiting:        
+remote:      https://github.com/komleff/overgate-rc4-winqa-20261103/pull/new/qa/server-rejection-probe        
+remote: 
+To https://github.com/komleff/overgate-rc4-winqa-20261103.git
+ * [new branch]      qa/server-rejection-probe -> qa/server-rejection-probe

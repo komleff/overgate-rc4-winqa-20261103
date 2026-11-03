@@ -1,0 +1,5 @@
+{"command": ["gh", "pr", "create", "--draft", "--base", "main", "--head", "qa/complex-auto", "--title", "Windows QA complex-auto exact403f95b", "--body-file", "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\complex-auto-pr-body.md"], "cwd": "C:\\Users\\komle\\Мои проекты\\demo app", "exit_code": 0}
+STDOUT:
+https://github.com/komleff/overgate-rc4-winqa-20261103/pull/5
+
+STDERR:

@@ -1,0 +1,5 @@
+{"command": ["git", "switch", "-c", "qa/simple-bypass"], "cwd": "C:\\work\\demo-bypass", "exit_code": 0}
+STDOUT:
+
+STDERR:
+Switched to a new branch 'qa/simple-bypass'

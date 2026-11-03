@@ -1,0 +1,11 @@
+{"command": ["git", "push", "-u", "origin", "qa/simple-rollback"], "cwd": "C:\\work\\demo-rollback", "exit_code": 0}
+STDOUT:
+branch 'qa/simple-rollback' set up to track 'origin/qa/simple-rollback'.
+
+STDERR:
+remote: 
+remote: Create a pull request for 'qa/simple-rollback' on GitHub by visiting:        
+remote:      https://github.com/komleff/overgate-rc4-winqa-20261103/pull/new/qa/simple-rollback        
+remote: 
+To https://github.com/komleff/overgate-rc4-winqa-20261103.git
+ * [new branch]      qa/simple-rollback -> qa/simple-rollback

@@ -1,0 +1,11 @@
+{"command": ["git", "push", "-u", "origin", "qa/complex-rollback"], "cwd": "C:\\Users\\komle\\Мои проекты\\demo app-rollback", "exit_code": 0}
+STDOUT:
+branch 'qa/complex-rollback' set up to track 'origin/qa/complex-rollback'.
+
+STDERR:
+remote: 
+remote: Create a pull request for 'qa/complex-rollback' on GitHub by visiting:        
+remote:      https://github.com/komleff/overgate-rc4-winqa-20261103/pull/new/qa/complex-rollback        
+remote: 
+To https://github.com/komleff/overgate-rc4-winqa-20261103.git
+ * [new branch]      qa/complex-rollback -> qa/complex-rollback

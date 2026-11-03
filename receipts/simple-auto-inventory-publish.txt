@@ -1,0 +1,5 @@
+{"command": ["gh", "pr", "comment", "https://github.com/komleff/overgate-rc4-winqa-20261103/pull/1", "--body-file", "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\simple-auto-inventory-comment.md"], "cwd": "C:\\work\\demo", "exit_code": 0}
+STDOUT:
+https://github.com/komleff/overgate-rc4-winqa-20261103/pull/1#issuecomment-6610324503
+
+STDERR:

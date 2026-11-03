@@ -1,0 +1,5 @@
+{"command": ["C:/Program Files/Git/bin/bash.exe", ".claude/hooks/pre-bash.sh"], "cwd": "C:\\Users\\komle\\Мои проекты\\demo app-bypass", "exit_code": 0}
+STDOUT:
+demo README check PASS
+
+STDERR:

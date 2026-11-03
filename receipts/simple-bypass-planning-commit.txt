@@ -1,0 +1,7 @@
+{"command": ["git", "commit", "-m", "docs: plan isolated simple-bypass Windows QA"], "cwd": "C:\\work\\demo-bypass", "exit_code": 0}
+STDOUT:
+[qa/simple-bypass 11fa0b5] docs: plan isolated simple-bypass Windows QA
+ 1 file changed, 10 insertions(+)
+ create mode 100644 qa-install-plan.md
+
+STDERR:

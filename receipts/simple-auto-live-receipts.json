@@ -1,0 +1,27 @@
+{
+  "source_sha": "403f95b8a7fae50957a99c16a211a8ef7217cb22",
+  "notice": "Only factual runtime init, tool calls/results and final report retained. Internal reasoning and OAuth flow are excluded.",
+  "events": [
+    {
+      "type": "system",
+      "subtype": "init",
+      "cwd": "C:\\work\\demo",
+      "session_id": "c6892443-5d1f-47d1-ad40-fa0eef7e4450",
+      "model": "claude-fable-5-1[1m]",
+      "permissionMode": "auto",
+      "claude_code_version": "2.1.139"
+    },
+    {
+      "type": "result",
+      "subtype": "success",
+      "is_error": true,
+      "api_error_status": 400,
+      "duration_ms": 1072,
+      "num_turns": 1,
+      "result": "API Error: 400 Claude Code 2.1.139 does not support this model; version 2.1.251 or newer is required. Run 'claude update', or update the Claude desktop app, then try again.",
+      "permission_denials": [],
+      "session_id": "c6892443-5d1f-47d1-ad40-fa0eef7e4450",
+      "modelUsage": {}
+    }
+  ]
+}

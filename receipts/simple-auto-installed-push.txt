@@ -1,0 +1,6 @@
+{"command": ["git", "push", "origin", "qa/simple-auto"], "cwd": "C:\\work\\demo", "exit_code": 0}
+STDOUT:
+
+STDERR:
+To https://github.com/komleff/overgate-rc4-winqa-20261103.git
+   27fba3d..512c903  qa/simple-auto -> qa/simple-auto

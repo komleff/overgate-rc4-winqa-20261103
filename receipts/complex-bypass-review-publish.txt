@@ -1,0 +1,5 @@
+{"command": ["C:\\Python314\\python.exe", "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\source\\.claude\\tools\\publish-pr-comment.py", "7", "-"], "cwd": "C:\\Users\\komle\\Мои проекты\\demo app-bypass", "exit_code": 0}
+STDOUT:
+https://github.com/komleff/overgate-rc4-winqa-20261103/pull/7#issuecomment-6610424355
+
+STDERR:

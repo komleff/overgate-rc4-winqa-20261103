@@ -1,0 +1,7 @@
+{"command": ["git", "commit", "-m", "docs: plan isolated simple-no-beads Windows QA"], "cwd": "C:\\work\\demo-no-beads", "exit_code": 0}
+STDOUT:
+[qa/simple-no-beads 27d4de1] docs: plan isolated simple-no-beads Windows QA
+ 1 file changed, 10 insertions(+)
+ create mode 100644 qa-install-plan.md
+
+STDERR:

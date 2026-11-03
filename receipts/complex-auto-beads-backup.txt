@@ -1,0 +1,5 @@
+{"command": ["git", "ls-remote", "--heads", "origin", "beads-backup"], "cwd": "C:\\Users\\komle\\Мои проекты\\demo app", "exit_code": 0}
+STDOUT:
+03263ca05b70a9fbc7690ef77bd765e7b3f5260b	refs/heads/beads-backup
+
+STDERR:

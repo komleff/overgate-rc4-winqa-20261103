@@ -1,0 +1,27 @@
+{
+  "source_sha": "403f95b8a7fae50957a99c16a211a8ef7217cb22",
+  "notice": "Only factual runtime init, tool calls/results and final report retained. Internal reasoning and OAuth flow are excluded.",
+  "events": [
+    {
+      "type": "system",
+      "subtype": "init",
+      "cwd": "C:\\work\\demo",
+      "session_id": "56dd7548-9ca8-44f1-bc7b-845bc1402573",
+      "model": "claude-fable-5-1[1m]",
+      "permissionMode": "auto",
+      "claude_code_version": "2.1.139"
+    },
+    {
+      "type": "result",
+      "subtype": "success",
+      "is_error": true,
+      "api_error_status": 401,
+      "duration_ms": 3278,
+      "num_turns": 1,
+      "result": "Failed to authenticate. API Error: 401 OAuth access token has been revoked.",
+      "permission_denials": [],
+      "session_id": "56dd7548-9ca8-44f1-bc7b-845bc1402573",
+      "modelUsage": {}
+    }
+  ]
+}

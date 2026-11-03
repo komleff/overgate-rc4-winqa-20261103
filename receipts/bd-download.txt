@@ -1,0 +1,4 @@
+{"command": ["gh", "release", "download", "v1.2.2", "-R", "gastownhall/beads", "-p", "beads_1.2.2_windows_amd64.zip", "-p", "checksums.txt", "-D", "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\tools"], "cwd": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103", "exit_code": 0}
+STDOUT:
+
+STDERR:

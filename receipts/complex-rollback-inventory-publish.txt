@@ -1,0 +1,5 @@
+{"command": ["gh", "pr", "comment", "https://github.com/komleff/overgate-rc4-winqa-20261103/pull/8", "--body-file", "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\evidence\\complex-rollback-inventory-comment.md"], "cwd": "C:\\Users\\komle\\Мои проекты\\demo app-rollback", "exit_code": 0}
+STDOUT:
+https://github.com/komleff/overgate-rc4-winqa-20261103/pull/8#issuecomment-6610364206
+
+STDERR:

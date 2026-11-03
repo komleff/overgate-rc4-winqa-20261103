@@ -1,0 +1,11 @@
+{"command": ["git", "push", "-u", "origin", "qa/simple-bypass"], "cwd": "C:\\work\\demo-bypass", "exit_code": 0}
+STDOUT:
+branch 'qa/simple-bypass' set up to track 'origin/qa/simple-bypass'.
+
+STDERR:
+remote: 
+remote: Create a pull request for 'qa/simple-bypass' on GitHub by visiting:        
+remote:      https://github.com/komleff/overgate-rc4-winqa-20261103/pull/new/qa/simple-bypass        
+remote: 
+To https://github.com/komleff/overgate-rc4-winqa-20261103.git
+ * [new branch]      qa/simple-bypass -> qa/simple-bypass

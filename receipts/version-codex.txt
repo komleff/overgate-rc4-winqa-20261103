@@ -1,0 +1,5 @@
+{"command": ["C:/Users/komle/AppData/Roaming/npm/codex.cmd", "--version"], "cwd": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103", "exit_code": 0}
+STDOUT:
+codex-cli 0.154.0
+
+STDERR:

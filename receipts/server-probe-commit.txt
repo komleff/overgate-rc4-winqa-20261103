@@ -1,0 +1,7 @@
+{"command": ["git", "commit", "-m", "test: distinct commit for server main rejection"], "cwd": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\server-probe", "exit_code": 0}
+STDOUT:
+[qa/server-rejection-probe e74242c] test: distinct commit for server main rejection
+ 1 file changed, 1 insertion(+)
+ create mode 100644 server-rejection-probe.txt
+
+STDERR:

@@ -1,0 +1,5 @@
+{"command": ["C:/Program Files/Git/bin/bash.exe", ".agents/project/verify.sh"], "cwd": "C:\\work\\demo", "exit_code": 0}
+STDOUT:
+demo README check PASS
+
+STDERR:

@@ -1,0 +1,6 @@
+{"command": ["C:/Program Files/Git/bin/bash.exe", ".claude/hooks/pre-bash.sh"], "cwd": "C:\\Users\\komle\\Мои проекты\\demo app-bypass", "exit_code": 2}
+STDOUT:
+
+STDERR:
+QA intentional red verification
+БЛОКИРОВКА: тесты падают. Исправь перед коммитом.

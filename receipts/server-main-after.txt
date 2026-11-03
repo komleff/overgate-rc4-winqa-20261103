@@ -1,0 +1,4 @@
+{"command": ["gh", "api", "repos/komleff/overgate-rc4-winqa-20261103/git/ref/heads/main"], "cwd": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103", "exit_code": 0}
+STDOUT:
+{"ref":"refs/heads/main","node_id":"REF_kwDOVhqZQ69yZWZzL2hlYWRzL21haW4","url":"https://api.github.com/repos/komleff/overgate-rc4-winqa-20261103/git/refs/heads/main","object":{"sha":"bd7fda1576137a2adf0dbbd4b611c9b1be96c21f","type":"commit","url":"https://api.github.com/repos/komleff/overgate-rc4-winqa-20261103/git/commits/bd7fda1576137a2adf0dbbd4b611c9b1be96c21f"}}
+STDERR:

@@ -1,0 +1,7 @@
+{"command": ["git", "commit", "-m", "docs: plan isolated complex-auto Windows QA"], "cwd": "C:\\Users\\komle\\Мои проекты\\demo app", "exit_code": 0}
+STDOUT:
+[qa/complex-auto ff893af] docs: plan isolated complex-auto Windows QA
+ 1 file changed, 10 insertions(+)
+ create mode 100644 qa-install-plan.md
+
+STDERR:

@@ -1,0 +1,16 @@
+{
+  "cwd": "C:/work/demo",
+  "mode": "auto",
+  "command": [
+    "C:/Users/komle/AppData/Roaming/npm/claude.cmd",
+    "--permission-mode",
+    "auto",
+    "--print",
+    "--verbose",
+    "--output-format",
+    "stream-json",
+    "--include-hook-events"
+  ],
+  "started": "2026-11-03T23:59:59+0700",
+  "exit_code": 1
+}

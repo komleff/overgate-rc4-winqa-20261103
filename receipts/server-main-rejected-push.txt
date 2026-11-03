@@ -1,0 +1,10 @@
+{"command": ["git", "push", "origin", "HEAD:refs/heads/main"], "cwd": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\server-probe", "exit_code": 1}
+STDOUT:
+
+STDERR:
+remote: error: GH006: Protected branch update failed for refs/heads/main.        
+remote: 
+remote: - Changes must be made through a pull request.        
+To https://github.com/komleff/overgate-rc4-winqa-20261103.git
+ ! [remote rejected] HEAD -> main (protected branch hook declined)
+error: failed to push some refs to 'https://github.com/komleff/overgate-rc4-winqa-20261103.git'

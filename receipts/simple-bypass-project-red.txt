@@ -1,0 +1,5 @@
+{"command": ["C:/Program Files/Git/bin/bash.exe", ".agents/project/verify.sh"], "cwd": "C:\\work\\demo-bypass", "exit_code": 1}
+STDOUT:
+
+STDERR:
+QA intentional red verification
