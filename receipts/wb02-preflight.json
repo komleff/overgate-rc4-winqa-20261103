@@ -1,0 +1,20 @@
+{
+  "source_sha": "ac58c9689d921cc859661e4cb7eb37a5b67c5abe",
+  "source_clean": true,
+  "target_sha": "6645603156c47e9211e1a262862fcd09edb35633",
+  "target_clean": true,
+  "managed_state_absent": true,
+  "template_sha256": "7d92606526ba81f81aa3acae9bd5a264e7a647084abd161848fb9a232e74b28c",
+  "template_in_prior_bundle": false,
+  "template_old_sha_assertion": "assert s.get(\"source_sha\")==\"2343df83a3a26ae83bc66d4009dd67a913eeea4e\", \"source SHA\"",
+  "source_hook_git_blob": "3e54c2a2002c67185274f1f00cfc33a8e9c7f4ff",
+  "source_hook_sha256": "5d2847e90ccc05cafdb4c0f342888687bf881a98c0ff1759e9312ad17b7c44ec",
+  "versions": {
+    "git": "git version 2.51.2.windows.1",
+    "bash": "GNU bash, version 5.2.37(1)-release (x86_64-pc-msys)",
+    "python": "Python 3.14.0",
+    "bd": "bd version 1.2.2 (6c124203e)",
+    "claude": "2.1.317 (Claude Code)"
+  },
+  "execution_status": "NOT RUN: awaiting PM template assertion clarification; independent inventory review pending"
+}

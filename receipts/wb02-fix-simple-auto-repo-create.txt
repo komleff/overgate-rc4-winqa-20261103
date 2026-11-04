@@ -1,0 +1,8 @@
+{"command": ["gh", "api", "user/repos", "--method", "POST", "--input", "-"], "cwd": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103", "exit_code": 1}
+STDOUT:
+{
+  "message": "Server Error"
+}
+
+STDERR:
+gh: Server Error (HTTP 502)
