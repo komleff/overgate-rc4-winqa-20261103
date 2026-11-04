@@ -1,0 +1,31 @@
+{
+  "source_sha": "ac58c9689d921cc859661e4cb7eb37a5b67c5abe",
+  "raw_local_sha256": "69a64f8bbadfe28f9c858ec11b295e981c735f6dd5474fef4d8d998afaae50d4",
+  "notice": "Exact runtime init and raw tool inputs/outputs only. Local original preserved; internal reasoning excluded. QA preflight command returned2 before apply; product candidate not exercised.",
+  "events": [
+    {
+      "type": "system",
+      "subtype": "init",
+      "cwd": "C:\\work\\og-wb02-auto",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e",
+      "model": "claude-fable-5-1",
+      "permissionMode": "auto",
+      "claude_code_version": "2.1.317"
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01HSrSvy1BPKwdUbcG1vYFSU",
+      "name": "Bash",
+      "input": {
+        "command": "cd C:/work/og-wb02-auto && git -C D:/CodexArtifacts/overgate-rc4-winqa-20261103/source-ac58c96 rev-parse HEAD && git -C D:/CodexArtifacts/overgate-rc4-winqa-20261103/source-ac58c96 status --porcelain && echo \"SOURCE_STATUS_DONE\" && sha256sum D:/CodexArtifacts/overgate-rc4-winqa-20261103/evidence/wb02-fix-simple-auto-plan.json && cat D:/CodexArtifacts/overgate-rc4-winqa-20261103/evidence/wb02-fix-simple-auto-approval.json && echo && git status --porcelain && git rev-parse HEAD && ls -a && ls .agents 2>/dev/null; ls -d .agents/install-state* Memory .beads memory-bank 2>&1",
+        "description": "Verify source HEAD, plan hash, approval, target state"
+      }
+    },
+    {
+      "type": "tool_result",
+      "content": "Exit code 2\nac58c9689d921cc859661e4cb7eb37a5b67c5abe\nSOURCE_STATUS_DONE\n0522eb1a4826fcb9dd5162a9724f9305e1d367ee8c74168a3721a0689c2ee2dd *D:/CodexArtifacts/overgate-rc4-winqa-20261103/evidence/wb02-fix-simple-auto-plan.json\n{\"verdict\":\"PLAN_READY\",\"plan_sha256\":\"0522eb1a4826fcb9dd5162a9724f9305e1d367ee8c74168a3721a0689c2ee2dd\",\"evidence\":\"https://github.com/komleff/overgate-rc4-wb02-auto-20261104/pull/1#issuecomment-6628414360\"}\n6645603156c47e9211e1a262862fcd09edb35633\n.\n..\n.git\nREADME.md\nqa-install-plan.md\nls: cannot access '.agents/install-state*': No such file or directory\nls: cannot access 'Memory': No such file or directory\nls: cannot access '.beads': No such file or directory\nls: cannot access 'memory-bank': No such file or directory",
+      "is_error": true,
+      "tool_use_id": "toolu_01HSrSvy1BPKwdUbcG1vYFSU"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "cwd": "C:/work/og-wb02-auto",
+  "mode": "auto",
+  "command": [
+    "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\tools\\claude-runtime\\node_modules\\.bin\\claude.cmd",
+    "--permission-mode",
+    "auto",
+    "--effort",
+    "low",
+    "--print",
+    "--verbose",
+    "--output-format",
+    "stream-json",
+    "--include-hook-events"
+  ],
+  "started": "2026-11-04T17:29:06+0700",
+  "prompt_file": "D:/CodexArtifacts/overgate-rc4-winqa-20261103/wb02-install-prompt.txt",
+  "prompt_text_utf8_sha256": "577a5430068a1edc2a55ddbf7b22185d042d9d946c220538d42c1e0006f48bc2",
+  "stopped_on_first_tool_error": true,
+  "failed_tool_ids": [
+    "toolu_01HSrSvy1BPKwdUbcG1vYFSU"
+  ],
+  "exit_code": 1
+}
