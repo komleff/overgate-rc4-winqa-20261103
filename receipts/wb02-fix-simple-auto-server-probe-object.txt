@@ -1,0 +1,5 @@
+{"command": ["git", "commit-tree", "e9df0c1eee68ba5f2fcc20decdafdd7f6f3ea7ea", "-p", "1274900b13fb5e4edc82bc55fd0337f648185dab"], "cwd": "C:\\work\\og-wb02-auto", "exit_code": 0}
+STDOUT:
+979fe44fbd10c74270b492c6400cf2067fa44284
+
+STDERR:

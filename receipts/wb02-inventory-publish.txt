@@ -1,0 +1,5 @@
+{"command": ["C:\\Python314\\python.exe", "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\source-ac58c96\\.claude\\tools\\publish-pr-comment.py", "1", "-"], "cwd": "C:\\work\\og-wb02-auto", "exit_code": 0}
+STDOUT:
+https://github.com/komleff/overgate-rc4-wb02-auto-20261104/pull/1#issuecomment-6628369732
+
+STDERR:

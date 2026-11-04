@@ -1,0 +1,10 @@
+{"command": ["C:/Program Files/Git/bin/bash.exe", "--version"], "cwd": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103", "exit_code": 0}
+STDOUT:
+GNU bash, version 5.2.37(1)-release (x86_64-pc-msys)
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+
+This is free software; you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+STDERR:

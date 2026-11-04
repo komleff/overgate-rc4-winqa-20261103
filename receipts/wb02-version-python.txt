@@ -1,0 +1,5 @@
+{"command": ["C:\\Python314\\python.exe", "--version"], "cwd": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103", "exit_code": 0}
+STDOUT:
+Python 3.14.0
+
+STDERR:

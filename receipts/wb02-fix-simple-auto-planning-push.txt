@@ -1,0 +1,11 @@
+{"command": ["git", "push", "-u", "origin", "install/wb02-auto"], "cwd": "C:\\work\\og-wb02-auto", "exit_code": 0}
+STDOUT:
+branch 'install/wb02-auto' set up to track 'origin/install/wb02-auto'.
+
+STDERR:
+remote: 
+remote: Create a pull request for 'install/wb02-auto' on GitHub by visiting:        
+remote:      https://github.com/komleff/overgate-rc4-wb02-auto-20261104/pull/new/install/wb02-auto        
+remote: 
+To https://github.com/komleff/overgate-rc4-wb02-auto-20261104.git
+ * [new branch]      install/wb02-auto -> install/wb02-auto

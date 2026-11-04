@@ -1,0 +1,5 @@
+{"command": ["git", "--version"], "cwd": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103", "exit_code": 0}
+STDOUT:
+git version 2.51.2.windows.1
+
+STDERR:

@@ -1,0 +1,5 @@
+{"command": ["C:/Program Files/Git/bin/bash.exe", "C:\\work\\og-wb02-auto\\.claude\\hooks\\check-tests-before-commit.sh"], "cwd": "C:\\work\\og-wb02-auto", "exit_code": 2}
+STDOUT:
+
+STDERR:
+БЛОКИРОВКА: переносимый Python launcher отсутствует или не исполним, гейт тестов не может проверить команду.

@@ -1,0 +1,14 @@
+{
+  "source_sha": "ac58c9689d921cc859661e4cb7eb37a5b67c5abe",
+  "remote": "komleff/overgate-rc4-wb02-auto-20261104",
+  "main_before": "1274900b13fb5e4edc82bc55fd0337f648185dab",
+  "distinct_probe_sha": "979fe44fbd10c74270b492c6400cf2067fa44284",
+  "push_rc": 1,
+  "push_stdout": "",
+  "push_stderr": "remote: error: GH006: Protected branch update failed for refs/heads/main.        \nremote: \nremote: - Changes must be made through a pull request.        \nTo https://github.com/komleff/overgate-rc4-wb02-auto-20261104.git\n ! [remote rejected] 979fe44fbd10c74270b492c6400cf2067fa44284 -> main (protected branch hook declined)\nerror: failed to push some refs to 'https://github.com/komleff/overgate-rc4-wb02-auto-20261104.git'\n",
+  "main_after": "1274900b13fb5e4edc82bc55fd0337f648185dab",
+  "enforce_admins": true,
+  "local_head": "b55d75f3fbc81ca7936f2ca8489c815f9cdc5e53",
+  "protection_changed_by_probe": false,
+  "result": "PASS"
+}

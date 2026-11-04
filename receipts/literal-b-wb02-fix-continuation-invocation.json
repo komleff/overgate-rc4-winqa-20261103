@@ -1,0 +1,22 @@
+{
+  "cwd": "C:/work/og-wb02-auto",
+  "mode": "auto",
+  "command": [
+    "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\tools\\claude-runtime\\node_modules\\.bin\\claude.cmd",
+    "--permission-mode",
+    "auto",
+    "--effort",
+    "low",
+    "--print",
+    "--verbose",
+    "--output-format",
+    "stream-json",
+    "--include-hook-events",
+    "--resume",
+    "a9b6a628-9f34-4508-b7bd-e5fbf160d23e"
+  ],
+  "started": "2026-11-04T17:33:57+0700",
+  "prompt_file": "D:/CodexArtifacts/overgate-rc4-winqa-20261103/wb02-continue-prompt.txt",
+  "prompt_text_utf8_sha256": "2cbbf9e017c8eeda5af1b90e004382989a7a3efc0bf51b622571723942b7b27a",
+  "exit_code": 0
+}

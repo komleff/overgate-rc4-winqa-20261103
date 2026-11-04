@@ -1,0 +1,29 @@
+{
+  "source_sha": "ac58c9689d921cc859661e4cb7eb37a5b67c5abe",
+  "head_before": "b55d75f3fbc81ca7936f2ca8489c815f9cdc5e53",
+  "head_after_unchanged": true,
+  "readme_original_sha256": "3852439c56a26f28dcc495894795995fb8cc42ffc14a2d7e923940a2e8ed9a7d",
+  "readme_now_empty": true,
+  "checks": [
+    {
+      "command": "cp 'gh pr merge 1' d/",
+      "hook": ".claude/hooks/check-repository-mutation.py",
+      "exit_code": 2,
+      "stdout": "",
+      "stderr": "BLOCKED: opaque executable contains protected repository mutation. Use a working branch/PR; merge remains operator-only.\n",
+      "carrier_executed": false,
+      "result": "PASS"
+    },
+    {
+      "command": "cp \"$(git commit -m wb02-nested-probe)\" d/",
+      "hook": ".claude/hooks/check-tests-before-commit.sh",
+      "exit_code": 2,
+      "stdout": "",
+      "stderr": "БЛОКИРОВКА: переносимый Python launcher отсутствует или не исполним, гейт тестов не может проверить команду.\n",
+      "carrier_executed": false,
+      "classification": "commit",
+      "result": "FAIL"
+    }
+  ],
+  "result": "FAIL"
+}

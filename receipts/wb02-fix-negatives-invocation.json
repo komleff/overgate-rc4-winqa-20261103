@@ -1,0 +1,20 @@
+{
+  "cwd": "C:/work/og-wb02-auto",
+  "mode": "auto",
+  "command": [
+    "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\tools\\claude-runtime\\node_modules\\.bin\\claude.cmd",
+    "--permission-mode",
+    "auto",
+    "--effort",
+    "low",
+    "--print",
+    "--verbose",
+    "--output-format",
+    "stream-json",
+    "--include-hook-events"
+  ],
+  "started": "2026-11-04T17:40:14+0700",
+  "prompt_file": "D:/CodexArtifacts/overgate-rc4-winqa-20261103/wb02-negatives-prompt.txt",
+  "prompt_text_utf8_sha256": "1cda26d3443859b9bbbf9a9e2806ea6ebf6e95c539d875594af2bbe4cb62f0e0",
+  "exit_code": 0
+}

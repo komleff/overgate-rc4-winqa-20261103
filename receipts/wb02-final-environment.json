@@ -1,0 +1,35 @@
+{
+  "windows": {
+    "Caption": "\u041c\u0430\u0439\u043a\u0440\u043e\u0441\u043e\u0444\u0442 Windows 11 Pro",
+    "Version": "10.0.26200",
+    "BuildNumber": "26200"
+  },
+  "versions": {
+    "git": "git version 2.51.2.windows.1",
+    "bash": "GNU bash, version 5.2.37(1)-release (x86_64-pc-msys)",
+    "python": "Python 3.14.0",
+    "bd": "bd version 1.2.2 (6c124203e)",
+    "claude": "2.1.317 (Claude Code)",
+    "gh": "gh version 2.85.0 (2026-01-14)",
+    "node": "v24.11.0",
+    "jq": "jq-1.8.2"
+  },
+  "runtime": {
+    "type": "system",
+    "subtype": "init",
+    "cwd": "C:\\work\\og-wb02-auto",
+    "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e",
+    "model": "claude-fable-5-1",
+    "permissionMode": "auto",
+    "claude_code_version": "2.1.317"
+  },
+  "negative_runtime": {
+    "type": "system",
+    "subtype": "init",
+    "cwd": "C:\\work\\og-wb02-auto",
+    "session_id": "e7253dfb-a207-4ea7-be9b-bea75c8ffc94",
+    "model": "claude-fable-5-1",
+    "permissionMode": "auto",
+    "claude_code_version": "2.1.317"
+  }
+}

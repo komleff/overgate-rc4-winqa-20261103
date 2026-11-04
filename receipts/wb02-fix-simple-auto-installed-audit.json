@@ -1,0 +1,35 @@
+{
+  "source_sha": "ac58c9689d921cc859661e4cb7eb37a5b67c5abe",
+  "stage": "installed",
+  "target": "C:\\work\\og-wb02-auto",
+  "repo": "komleff/overgate-rc4-wb02-auto-20261104",
+  "noop_operations": 73,
+  "changed_hook": {
+    "git_blob": "3e54c2a2002c67185274f1f00cfc33a8e9c7f4ff",
+    "source_sha256": "5d2847e90ccc05cafdb4c0f342888687bf881a98c0ff1759e9312ad17b7c44ec",
+    "installed_sha256": "5d2847e90ccc05cafdb4c0f342888687bf881a98c0ff1759e9312ad17b7c44ec",
+    "observed_mode": "0o666"
+  },
+  "refs": {
+    "refs/heads/beads-backup": "9f318bf06a4c8fc5b575286d38cc18299e94c047",
+    "refs/heads/install/wb02-auto": "6645603156c47e9211e1a262862fcd09edb35633",
+    "refs/heads/main": "1274900b13fb5e4edc82bc55fd0337f648185dab"
+  },
+  "head": "d9300df8698955ae2645b280e06f83b616d84003",
+  "branch": "install/wb02-auto",
+  "checks": {
+    "exact_source_auto_beads": true,
+    "default_mode_auto": true,
+    "memory_six_exact": true,
+    "project_verify": true,
+    "checker": true,
+    "noop": true,
+    "installed_fix_hook": true,
+    "bd_ready": true,
+    "embedded_db": true,
+    "beads_backup": true,
+    "protection": true,
+    "working_branch": true
+  },
+  "result": "PASS"
+}

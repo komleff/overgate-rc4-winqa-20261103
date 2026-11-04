@@ -1,0 +1,851 @@
+{
+  "source_sha": "ac58c9689d921cc859661e4cb7eb37a5b67c5abe",
+  "raw_local_sha256": "b7284f6ec2c36793bac40256f738da2d4ee54a2c04dc22901b1a2fc08b01c692",
+  "notice": "Original local JSONL preserved. Only runtime init, raw tool inputs/outputs, hook events and final factual response retained; no internal reasoning/OAuth flow.",
+  "events": [
+    {
+      "type": "system",
+      "subtype": "hook_started",
+      "hook_id": "509042b2-05f2-4bb5-a875-b00748621a07",
+      "hook_name": "SessionStart:resume",
+      "hook_event": "SessionStart",
+      "uuid": "32830f6f-8784-453f-844e-41eec258d1a3",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e"
+    },
+    {
+      "type": "system",
+      "subtype": "hook_response",
+      "hook_id": "509042b2-05f2-4bb5-a875-b00748621a07",
+      "hook_name": "SessionStart:resume",
+      "hook_event": "SessionStart",
+      "output": "",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "outcome": "success",
+      "uuid": "b30db486-1e3b-49c0-b698-a2d3d0237bf7",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e"
+    },
+    {
+      "type": "system",
+      "subtype": "init",
+      "cwd": "C:\\work\\og-wb02-auto",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e",
+      "model": "claude-fable-5-1",
+      "permissionMode": "auto",
+      "claude_code_version": "2.1.317"
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01FVnyyCR8dFBvUPPuKegCgx",
+      "name": "Bash",
+      "input": {
+        "command": "cd C:/work/og-wb02-auto && py -3 -c \"from pathlib import Path; assert all(not Path(p).exists() for p in ['.overgate/install-state.json','.beads','.memory-bank','.claude/settings.json']); print('PASS: fresh target before first apply')\"",
+        "description": "Native fresh-target existence check"
+      }
+    },
+    {
+      "tool_use_id": "toolu_01FVnyyCR8dFBvUPPuKegCgx",
+      "type": "tool_result",
+      "content": "PASS: fresh target before first apply",
+      "is_error": false,
+      "permission_metadata": [
+        {
+          "id": "toolu_01FVnyyCR8dFBvUPPuKegCgx",
+          "permission_decision": {
+            "decision": "accept",
+            "source": "config",
+            "reason_type": "classifier"
+          }
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01XT9pA8s6FAXjtRkQV6EmgQ",
+      "name": "Bash",
+      "input": {
+        "command": "cd C:/work/og-wb02-auto && py -3 D:/CodexArtifacts/overgate-rc4-winqa-20261103/source-ac58c96/scripts/install-overgate.py apply --plan D:/CodexArtifacts/overgate-rc4-winqa-20261103/evidence/wb02-fix-simple-auto-plan.json --approval D:/CodexArtifacts/overgate-rc4-winqa-20261103/evidence/wb02-fix-simple-auto-approval.json",
+        "description": "Run installer apply with exact plan and approval",
+        "timeout": 600000
+      }
+    },
+    {
+      "tool_use_id": "toolu_01XT9pA8s6FAXjtRkQV6EmgQ",
+      "type": "tool_result",
+      "content": "Applied frozen source ac58c9689d921cc859661e4cb7eb37a5b67c5abe; backup: C:\\work\\og-wb02-auto\\.overgate-backups\\62fc7852899a45b094746ff663898a2d\\rollback.json",
+      "is_error": false,
+      "permission_metadata": [
+        {
+          "id": "toolu_01XT9pA8s6FAXjtRkQV6EmgQ",
+          "permission_decision": {
+            "decision": "accept",
+            "source": "config",
+            "reason_type": "classifier"
+          }
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01TVyySkLbtC1Rh11nVz4bSX",
+      "name": "Bash",
+      "input": {
+        "command": "cd C:/work/og-wb02-auto && bash scripts/og-init-memory-bank.sh",
+        "description": "Run memory bank init helper",
+        "timeout": 300000
+      }
+    },
+    {
+      "type": "system",
+      "subtype": "hook_started",
+      "hook_id": "16f2110d-89ed-46de-a941-54fb5779c447",
+      "hook_name": "PreToolUse:Bash",
+      "hook_event": "PreToolUse",
+      "uuid": "4ba8b7d5-2463-4c23-986d-4d3014843ac6",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e"
+    },
+    {
+      "type": "system",
+      "subtype": "hook_response",
+      "hook_id": "16f2110d-89ed-46de-a941-54fb5779c447",
+      "hook_name": "PreToolUse:Bash",
+      "hook_event": "PreToolUse",
+      "output": "",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "outcome": "success",
+      "uuid": "6dce023a-2a9e-42fd-a74a-1d8c4c6d016d",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e"
+    },
+    {
+      "tool_use_id": "toolu_01TVyySkLbtC1Rh11nVz4bSX",
+      "type": "tool_result",
+      "content": "Memory Bank: created six files",
+      "is_error": false,
+      "permission_metadata": [
+        {
+          "id": "toolu_01TVyySkLbtC1Rh11nVz4bSX",
+          "permission_decision": {
+            "decision": "accept",
+            "source": "config",
+            "reason_type": "classifier"
+          }
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01L984ek4dW5atdwDyRLTkH1",
+      "name": "Bash",
+      "input": {
+        "command": "cd C:/work/og-wb02-auto && bash scripts/bd-bootstrap.sh",
+        "description": "Run Beads bootstrap helper",
+        "timeout": 300000
+      }
+    },
+    {
+      "type": "system",
+      "subtype": "hook_started",
+      "hook_id": "c0a37d58-42ab-447e-8b39-8404ea5c0413",
+      "hook_name": "PreToolUse:Bash",
+      "hook_event": "PreToolUse",
+      "uuid": "53cdf0f1-3bb7-4c92-be3c-c83b07d3d813",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e"
+    },
+    {
+      "type": "system",
+      "subtype": "hook_response",
+      "hook_id": "c0a37d58-42ab-447e-8b39-8404ea5c0413",
+      "hook_name": "PreToolUse:Bash",
+      "hook_event": "PreToolUse",
+      "output": "",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "outcome": "success",
+      "uuid": "4bacd2f0-0c64-4de5-8d53-0f1f40f0be70",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e"
+    },
+    {
+      "tool_use_id": "toolu_01L984ek4dW5atdwDyRLTkH1",
+      "type": "tool_result",
+      "content": "Beads fresh prefix: og-wb02-auto\r\nBeads: ready; origin/beads-backup exists",
+      "is_error": false,
+      "permission_metadata": [
+        {
+          "id": "toolu_01L984ek4dW5atdwDyRLTkH1",
+          "permission_decision": {
+            "decision": "accept",
+            "source": "config",
+            "reason_type": "classifier"
+          }
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01Gw6UaGmnETcvrEERC78ZCC",
+      "name": "Bash",
+      "input": {
+        "command": "cd C:/work/og-wb02-auto && bash scripts/og-protect-main.sh",
+        "description": "Run main-branch protection helper",
+        "timeout": 300000
+      }
+    },
+    {
+      "type": "system",
+      "subtype": "hook_started",
+      "hook_id": "3d3f2373-dd92-4afd-b1e9-a5fed3c3131f",
+      "hook_name": "PreToolUse:Bash",
+      "hook_event": "PreToolUse",
+      "uuid": "cdccebdb-92aa-4e6d-8a23-a688b2cee914",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e"
+    },
+    {
+      "type": "system",
+      "subtype": "hook_response",
+      "hook_id": "3d3f2373-dd92-4afd-b1e9-a5fed3c3131f",
+      "hook_name": "PreToolUse:Bash",
+      "hook_event": "PreToolUse",
+      "output": "",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "outcome": "success",
+      "uuid": "71844804-ea74-45fd-b179-08840c5c93b0",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e"
+    },
+    {
+      "tool_use_id": "toolu_01Gw6UaGmnETcvrEERC78ZCC",
+      "type": "tool_result",
+      "content": "Protection: verified komleff/overgate-rc4-wb02-auto-20261104/main updated; evidence for target PR",
+      "is_error": false,
+      "permission_metadata": [
+        {
+          "id": "toolu_01Gw6UaGmnETcvrEERC78ZCC",
+          "permission_decision": {
+            "decision": "accept",
+            "source": "config",
+            "reason_type": "classifier"
+          }
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01QHsDhqHgiWFqFpqWnyzP5Y",
+      "name": "Bash",
+      "input": {
+        "command": "cd C:/work/og-wb02-auto && py -3 D:/CodexArtifacts/overgate-rc4-winqa-20261103/source-ac58c96/scripts/check-reference.py --root C:/work/og-wb02-auto",
+        "description": "Run source reference checker on target",
+        "timeout": 300000
+      }
+    },
+    {
+      "type": "system",
+      "subtype": "hook_started",
+      "hook_id": "7c6941ba-ad7c-4b8e-947c-60c8462b5c10",
+      "hook_name": "PreToolUse:Bash",
+      "hook_event": "PreToolUse",
+      "uuid": "19e80d8b-4426-4065-ac0c-4d5e35ef614a",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e"
+    },
+    {
+      "type": "system",
+      "subtype": "hook_response",
+      "hook_id": "7c6941ba-ad7c-4b8e-947c-60c8462b5c10",
+      "hook_name": "PreToolUse:Bash",
+      "hook_event": "PreToolUse",
+      "output": "",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "outcome": "success",
+      "uuid": "54f0ecb9-cfac-4d3e-bf28-af7f64c2486b",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e"
+    },
+    {
+      "tool_use_id": "toolu_01QHsDhqHgiWFqFpqWnyzP5Y",
+      "type": "tool_result",
+      "content": "reference structure: PASS",
+      "is_error": false,
+      "permission_metadata": [
+        {
+          "id": "toolu_01QHsDhqHgiWFqFpqWnyzP5Y",
+          "permission_decision": {
+            "decision": "accept",
+            "source": "config",
+            "reason_type": "classifier"
+          }
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_0196zg25bNcuL2u6tdgQB221",
+      "name": "Bash",
+      "input": {
+        "command": "cd C:/work/og-wb02-auto && cp D:/CodexArtifacts/overgate-rc4-winqa-20261103/evidence/literal-b-simple-auto-project-verify-template.sh .agents/project/verify.sh && sha256sum .agents/project/verify.sh D:/CodexArtifacts/overgate-rc4-winqa-20261103/evidence/literal-b-simple-auto-project-verify-template.sh",
+        "description": "Copy verify template into target and hash both"
+      }
+    },
+    {
+      "type": "system",
+      "subtype": "hook_started",
+      "hook_id": "e8e61f18-a1b7-4f08-a905-191b25f32aba",
+      "hook_name": "PreToolUse:Bash",
+      "hook_event": "PreToolUse",
+      "uuid": "9386cfe0-0fee-438e-87d5-7f79905c304b",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e"
+    },
+    {
+      "type": "system",
+      "subtype": "hook_response",
+      "hook_id": "e8e61f18-a1b7-4f08-a905-191b25f32aba",
+      "hook_name": "PreToolUse:Bash",
+      "hook_event": "PreToolUse",
+      "output": "",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "outcome": "success",
+      "uuid": "dfb9a952-1602-441a-94bd-4358edef51d8",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e"
+    },
+    {
+      "tool_use_id": "toolu_0196zg25bNcuL2u6tdgQB221",
+      "type": "tool_result",
+      "content": "7d92606526ba81f81aa3acae9bd5a264e7a647084abd161848fb9a232e74b28c *.agents/project/verify.sh\n7d92606526ba81f81aa3acae9bd5a264e7a647084abd161848fb9a232e74b28c *D:/CodexArtifacts/overgate-rc4-winqa-20261103/evidence/literal-b-simple-auto-project-verify-template.sh",
+      "is_error": false,
+      "permission_metadata": [
+        {
+          "id": "toolu_0196zg25bNcuL2u6tdgQB221",
+          "permission_decision": {
+            "decision": "accept",
+            "source": "config",
+            "reason_type": "classifier"
+          }
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01PenpY4eZpUD4v7HZj4rfJs",
+      "name": "Bash",
+      "input": {
+        "command": "cd C:/work/og-wb02-auto && py -3 D:/CodexArtifacts/overgate-rc4-winqa-20261103/audit-wb02.py copy",
+        "description": "Record exact copy receipt"
+      }
+    },
+    {
+      "type": "system",
+      "subtype": "hook_started",
+      "hook_id": "9e08159a-f128-4c07-8ce5-e1491836ea5d",
+      "hook_name": "PreToolUse:Bash",
+      "hook_event": "PreToolUse",
+      "uuid": "88bc1aad-46f0-4b1d-b5aa-ae093c462c66",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e"
+    },
+    {
+      "type": "system",
+      "subtype": "hook_response",
+      "hook_id": "9e08159a-f128-4c07-8ce5-e1491836ea5d",
+      "hook_name": "PreToolUse:Bash",
+      "hook_event": "PreToolUse",
+      "output": "",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "outcome": "success",
+      "uuid": "de4dc893-5c33-4406-b9bd-20c9c2aef0a3",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e"
+    },
+    {
+      "tool_use_id": "toolu_01PenpY4eZpUD4v7HZj4rfJs",
+      "type": "tool_result",
+      "content": "{\"source_sha\": \"ac58c9689d921cc859661e4cb7eb37a5b67c5abe\", \"stage\": \"copy\", \"template_sha256\": \"7d92606526ba81f81aa3acae9bd5a264e7a647084abd161848fb9a232e74b28c\", \"target_sha256\": \"7d92606526ba81f81aa3acae9bd5a264e7a647084abd161848fb9a232e74b28c\", \"exact_expected_bytes\": true, \"target_file\": \"C:\\\\work\\\\og-wb02-auto\\\\.agents\\\\project\\\\verify.sh\", \"pm_permission\": \"https://github.com/komleff/overgate/pull/12#issuecomment-6628354758\"}",
+      "is_error": false,
+      "permission_metadata": [
+        {
+          "id": "toolu_01PenpY4eZpUD4v7HZj4rfJs",
+          "permission_decision": {
+            "decision": "accept",
+            "source": "config",
+            "reason_type": "classifier"
+          }
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01MAGEpjFcktjkB68b86sKcs",
+      "name": "Read",
+      "input": {
+        "file_path": "C:\\work\\og-wb02-auto\\.agents\\project\\verify.sh"
+      }
+    },
+    {
+      "tool_use_id": "toolu_01MAGEpjFcktjkB68b86sKcs",
+      "type": "tool_result",
+      "content": "1\t#!/usr/bin/env bash\n2\tset -euo pipefail\n3\tpy -3 -I - <<'PY'\n4\timport json\n5\tfrom pathlib import Path\n6\tp=Path(\"README.md\")\n7\tassert p.is_file() and p.read_bytes().strip(), \"README absent or empty\"\n8\ts=json.loads(Path(\".overgate/install-state.json\").read_text(encoding=\"utf-8\"))\n9\tassert s.get(\"source_sha\")==\"2343df83a3a26ae83bc66d4009dd67a913eeea4e\", \"source SHA\"\n10\tassert s.get(\"mode\")==\"auto\", \"state mode\"\n11\tassert s.get(\"beads\") is True, \"strict Beads bool\"\n12\tprint(\"PASS: README and exact B/mode/Beads\")\n13\tPY\n14\t",
+      "permission_metadata": [
+        {
+          "id": "toolu_01MAGEpjFcktjkB68b86sKcs",
+          "permission_decision": {
+            "decision": "accept",
+            "source": "user_permanent",
+            "reason_type": "rule"
+          }
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01FL65mRHz7KKtLnWcZzeKPB",
+      "name": "Edit",
+      "input": {
+        "replace_all": false,
+        "file_path": "C:\\work\\og-wb02-auto\\.agents\\project\\verify.sh",
+        "old_string": "assert s.get(\"source_sha\")==\"2343df83a3a26ae83bc66d4009dd67a913eeea4e\", \"source SHA\"",
+        "new_string": "assert s.get(\"source_sha\")==\"ac58c9689d921cc859661e4cb7eb37a5b67c5abe\", \"source SHA\""
+      }
+    },
+    {
+      "type": "system",
+      "subtype": "hook_started",
+      "hook_id": "7e4f8831-360a-4ea6-b4df-c5e7c282e81f",
+      "hook_name": "PostToolUse:Edit",
+      "hook_event": "PostToolUse",
+      "uuid": "36d50448-45e0-4c37-95f1-b090f526a802",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e"
+    },
+    {
+      "type": "system",
+      "subtype": "hook_response",
+      "hook_id": "7e4f8831-360a-4ea6-b4df-c5e7c282e81f",
+      "hook_name": "PostToolUse:Edit",
+      "hook_event": "PostToolUse",
+      "output": "Файл изменён. Убедись, что тесты проходят перед коммитом.\n",
+      "stdout": "Файл изменён. Убедись, что тесты проходят перед коммитом.\n",
+      "stderr": "",
+      "exit_code": 0,
+      "outcome": "success",
+      "uuid": "43b1d937-6dda-4873-ab66-38d2ada6ed15",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e"
+    },
+    {
+      "tool_use_id": "toolu_01FL65mRHz7KKtLnWcZzeKPB",
+      "type": "tool_result",
+      "content": "The file C:\\work\\og-wb02-auto\\.agents\\project\\verify.sh has been updated successfully. (file state is current in your context — no need to Read it back)",
+      "permission_metadata": [
+        {
+          "id": "toolu_01FL65mRHz7KKtLnWcZzeKPB",
+          "permission_decision": {
+            "decision": "accept",
+            "source": "user_permanent",
+            "reason_type": "rule"
+          }
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01AFebZ1sFpY9hsotvd6h3Vf",
+      "name": "Bash",
+      "input": {
+        "command": "cd C:/work/og-wb02-auto && py -3 D:/CodexArtifacts/overgate-rc4-winqa-20261103/audit-wb02.py bound",
+        "description": "Record bound fixture diff and hashes"
+      }
+    },
+    {
+      "type": "system",
+      "subtype": "hook_started",
+      "hook_id": "bfc7c403-cb96-4355-b274-42a179b23fe9",
+      "hook_name": "PreToolUse:Bash",
+      "hook_event": "PreToolUse",
+      "uuid": "4b8bddec-d22a-43f2-a49f-63295b9b4584",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e"
+    },
+    {
+      "type": "system",
+      "subtype": "hook_response",
+      "hook_id": "bfc7c403-cb96-4355-b274-42a179b23fe9",
+      "hook_name": "PreToolUse:Bash",
+      "hook_event": "PreToolUse",
+      "output": "",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "outcome": "success",
+      "uuid": "3fa24f71-d52c-4d2a-ab8b-d31c82ddda14",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e"
+    },
+    {
+      "tool_use_id": "toolu_01AFebZ1sFpY9hsotvd6h3Vf",
+      "type": "tool_result",
+      "content": "{\"source_sha\": \"ac58c9689d921cc859661e4cb7eb37a5b67c5abe\", \"stage\": \"bound\", \"template_sha256\": \"7d92606526ba81f81aa3acae9bd5a264e7a647084abd161848fb9a232e74b28c\", \"target_sha256\": \"6d82963b262f512e7adda903728387b643b0499a51a4e97470d3e3dcaedfea62\", \"exact_expected_bytes\": true, \"target_file\": \"C:\\\\work\\\\og-wb02-auto\\\\.agents\\\\project\\\\verify.sh\", \"pm_permission\": \"https://github.com/komleff/overgate/pull/12#issuecomment-6628354758\", \"diff\": \"--- historical-template\\n+++ new-target-verifier\\n@@ -6,7 +6,7 @@\\n p=Path(\\\"README.md\\\")\\n assert p.is_file() and p.read_bytes().strip(), \\\"README absent or empty\\\"\\n s=json.loads(Path(\\\".overgate/install-state.json\\\").read_text(encoding=\\\"utf-8\\\"))\\n-assert s.get(\\\"source_sha\\\")==\\\"2343df83a3a26ae83bc66d4009dd67a913eeea4e\\\", \\\"source SHA\\\"\\n+assert s.get(\\\"source_sha\\\")==\\\"ac58c9689d921cc859661e4cb7eb37a5b67c5abe\\\", \\\"source SHA\\\"\\n assert s.get(\\\"mode\\\")==\\\"auto\\\", \\\"state mode\\\"\\n assert s.get(\\\"beads\\\") is True, \\\"strict Beads bool\\\"\\n print(\\\"PASS: README and exact B/mode/Beads\\\")\\n\", \"reason\": \"PM-approved project-owned fixture source SHA binding after exact actual cp; original external template unchanged.\"}",
+      "is_error": false,
+      "permission_metadata": [
+        {
+          "id": "toolu_01AFebZ1sFpY9hsotvd6h3Vf",
+          "permission_decision": {
+            "decision": "accept",
+            "source": "config",
+            "reason_type": "classifier"
+          }
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01SKZVsLifeKaxJoEiYrJnto",
+      "name": "Bash",
+      "input": {
+        "command": "cd C:/work/og-wb02-auto && bash .agents/project/verify.sh",
+        "description": "Run project verifier",
+        "timeout": 300000
+      }
+    },
+    {
+      "type": "system",
+      "subtype": "hook_started",
+      "hook_id": "a90eff0f-5a6b-4540-b1b3-85234383691a",
+      "hook_name": "PreToolUse:Bash",
+      "hook_event": "PreToolUse",
+      "uuid": "35745bd2-e48d-4059-ab30-438939f97071",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e"
+    },
+    {
+      "type": "system",
+      "subtype": "hook_response",
+      "hook_id": "a90eff0f-5a6b-4540-b1b3-85234383691a",
+      "hook_name": "PreToolUse:Bash",
+      "hook_event": "PreToolUse",
+      "output": "",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "outcome": "success",
+      "uuid": "82c32abb-e3c9-412b-913b-a048ecc3c833",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e"
+    },
+    {
+      "tool_use_id": "toolu_01SKZVsLifeKaxJoEiYrJnto",
+      "type": "tool_result",
+      "content": "PASS: README and exact B/mode/Beads",
+      "is_error": false,
+      "permission_metadata": [
+        {
+          "id": "toolu_01SKZVsLifeKaxJoEiYrJnto",
+          "permission_decision": {
+            "decision": "accept",
+            "source": "config",
+            "reason_type": "classifier"
+          }
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01PFNFVNG6QbPhiFWr1PzJ3f",
+      "name": "Bash",
+      "input": {
+        "command": "cd C:/work/og-wb02-auto && py -3 D:/CodexArtifacts/overgate-rc4-winqa-20261103/audit-wb02.py installed",
+        "description": "Run installed-state audit",
+        "timeout": 600000
+      }
+    },
+    {
+      "type": "system",
+      "subtype": "hook_started",
+      "hook_id": "04080fdd-158f-458f-b482-021ceef755db",
+      "hook_name": "PreToolUse:Bash",
+      "hook_event": "PreToolUse",
+      "uuid": "3b1c84d3-205d-4801-8172-433f39da8e0e",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e"
+    },
+    {
+      "type": "system",
+      "subtype": "hook_response",
+      "hook_id": "04080fdd-158f-458f-b482-021ceef755db",
+      "hook_name": "PreToolUse:Bash",
+      "hook_event": "PreToolUse",
+      "output": "",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "outcome": "success",
+      "uuid": "5d1bbd93-6a62-4699-983d-20c75269b9d9",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e"
+    },
+    {
+      "tool_use_id": "toolu_01PFNFVNG6QbPhiFWr1PzJ3f",
+      "type": "tool_result",
+      "content": "{\"source_sha\": \"ac58c9689d921cc859661e4cb7eb37a5b67c5abe\", \"stage\": \"installed\", \"target\": \"C:\\\\work\\\\og-wb02-auto\", \"repo\": \"komleff/overgate-rc4-wb02-auto-20261104\", \"noop_operations\": 73, \"changed_hook\": {\"git_blob\": \"3e54c2a2002c67185274f1f00cfc33a8e9c7f4ff\", \"source_sha256\": \"5d2847e90ccc05cafdb4c0f342888687bf881a98c0ff1759e9312ad17b7c44ec\", \"installed_sha256\": \"5d2847e90ccc05cafdb4c0f342888687bf881a98c0ff1759e9312ad17b7c44ec\", \"observed_mode\": \"0o666\"}, \"refs\": {\"refs/heads/beads-backup\": \"9f318bf06a4c8fc5b575286d38cc18299e94c047\", \"refs/heads/install/wb02-auto\": \"6645603156c47e9211e1a262862fcd09edb35633\", \"refs/heads/main\": \"1274900b13fb5e4edc82bc55fd0337f648185dab\"}, \"head\": \"d9300df8698955ae2645b280e06f83b616d84003\", \"branch\": \"install/wb02-auto\", \"checks\": {\"exact_source_auto_beads\": true, \"default_mode_auto\": true, \"memory_six_exact\": true, \"project_verify\": true, \"checker\": true, \"noop\": true, \"installed_fix_hook\": true, \"bd_ready\": true, \"embedded_db\": true, \"beads_backup\": true, \"protection\": true, \"working_branch\": true}, \"result\": \"PASS\"}",
+      "is_error": false,
+      "permission_metadata": [
+        {
+          "id": "toolu_01PFNFVNG6QbPhiFWr1PzJ3f",
+          "permission_decision": {
+            "decision": "accept",
+            "source": "config",
+            "reason_type": "classifier"
+          }
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_014BKXqQkd8ni78WbfW4NWnR",
+      "name": "Bash",
+      "input": {
+        "command": "cd C:/work/og-wb02-auto && git status --short --branch && git log --oneline -5",
+        "description": "Show working tree status and recent commits"
+      }
+    },
+    {
+      "type": "system",
+      "subtype": "hook_started",
+      "hook_id": "4c0172eb-1f12-453b-9bbb-c0d1a0c07bd7",
+      "hook_name": "PreToolUse:Bash",
+      "hook_event": "PreToolUse",
+      "uuid": "d1ba25d7-e5c2-4cd9-b1ca-27401398ae40",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e"
+    },
+    {
+      "type": "system",
+      "subtype": "hook_response",
+      "hook_id": "4c0172eb-1f12-453b-9bbb-c0d1a0c07bd7",
+      "hook_name": "PreToolUse:Bash",
+      "hook_event": "PreToolUse",
+      "output": "",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "outcome": "success",
+      "uuid": "ff25daf5-86c0-4f5b-8b74-ab839b40b42e",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e"
+    },
+    {
+      "tool_use_id": "toolu_014BKXqQkd8ni78WbfW4NWnR",
+      "type": "tool_result",
+      "content": "## install/wb02-auto...origin/install/wb02-auto [ahead 1]\n M .agents/project/verify.sh\n M .beads/config.yaml\n?? .claude/agents/\n?? .claude/hooks/\n?? .claude/rules/\n?? .claude/skills/\n?? .claude/tools/\n?? .memory-bank/\n?? .overgate/\n?? LICENSE\n?? docs/\n?? scripts/\nd9300df bd init: initialize beads issue tracking\n6645603 docs: plan affected WB-02 Windows auto QA\n1274900 Initial commit",
+      "is_error": false,
+      "permission_metadata": [
+        {
+          "id": "toolu_014BKXqQkd8ni78WbfW4NWnR",
+          "permission_decision": {
+            "decision": "accept",
+            "source": "config",
+            "reason_type": "classifier"
+          }
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01XjSuwX6sYHz55hTK5QDJcw",
+      "name": "Bash",
+      "input": {
+        "command": "cd C:/work/og-wb02-auto && cat > qa-wb02.txt <<'EOF'\nWB-02 Windows auto install QA\nsource_sha: ac58c9689d921cc859661e4cb7eb37a5b67c5abe\nmode: auto\nplan: wb02-fix-simple-auto-plan.json sha256 0522eb1a4826fcb9dd5162a9724f9305e1d367ee8c74168a3721a0689c2ee2dd\napproval: PLAN_READY https://github.com/komleff/overgate-rc4-wb02-auto-20261104/pull/1#issuecomment-6628414360\nproject verify.sh: literal cp of evidence/literal-b-simple-auto-project-verify-template.sh (sha256 7d92606526ba81f81aa3acae9bd5a264e7a647084abd161848fb9a232e74b28c), then single source_sha assertion rebound to ac58c9689d921cc859661e4cb7eb37a5b67c5abe (PM-approved, https://github.com/komleff/overgate/pull/12#issuecomment-6628354758)\napply: PASS; helpers memory/bd/protect: PASS; check-reference: PASS; verify.sh: PASS; installed audit: PASS\nEOF\ngit add .",
+        "description": "Create qa-wb02.txt and stage all changes"
+      }
+    },
+    {
+      "type": "system",
+      "subtype": "hook_started",
+      "hook_id": "b1bede89-6297-432f-9878-4e80b521a4ff",
+      "hook_name": "PreToolUse:Bash",
+      "hook_event": "PreToolUse",
+      "uuid": "ea6c7845-71cb-4b3b-a126-da9be1addcc2",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e"
+    },
+    {
+      "type": "system",
+      "subtype": "hook_response",
+      "hook_id": "b1bede89-6297-432f-9878-4e80b521a4ff",
+      "hook_name": "PreToolUse:Bash",
+      "hook_event": "PreToolUse",
+      "output": "",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "outcome": "success",
+      "uuid": "5a5d6123-9f94-4d0a-bae0-ec94136b850b",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e"
+    },
+    {
+      "tool_use_id": "toolu_01XjSuwX6sYHz55hTK5QDJcw",
+      "type": "tool_result",
+      "content": "warning: in the working copy of '.agents/project/verify.sh', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.beads/config.yaml', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/agents/developer.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/agents/planner.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/agents/reviewer.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/agents/tester.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/hooks/check-merge-ready.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/hooks/check-repository-mutation.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/hooks/check-tests-before-commit.sh', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/hooks/commit_command_classifier.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/hooks/pre-bash.sh', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/hooks/readiness_policy.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/hooks/shell_comment_parser.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/hooks/shell_grammar.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/rules/beads.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/rules/large-payloads.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/rules/tests.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/rules/universal.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/skills/architect/SKILL.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/skills/external-review/SKILL.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/skills/finalize-pr/SKILL.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/skills/finalize-pr/finalize-gate.sh', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/skills/finalize-pr/validators/strip_code_spans.sh', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/skills/finalize-pr/validators/test_validate_review_pass.sh', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/skills/pipeline-audit/SKILL.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/skills/project-manager/SKILL.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/skills/sprint-pr-cycle/SKILL.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/skills/verify/SKILL.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/tools/publish-pr-comment.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/tools/run-python.sh', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.claude/tools/with-timeout.sh', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.memory-bank/activeContext.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.memory-bank/productContext.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.memory-bank/progress.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.memory-bank/projectbrief.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.memory-bank/systemPatterns.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.memory-bank/techContext.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.overgate/install-state.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'LICENSE', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/baselines/2026-10-01-delivery-first-provenance.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'qa-wb02.txt', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/bd-bootstrap.sh', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/bd-read.sh', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/bd-sync-common.sh', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/bd-sync-export.sh', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/bd-sync-restore.sh', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/bd-wt.sh', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/check-reference.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/install-overgate.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/lib/bd-env.sh', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/lib/bd-read-engine.mjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/og-init-memory-bank.sh', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/og-protect-main.sh', LF will be replaced by CRLF the next time Git touches it",
+      "is_error": false,
+      "permission_metadata": [
+        {
+          "id": "toolu_01XjSuwX6sYHz55hTK5QDJcw",
+          "permission_decision": {
+            "decision": "accept",
+            "source": "config",
+            "reason_type": "classifier"
+          }
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_014NTvsMYp8FfAUo7Vx1gBkf",
+      "name": "Bash",
+      "input": {
+        "command": "cd C:/work/og-wb02-auto && git commit -m \"test: affected WB-02 Windows auto install\"",
+        "description": "Commit staged install changes",
+        "timeout": 300000
+      }
+    },
+    {
+      "type": "system",
+      "subtype": "hook_started",
+      "hook_id": "ad1c1dbe-f90d-464a-8f18-6942c1c2c646",
+      "hook_name": "PreToolUse:Bash",
+      "hook_event": "PreToolUse",
+      "uuid": "046c1aa5-ed57-4b11-93d5-3c4088f78dca",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e"
+    },
+    {
+      "type": "system",
+      "subtype": "hook_response",
+      "hook_id": "ad1c1dbe-f90d-464a-8f18-6942c1c2c646",
+      "hook_name": "PreToolUse:Bash",
+      "hook_event": "PreToolUse",
+      "output": "PASS: README and exact B/mode/Beads\r\n",
+      "stdout": "PASS: README and exact B/mode/Beads\r\n",
+      "stderr": "",
+      "exit_code": 0,
+      "outcome": "success",
+      "uuid": "6215fdf4-1f90-4ef8-adaf-389408376a8a",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e"
+    },
+    {
+      "tool_use_id": "toolu_014NTvsMYp8FfAUo7Vx1gBkf",
+      "type": "tool_result",
+      "content": "[install/wb02-auto b55d75f] test: affected WB-02 Windows auto install\n 53 files changed, 14177 insertions(+), 3 deletions(-)\n create mode 100644 .claude/agents/developer.md\n create mode 100644 .claude/agents/planner.md\n create mode 100644 .claude/agents/reviewer.md\n create mode 100644 .claude/agents/tester.md\n create mode 100644 .claude/hooks/check-merge-ready.py\n create mode 100644 .claude/hooks/check-repository-mutation.py\n create mode 100644 .claude/hooks/check-tests-before-commit.sh\n create mode 100644 .claude/hooks/commit_command_classifier.py\n create mode 100644 .claude/hooks/pre-bash.sh\n create mode 100644 .claude/hooks/readiness_policy.py\n create mode 100644 .claude/hooks/shell_comment_parser.py\n create mode 100644 .claude/hooks/shell_grammar.py\n create mode 100644 .claude/rules/beads.md\n create mode 100644 .claude/rules/large-payloads.md\n create mode 100644 .claude/rules/tests.md\n create mode 100644 .claude/rules/universal.md\n create mode 100644 .claude/skills/architect/SKILL.md\n create mode 100644 .claude/skills/external-review/SKILL.md\n create mode 100644 .claude/skills/finalize-pr/SKILL.md\n create mode 100644 .claude/skills/finalize-pr/finalize-gate.sh\n create mode 100644 .claude/skills/finalize-pr/validators/strip_code_spans.sh\n create mode 100644 .claude/skills/finalize-pr/validators/test_validate_review_pass.sh\n create mode 100644 .claude/skills/pipeline-audit/SKILL.md\n create mode 100644 .claude/skills/project-manager/SKILL.md\n create mode 100644 .claude/skills/sprint-pr-cycle/SKILL.md\n create mode 100644 .claude/skills/verify/SKILL.md\n create mode 100644 .claude/tools/publish-pr-comment.py\n create mode 100644 .claude/tools/run-python.sh\n create mode 100644 .claude/tools/with-timeout.sh\n create mode 100644 .memory-bank/activeContext.md\n create mode 100644 .memory-bank/productContext.md\n create mode 100644 .memory-bank/progress.md\n create mode 100644 .memory-bank/projectbrief.md\n create mode 100644 .memory-bank/systemPatterns.md\n create mode 100644 .memory-bank/techContext.md\n create mode 100644 .overgate/install-state.json\n create mode 100644 LICENSE\n create mode 100644 docs/baselines/2026-10-01-delivery-first-provenance.json\n create mode 100644 qa-wb02.txt\n create mode 100644 scripts/bd-bootstrap.sh\n create mode 100644 scripts/bd-read.sh\n create mode 100644 scripts/bd-sync-common.sh\n create mode 100644 scripts/bd-sync-export.sh\n create mode 100644 scripts/bd-sync-restore.sh\n create mode 100644 scripts/bd-wt.sh\n create mode 100644 scripts/check-reference.py\n create mode 100644 scripts/install-overgate.py\n create mode 100644 scripts/lib/bd-env.sh\n create mode 100644 scripts/lib/bd-read-engine.mjs\n create mode 100644 scripts/og-init-memory-bank.sh\n create mode 100644 scripts/og-protect-main.sh",
+      "is_error": false,
+      "permission_metadata": [
+        {
+          "id": "toolu_014NTvsMYp8FfAUo7Vx1gBkf",
+          "permission_decision": {
+            "decision": "accept",
+            "source": "config",
+            "reason_type": "classifier"
+          }
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01PrBeRYk37chLa9JbkCyZxj",
+      "name": "Bash",
+      "input": {
+        "command": "cd C:/work/og-wb02-auto && git push origin install/wb02-auto",
+        "description": "Push working branch to origin",
+        "timeout": 300000
+      }
+    },
+    {
+      "type": "system",
+      "subtype": "hook_started",
+      "hook_id": "a5cfa45a-4fef-4ca7-90b5-4083f47ce5ea",
+      "hook_name": "PreToolUse:Bash",
+      "hook_event": "PreToolUse",
+      "uuid": "bdec11fe-1ec8-414a-b5ef-0a5ab1c14599",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e"
+    },
+    {
+      "type": "system",
+      "subtype": "hook_response",
+      "hook_id": "a5cfa45a-4fef-4ca7-90b5-4083f47ce5ea",
+      "hook_name": "PreToolUse:Bash",
+      "hook_event": "PreToolUse",
+      "output": "",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "outcome": "success",
+      "uuid": "6a51f587-14fc-4353-8ccd-c8502c6a23d4",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e"
+    },
+    {
+      "tool_use_id": "toolu_01PrBeRYk37chLa9JbkCyZxj",
+      "type": "tool_result",
+      "content": "To https://github.com/komleff/overgate-rc4-wb02-auto-20261104.git\n   6645603..b55d75f  install/wb02-auto -> install/wb02-auto",
+      "is_error": false,
+      "permission_metadata": [
+        {
+          "id": "toolu_01PrBeRYk37chLa9JbkCyZxj",
+          "permission_decision": {
+            "decision": "accept",
+            "source": "config",
+            "reason_type": "classifier"
+          }
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_013RDLMvsTn2Eb4zowDVPZbN",
+      "name": "Bash",
+      "input": {
+        "command": "cd C:/work/og-wb02-auto && py -3 D:/CodexArtifacts/overgate-rc4-winqa-20261103/audit-wb02.py final",
+        "description": "Run final audit",
+        "timeout": 600000
+      }
+    },
+    {
+      "type": "system",
+      "subtype": "hook_started",
+      "hook_id": "cdf29787-abb1-4cd3-a8f2-3b80073103d8",
+      "hook_name": "PreToolUse:Bash",
+      "hook_event": "PreToolUse",
+      "uuid": "c4e858f8-fbb5-45c2-b238-bd0aa9e1bc6c",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e"
+    },
+    {
+      "type": "system",
+      "subtype": "hook_response",
+      "hook_id": "cdf29787-abb1-4cd3-a8f2-3b80073103d8",
+      "hook_name": "PreToolUse:Bash",
+      "hook_event": "PreToolUse",
+      "output": "",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "outcome": "success",
+      "uuid": "afa53c02-f9a3-43be-a008-4591d403168f",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e"
+    },
+    {
+      "tool_use_id": "toolu_013RDLMvsTn2Eb4zowDVPZbN",
+      "type": "tool_result",
+      "content": "{\"source_sha\": \"ac58c9689d921cc859661e4cb7eb37a5b67c5abe\", \"stage\": \"final\", \"target\": \"C:\\\\work\\\\og-wb02-auto\", \"repo\": \"komleff/overgate-rc4-wb02-auto-20261104\", \"noop_operations\": 73, \"changed_hook\": {\"git_blob\": \"3e54c2a2002c67185274f1f00cfc33a8e9c7f4ff\", \"source_sha256\": \"5d2847e90ccc05cafdb4c0f342888687bf881a98c0ff1759e9312ad17b7c44ec\", \"installed_sha256\": \"5d2847e90ccc05cafdb4c0f342888687bf881a98c0ff1759e9312ad17b7c44ec\", \"observed_mode\": \"0o666\"}, \"refs\": {\"refs/heads/beads-backup\": \"9f318bf06a4c8fc5b575286d38cc18299e94c047\", \"refs/heads/install/wb02-auto\": \"b55d75f3fbc81ca7936f2ca8489c815f9cdc5e53\", \"refs/heads/main\": \"1274900b13fb5e4edc82bc55fd0337f648185dab\"}, \"head\": \"b55d75f3fbc81ca7936f2ca8489c815f9cdc5e53\", \"branch\": \"install/wb02-auto\", \"pr\": {\"headRefOid\": \"b55d75f3fbc81ca7936f2ca8489c815f9cdc5e53\", \"isDraft\": true, \"state\": \"OPEN\", \"url\": \"https://github.com/komleff/overgate-rc4-wb02-auto-20261104/pull/1\"}, \"checks\": {\"exact_source_auto_beads\": true, \"default_mode_auto\": true, \"memory_six_exact\": true, \"project_verify\": true, \"checker\": true, \"noop\": true, \"installed_fix_hook\": true, \"bd_ready\": true, \"embedded_db\": true, \"beads_backup\": true, \"protection\": true, \"working_branch\": true, \"clean\": true, \"index_empty\": true, \"remote_head\": true, \"draft_pr_head\": true}, \"result\": \"PASS\"}",
+      "is_error": false,
+      "permission_metadata": [
+        {
+          "id": "toolu_013RDLMvsTn2Eb4zowDVPZbN",
+          "permission_decision": {
+            "decision": "accept",
+            "source": "config",
+            "reason_type": "classifier"
+          }
+        }
+      ]
+    },
+    {
+      "type": "result",
+      "subtype": "success",
+      "is_error": false,
+      "result": "**Результат: PASS.** Все шаги 1–8 выполнены без единого ненулевого возврата, повторов apply/helpers не было.\n\nФакты:\n- **Preflight:** native existence check PASS, source HEAD ac58c9689d921cc859661e4cb7eb37a5b67c5abe clean, plan sha256 совпал с approval PLAN_READY.\n- **Apply:** frozen source ac58c96 применён, backup в `.overgate-backups/62fc7852.../rollback.json`.\n- **Helpers:** memory bank (six files), bd-bootstrap (prefix og-wb02-auto, beads-backup создан, коммит `bd init`), og-protect-main (protection verified) — все PASS.\n- **check-reference:** PASS.\n- **verify.sh:** литеральный cp, оба хэша 7d92606526ba…74b28c, receipt `copy` записан. Затем единственная замена source_sha на ac58c96 через Edit, receipt `bound` с diff; итоговый хэш 6d82963b…fea62.\n- **Проверки:** `verify.sh` PASS, `installed` audit PASS (73 noop ops, hook hashes совпадают, все checks true).\n- **Git:** qa-wb02.txt создан, отдельные `git add .`, commit, push в install/wb02-auto.\n\nTarget HEAD: **b55d75f3fbc81ca7936f2ca8489c815f9cdc5e53** (ветка install/wb02-auto, рабочее дерево clean).\nDraft PR: https://github.com/komleff/overgate-rc4-wb02-auto-20261104/pull/1 (OPEN, isDraft true, head совпадает с HEAD). Final audit result PASS.\n\nNegative probes и R1 UnavailableAccount не запускались (NOT RUN). Merge/ready не делал.",
+      "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e",
+      "permission_denials": []
+    }
+  ]
+}

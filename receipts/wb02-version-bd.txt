@@ -1,0 +1,5 @@
+{"command": ["bd", "--version"], "cwd": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103", "exit_code": 0}
+STDOUT:
+bd version 1.2.2 (6c124203e)
+
+STDERR:

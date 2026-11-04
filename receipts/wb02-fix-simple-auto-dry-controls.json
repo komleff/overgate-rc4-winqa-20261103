@@ -1,0 +1,31 @@
+{
+  "source_sha": "ac58c9689d921cc859661e4cb7eb37a5b67c5abe",
+  "head_before": "b55d75f3fbc81ca7936f2ca8489c815f9cdc5e53",
+  "head_after_unchanged": true,
+  "readme_original_sha256": "3852439c56a26f28dcc495894795995fb8cc42ffc14a2d7e923940a2e8ed9a7d",
+  "readme_now_empty": true,
+  "checks": [
+    {
+      "command": "cp 'gh pr merge 1' d/",
+      "hook": ".claude/hooks/check-repository-mutation.py",
+      "exit_code": 2,
+      "stdout": "",
+      "stderr": "BLOCKED: opaque executable contains protected repository mutation. Use a working branch/PR; merge remains operator-only.\n",
+      "carrier_executed": false,
+      "result": "PASS"
+    },
+    {
+      "command": "cp \"$(git commit -m wb02-nested-probe)\" d/",
+      "hook": ".claude/hooks/check-tests-before-commit.sh",
+      "invocation": "bash .claude/hooks/check-tests-before-commit.sh (relative POSIX path, cwd target)",
+      "exit_code": 2,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<stdin>\", line 4, in <module>\nAssertionError: README absent or empty\nБЛОКИРОВКА: тесты падают. Исправь перед коммитом.\n",
+      "carrier_executed": false,
+      "classification": "commit",
+      "result": "PASS"
+    }
+  ],
+  "result": "PASS",
+  "qa_harness_correction": "Initial native Python passed a Windows backslash script pathname to bash; dirname of BASH_SOURCE resolved wrong launcher path. Corrected only harness argv to canonical relative POSIX hook path. Initial raw refusal preserved separately; installed payload unchanged and carrier never executed."
+}

@@ -1,0 +1,10 @@
+{"command": ["git", "push", "origin", "979fe44fbd10c74270b492c6400cf2067fa44284:refs/heads/main"], "cwd": "C:\\work\\og-wb02-auto", "exit_code": 1}
+STDOUT:
+
+STDERR:
+remote: error: GH006: Protected branch update failed for refs/heads/main.        
+remote: 
+remote: - Changes must be made through a pull request.        
+To https://github.com/komleff/overgate-rc4-wb02-auto-20261104.git
+ ! [remote rejected] 979fe44fbd10c74270b492c6400cf2067fa44284 -> main (protected branch hook declined)
+error: failed to push some refs to 'https://github.com/komleff/overgate-rc4-wb02-auto-20261104.git'

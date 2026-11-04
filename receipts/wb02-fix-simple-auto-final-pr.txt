@@ -1,0 +1,5 @@
+{"command": ["gh", "pr", "view", "1", "--json", "isDraft,state,headRefOid,url"], "cwd": "C:\\work\\og-wb02-auto", "exit_code": 0}
+STDOUT:
+{"headRefOid":"b55d75f3fbc81ca7936f2ca8489c815f9cdc5e53","isDraft":true,"state":"OPEN","url":"https://github.com/komleff/overgate-rc4-wb02-auto-20261104/pull/1"}
+
+STDERR:

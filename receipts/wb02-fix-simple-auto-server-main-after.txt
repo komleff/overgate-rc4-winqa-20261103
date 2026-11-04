@@ -1,0 +1,5 @@
+{"command": ["git", "ls-remote", "origin", "refs/heads/main"], "cwd": "C:\\work\\og-wb02-auto", "exit_code": 0}
+STDOUT:
+1274900b13fb5e4edc82bc55fd0337f648185dab	refs/heads/main
+
+STDERR:

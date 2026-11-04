@@ -1,0 +1,5 @@
+{"command": ["C:\\Python314\\python.exe", "C:\\work\\og-wb02-auto\\.claude\\hooks\\check-repository-mutation.py"], "cwd": "C:\\work\\og-wb02-auto", "exit_code": 2}
+STDOUT:
+
+STDERR:
+BLOCKED: opaque executable contains protected repository mutation. Use a working branch/PR; merge remains operator-only.

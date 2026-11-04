@@ -1,0 +1,11 @@
+{
+  "source_sha": "ac58c9689d921cc859661e4cb7eb37a5b67c5abe",
+  "stage": "bound",
+  "template_sha256": "7d92606526ba81f81aa3acae9bd5a264e7a647084abd161848fb9a232e74b28c",
+  "target_sha256": "6d82963b262f512e7adda903728387b643b0499a51a4e97470d3e3dcaedfea62",
+  "exact_expected_bytes": true,
+  "target_file": "C:\\work\\og-wb02-auto\\.agents\\project\\verify.sh",
+  "pm_permission": "https://github.com/komleff/overgate/pull/12#issuecomment-6628354758",
+  "diff": "--- historical-template\n+++ new-target-verifier\n@@ -6,7 +6,7 @@\n p=Path(\"README.md\")\n assert p.is_file() and p.read_bytes().strip(), \"README absent or empty\"\n s=json.loads(Path(\".overgate/install-state.json\").read_text(encoding=\"utf-8\"))\n-assert s.get(\"source_sha\")==\"2343df83a3a26ae83bc66d4009dd67a913eeea4e\", \"source SHA\"\n+assert s.get(\"source_sha\")==\"ac58c9689d921cc859661e4cb7eb37a5b67c5abe\", \"source SHA\"\n assert s.get(\"mode\")==\"auto\", \"state mode\"\n assert s.get(\"beads\") is True, \"strict Beads bool\"\n print(\"PASS: README and exact B/mode/Beads\")\n",
+  "reason": "PM-approved project-owned fixture source SHA binding after exact actual cp; original external template unchanged."
+}

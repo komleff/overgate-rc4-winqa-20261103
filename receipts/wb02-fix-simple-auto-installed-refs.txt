@@ -1,0 +1,7 @@
+{"command": ["git", "ls-remote", "--heads", "origin"], "cwd": "C:\\work\\og-wb02-auto", "exit_code": 0}
+STDOUT:
+9f318bf06a4c8fc5b575286d38cc18299e94c047	refs/heads/beads-backup
+6645603156c47e9211e1a262862fcd09edb35633	refs/heads/install/wb02-auto
+1274900b13fb5e4edc82bc55fd0337f648185dab	refs/heads/main
+
+STDERR:

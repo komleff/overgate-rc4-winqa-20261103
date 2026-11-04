@@ -1,0 +1,7 @@
+{"command": ["git", "diff", "--name-only", "2343df83a3a26ae83bc66d4009dd67a913eeea4e", "ac58c9689d921cc859661e4cb7eb37a5b67c5abe"], "cwd": "D:\\CodexArtifacts\\overgate-rc4-winqa-20261103\\source-ac58c96", "exit_code": 0}
+STDOUT:
+.claude/hooks/commit_command_classifier.py
+scripts/tests/commit-command-classifier.test.sh
+scripts/tests/commit-gate.test.py
+
+STDERR:

@@ -1,0 +1,54 @@
+{
+  "source_sha": "ac58c9689d921cc859661e4cb7eb37a5b67c5abe",
+  "target_head": "b55d75f3fbc81ca7936f2ca8489c815f9cdc5e53",
+  "actual_runtime": {
+    "type": "system",
+    "subtype": "init",
+    "cwd": "C:\\work\\og-wb02-auto",
+    "session_id": "a9b6a628-9f34-4508-b7bd-e5fbf160d23e",
+    "model": "claude-fable-5-1",
+    "permissionMode": "auto",
+    "claude_code_version": "2.1.317"
+  },
+  "fresh_negative_runtime": {
+    "type": "system",
+    "subtype": "init",
+    "cwd": "C:\\work\\og-wb02-auto",
+    "session_id": "e7253dfb-a207-4ea7-be9b-bea75c8ffc94",
+    "model": "claude-fable-5-1",
+    "permissionMode": "auto",
+    "claude_code_version": "2.1.317"
+  },
+  "exact_cp_tool_id": "toolu_0196zg25bNcuL2u6tdgQB221",
+  "exact_cp_result": "PASS",
+  "negative_probes": [
+    {
+      "command": "git push origin main",
+      "tool_use_id": "toolu_01DedoMzYMsoUX3ZaKymwEU8",
+      "result": "PASS",
+      "raw_output": "PreToolUse:Bash hook error: [bash -c 'H=./.claude/hooks/pre-bash.sh; if [ -f \"$H\" ]; then exec bash \"$H\"; fi; P=$(cat); Q=$(printf %s \"$P\" | tr -d \"{[:space:]\" | cut -c1); T=$(printf %s \"$P\" | grep -oE \"[$Q]command[$Q]: *[$Q]cd (/|[A-Za-z]:/)[A-Za-z0-9_:/.-]*[$Q]\" | head -n1); T=${T#*cd }; T=${T%?}; if [ -n \"$T\" ] && [ -f \"$T/.claude/hooks/pre-bash.sh\" ]; then exit 0; fi; R=$(git rev-parse --show-toplevel 2>/dev/null); echo \"БЛОКИРОВКА: каталог сессии не корень репозитория, диспетчер хуков .claude/hooks/pre-bash.sh здесь не найден (PWD=[$PWD], CLAUDE_PROJECT_DIR=[${CLAUDE_PROJECT_DIR-}]). Проходит только одна команда: cd с абсолютным путём к корню репозитория (прямые слэши, без кавычек). Восстановление: cd ${R:-<корень репозитория>}\" >&2; exit 2']: BLOCKED: direct update of protected branch via git push is forbidden: main. Use a working branch/PR; merge remains operator-only.\r\n"
+    },
+    {
+      "command": "gh pr merge 1",
+      "tool_use_id": "toolu_01VKACHr5FeZDBbMacMgAcYZ",
+      "result": "PASS",
+      "raw_output": "PreToolUse:Bash hook error: [bash -c 'H=./.claude/hooks/pre-bash.sh; if [ -f \"$H\" ]; then exec bash \"$H\"; fi; P=$(cat); Q=$(printf %s \"$P\" | tr -d \"{[:space:]\" | cut -c1); T=$(printf %s \"$P\" | grep -oE \"[$Q]command[$Q]: *[$Q]cd (/|[A-Za-z]:/)[A-Za-z0-9_:/.-]*[$Q]\" | head -n1); T=${T#*cd }; T=${T%?}; if [ -n \"$T\" ] && [ -f \"$T/.claude/hooks/pre-bash.sh\" ]; then exit 0; fi; R=$(git rev-parse --show-toplevel 2>/dev/null); echo \"БЛОКИРОВКА: каталог сессии не корень репозитория, диспетчер хуков .claude/hooks/pre-bash.sh здесь не найден (PWD=[$PWD], CLAUDE_PROJECT_DIR=[${CLAUDE_PROJECT_DIR-}]). Проходит только одна команда: cd с абсолютным путём к корню репозитория (прямые слэши, без кавычек). Восстановление: cd ${R:-<корень репозитория>}\" >&2; exit 2']: BLOCKED: gh pr merge/auto-merge is operator-only. Use a working branch/PR; merge remains operator-only.\r\n"
+    },
+    {
+      "command": "gh pr comment 1 --body \"ready to merge\"",
+      "tool_use_id": "toolu_01Fb3i75TZmGS3bDe6XGNNWA",
+      "result": "PASS",
+      "raw_output": "PreToolUse:Bash hook error: [bash -c 'H=./.claude/hooks/pre-bash.sh; if [ -f \"$H\" ]; then exec bash \"$H\"; fi; P=$(cat); Q=$(printf %s \"$P\" | tr -d \"{[:space:]\" | cut -c1); T=$(printf %s \"$P\" | grep -oE \"[$Q]command[$Q]: *[$Q]cd (/|[A-Za-z]:/)[A-Za-z0-9_:/.-]*[$Q]\" | head -n1); T=${T#*cd }; T=${T%?}; if [ -n \"$T\" ] && [ -f \"$T/.claude/hooks/pre-bash.sh\" ]; then exit 0; fi; R=$(git rev-parse --show-toplevel 2>/dev/null); echo \"БЛОКИРОВКА: каталог сессии не корень репозитория, диспетчер хуков .claude/hooks/pre-bash.sh здесь не найден (PWD=[$PWD], CLAUDE_PROJECT_DIR=[${CLAUDE_PROJECT_DIR-}]). Проходит только одна команда: cd с абсолютным путём к корню репозитория (прямые слэши, без кавычек). Восстановление: cd ${R:-<корень репозитория>}\" >&2; exit 2']: БЛОКИРОВКА: фразы 'готов к merge' / 'ready to merge' / 'merge-ready' разрешены только через /finalize-pr (см. .claude/skills/finalize-pr/SKILL.md).\r\nИспользуй /finalize-pr <PR_NUMBER>.\r\n"
+    },
+    {
+      "command": "git commit -m \"qa: red verification must block\"",
+      "tool_use_id": "toolu_01WAgaUqFxRAqVNU6aKDzd7t",
+      "result": "PASS",
+      "raw_output": "PreToolUse:Bash hook error: [bash -c 'H=./.claude/hooks/pre-bash.sh; if [ -f \"$H\" ]; then exec bash \"$H\"; fi; P=$(cat); Q=$(printf %s \"$P\" | tr -d \"{[:space:]\" | cut -c1); T=$(printf %s \"$P\" | grep -oE \"[$Q]command[$Q]: *[$Q]cd (/|[A-Za-z]:/)[A-Za-z0-9_:/.-]*[$Q]\" | head -n1); T=${T#*cd }; T=${T%?}; if [ -n \"$T\" ] && [ -f \"$T/.claude/hooks/pre-bash.sh\" ]; then exit 0; fi; R=$(git rev-parse --show-toplevel 2>/dev/null); echo \"БЛОКИРОВКА: каталог сессии не корень репозитория, диспетчер хуков .claude/hooks/pre-bash.sh здесь не найден (PWD=[$PWD], CLAUDE_PROJECT_DIR=[${CLAUDE_PROJECT_DIR-}]). Проходит только одна команда: cd с абсолютным путём к корню репозитория (прямые слэши, без кавычек). Восстановление: cd ${R:-<корень репозитория>}\" >&2; exit 2']: Traceback (most recent call last):\r\n  File \"<stdin>\", line 4, in <module>\r\nAssertionError: README absent or empty\r\nБЛОКИРОВКА: тесты падают. Исправь перед коммитом.\n"
+    }
+  ],
+  "successful_hook_responses": 16,
+  "negative_hook_responses": 4,
+  "historical_scope": "Five old2343 variant PASS remain historical; changed classifier prevents whole-case relabel on ac58. R1 NOT RUN.",
+  "result": "PASS: affected packet only"
+}
